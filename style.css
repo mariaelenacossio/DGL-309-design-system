@@ -161,6 +161,16 @@ body {
 }
 
 
+/* Section title - Changes according the page */
+.i-name {
+  color: #072ac8;
+  padding: 30px 30px 0 30px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+
 
 
 /* Media Queries */
