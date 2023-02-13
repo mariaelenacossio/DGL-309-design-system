@@ -202,6 +202,9 @@ body {
 .interface .navigation-bar {
     width: 100%;
 }
+.section {
+  display: block;
+}
 }
 
 /* Smaller Screens */

@@ -14,13 +14,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
 <!--Font Awesome Assets-->
-<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
 <title>BEYOND Skincare</title>
 </head>
 <body>
 
   <!--Side Navbar-->
-  <section class="menu">
+  <section class="menu" id="#menu">
     <div class="logo">
         <img src="" alt=""><!--Add logo-->
         <h2>BEYOND Skincare</h2>
@@ -47,7 +47,7 @@
 <seciton class="interface">
   <div class="navigation-bar">
     <div class="search-field">
-        <div class="menu-btn">
+        <div class="menu-btn" id="#menu-btn">
             <i class="fas fa-bars"></i>
         </div>
         <div class="search">
@@ -75,8 +75,13 @@
 
 
 <!--Compiled JS-->
-<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
-  
+<script src="/fontawesome/js/fontawesome.js"></script>
+<script>
+  $('#menu-btn').click(function() {
+      $('#menu').toggleClass("active");
+  })
+</script>
+
 </body>
 </html>
 
