@@ -168,6 +168,10 @@ body {
   color: #072ac8;;
 }
 
+.search-field i {
+  display: initial;
+}
+
 
 /* Section title - Changes according the page */
 .i-name {
@@ -227,6 +231,7 @@ body {
   .interface .navigation-bar .search-field input {
       width: 150px;
   }
+
   .i-name {
       padding: 30px 15px 0 15px;
   }
