@@ -203,3 +203,16 @@ body {
     width: 100%;
 }
 }
+
+/* Smaller Screens */
+@media (max-width:477px) {
+  .interface .navigation-bar {
+      padding: 15px;
+  }
+  .interface .navigation-bar .search-field input {
+      width: 150px;
+  }
+  .i-name {
+      padding: 30px 15px 0 15px;
+  }
+}
