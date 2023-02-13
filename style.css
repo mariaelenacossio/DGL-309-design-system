@@ -175,7 +175,7 @@ body {
 
 /* Media Queries */
 
-@media (max-widht: 769px){
+@media (max-width: 769px){
   .menu {
     width: 270px;
     position: fixed;
@@ -202,9 +202,9 @@ body {
 .interface .navigation-bar {
     width: 100%;
 }
-.section {
+/* .section {
   display: block;
-}
+} */
 }
 
 /* Smaller Screens */
