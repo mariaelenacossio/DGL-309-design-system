@@ -196,6 +196,10 @@ body {
 .menu-btn {
     display: initial;
 }
+.n1 i {
+  display: initial;
+}
+
 .interface {
     width: 100%;
     margin-left: 0px;
