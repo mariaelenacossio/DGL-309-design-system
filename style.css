@@ -31,40 +31,44 @@ body {
 
 
 /* Sidebar title */
-.menu .logo {
+.side-bar {
+  position: sticky;
+  top: auto;
+}
+.side-bar .logo {
   display: flex;
   align-items: center;
   color: black; /*Change to primary color*/
   padding: 30px 0 0 30px;
 }
 
-.menu .logo img {
+.side-bar .logo img {
   width: 40px;
   margin-right: 15px;
 }
 
-.menu .items {
+.side-bar .items {
   margin-top: 40px;
 }
 
-.menu .items li {
+.side-bar .items li {
   list-style: none;
   padding: 15px 0;
   transition: 0.3s ease;
 }
 
 /* Links hover */
-.menu .items li:hover {
+.side-bar .items li:hover {
   background: #a2d6f9;
   cursor: pointer;
 }
 
-.menu .items li:nth-child(1) {
+.side-bar .items li:nth-child(1) {
   border-left: 4px solid #fff;
 }
 
 /* Sidebar link text color */
-.menu .items li i {
+.side-bar .items li i {
   color: black;
   width: 30px;
   height: 30px;
@@ -74,12 +78,12 @@ body {
   margin: 0 10px 0 25px;
 }
 /* Sidebar link text color hover */
-.menu .items li:hover i,
-.menu .items li:hover a {
+.side-bar .items li:hover i,
+.side-bar .items li:hover a {
   color: #F3F4F6;
 }
 
-.menu .items li a {
+.side-bar .items li a {
   text-decoration: none;
   color: black;
   font-weight: 300px;
@@ -156,7 +160,7 @@ body {
   display: none;
 }
 
-.menu-btn {
+.side-bar-btn {
   display: none;
   color: #2b2b2b;
   font-size: 20px;
@@ -185,22 +189,75 @@ body {
 
 
 /* Cards section */
+.cards {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.box {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  background-color: #1e96fc;
+  border-radius: 40px;
+/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.box .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.box .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.box .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: -50px;
+  height: 40px;
+}
+
+.box:hover {
+  transform: scale(0.9, 0.9);
+  /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22); */
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
 
 
 /* Media Queries */
 
 @media (max-width: 769px){
-  .menu {
+  .side-bar {
     width: 270px;
     position: fixed;
     left: -270px;
     transition: 0.3s ease;
 }
-.menu.active {
+.side-bar.active {
     left: 0px;
 }
-.menu-btn {
+.side-bar-btn {
     display: initial;
 }
 .n1 i {
@@ -213,7 +270,7 @@ body {
     display: inline-block;
     transition: 0.3s ease;
 }
-.menu.active~.interface {
+.side-bar.active~.interface {
     width: calc(100% - 270px);
     margin-left: 270px;
     transition: 0.3s ease;
@@ -238,4 +295,10 @@ body {
   .i-name {
       padding: 30px 15px 0 15px;
   }
+
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
+
