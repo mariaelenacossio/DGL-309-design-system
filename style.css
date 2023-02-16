@@ -35,6 +35,8 @@ body {
 .side-bar {
   position: fixed;
   top: auto;
+  background-color: #1e96fc;
+  height: 100%;
 }
 .side-bar .logo {
   display: flex;
