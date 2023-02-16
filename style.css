@@ -29,7 +29,11 @@ body {
   display: flex;
 }
 
+/* Dropdown */
 
+.disable{
+  display: none;
+}
 
 /* Sidebar title */
 .side-bar {
