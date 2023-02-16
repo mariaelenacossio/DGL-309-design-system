@@ -24,7 +24,7 @@ Hover btn #ffc600
 
 body {
   width: 100%;
-  background: #E5E7EB;
+  background: #fff;
   position: relative;
   display: flex;
 }
@@ -33,7 +33,7 @@ body {
 
 /* Sidebar title */
 .side-bar {
-  position: sticky;
+  position: fixed;
   top: auto;
 }
 .side-bar .logo {
@@ -98,7 +98,7 @@ body {
 
 .interface {
   width: calc(100% - 300px);
-  /* margin-left: 300px; */
+  margin-left: 300px;
   position: relative;
 }
 
