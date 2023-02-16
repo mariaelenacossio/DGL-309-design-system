@@ -28,8 +28,11 @@
     </div>
 
     <div class="items">
-        <li><i class="fa-solid fa-house"></i><a href="#">Overview</a></li>
+        <li onclick="myFunction()"><i class="fa-solid fa-house"></i><a href="#">Overview</a></li>
         <!--Add submenu for Introduction-->
+        <div class="disable" id="myDIV">
+          <li><i class="fab fa-uikit"></i><a href="#">Introduction</a></li>
+        </div>
         <li><i class="fab fa-uikit"></i><a href="#">Style</a></li>
         <!--Add submenu for Color, Typography, Icons and Images-->
         <li><i class="fa-solid fa-pen-to-square"></i><a href="#">Layout</a></li>
@@ -157,6 +160,19 @@
 <!--Compiled JS-->
 <script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
 <script src="/fontawesome/js/fontawesome.js"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
 <!-- <script>
   $('#menu-btn').click(function() {
       $('#menu').toggleClass("active");
