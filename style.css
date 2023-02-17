@@ -31,27 +31,42 @@ body {
 
 /* Dropdown */
 
-.disable{
-  display: none;
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
 }
 
-/* Sidebar title */
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+
+}/* Sidebar title */
 .side-bar {
   position: fixed;
   top: auto;
   background-color: #1e96fc;
   height: 100%;
+  overflow-y: scroll;
 }
 .side-bar .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: black; /*Change to primary color*/
-  padding: 30px 0 0 30px;
+  /* padding: 30px 0 0 30px; */
 }
 
 .side-bar .logo img {
-  width: 40px;
-  margin-right: 15px;
+  width: 300px;
+  height: 300px;
+  /* margin-right: 15px; */
+}
+.h2-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .side-bar .items {
