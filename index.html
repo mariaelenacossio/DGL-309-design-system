@@ -24,23 +24,39 @@
   <section class="side-bar">
     <div class="logo">
         <img src="/img/BEYOND.png" alt=""><!--Add logo-->
-        <h2>BEYOND Skincare</h2>
+        <h2 class="h2-sidebar">BEYOND Skincare</h2>
     </div>
 
     <div class="items">
-        <li onclick="myFunction()"><i class="fa-solid fa-house"></i><a href="#">Overview</a></li>
-        <!--Add submenu for Introduction-->
-        <div class="disable" id="myDIV">
+        <li><i class="fa-solid fa-house"></i><a href="#">Overview</a></li>
+        <div>
           <li><i class="fab fa-uikit"></i><a href="#">Introduction</a></li>
         </div>
         <li><i class="fab fa-uikit"></i><a href="#">Style</a></li>
-        <!--Add submenu for Color, Typography, Icons and Images-->
+        <div>
+          <li><i class="fab fa-uikit"></i><a href="#">Color</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Typography</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Icons</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Images</a></li>
+        </div>
         <li><i class="fa-solid fa-pen-to-square"></i><a href="#">Layout</a></li>
-        <!--Add submenu for Spacing, Grid and breakpoints-->
+        <div>
+          <li><i class="fab fa-uikit"></i><a href="#">Spacing</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Grid</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Breakpoints</a></li>
+        </div>
         <li><i class="fa-solid fa-star"></i></i><a href="#">Components</a></li>
-        <!--Add submenu for Buttons, carousel, cards and dropdowns (maybe forms)-->
+        <div>
+          <li><i class="fab fa-uikit"></i><a href="#">Buttons</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Cards</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Carousel</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Dropdowns</a></li>
+        </div>
         <li><i class="fa-solid fa-file"></i><a href="#">Resources</a></li>
-        <!--Add submenu for contact and support-->
+        <div>
+          <li><i class="fab fa-uikit"></i><a href="#">Contact</a></li>
+          <li><i class="fab fa-uikit"></i><a href="#">Support</a></li>
+        </div>
         <li><i class="fa-brands fa-github"></i><a href="#">Github Repo</a></li>
     </div>
 </section>
@@ -162,7 +178,11 @@
 <script src="/fontawesome/js/fontawesome.js"></script>
 <script>
   function myFunction() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("overview");
+  var x = document.getElementById("style");
+  var x = document.getElementById("layout");
+  var x = document.getElementById("components");
+  var x = document.getElementById("resources");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
