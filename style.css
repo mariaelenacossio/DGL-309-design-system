@@ -6,7 +6,9 @@ Secondary #1e96fc
 Accent #a2d6f9
 Buttons #fcf300
 Hover btn #ffc600
-
+Side bar gradient
+background: rgb(30,150,252);
+background: linear-gradient(180deg, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 63%);
 
 
 
@@ -46,8 +48,8 @@ body {
 .side-bar {
   position: fixed;
   top: auto;
-  background-color: #1e96fc;
-  height: 100%;
+  background: rgb(30,150,252);
+  background: linear-gradient(180deg, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 63%);  height: 100%;
   overflow-y: scroll;
 }
 .side-bar .logo {
