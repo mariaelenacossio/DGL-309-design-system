@@ -158,6 +158,23 @@ a, b, i, strong, em, small, code {
 }
 .h-200 {height: 239px;}
 
+
+
+/* to remove the arrow */
+details summary::-webkit-details-marker {
+  display:none;
+}
+details > summary {
+  list-style: none;
+}
+details > summary a {
+  text-decoration: none;
+  padding-left: 0.5rem;
+}
+details > summary i {
+  margin-left: 1rem;
+}
+
 /* h1 {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 500;
