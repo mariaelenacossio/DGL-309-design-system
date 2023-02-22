@@ -113,6 +113,7 @@ ul ul, ol ol, ul ol, ol ul {
 
 /* Let's make sure all's aligned */
 
+
 a, b, i, strong, em, small, code {
   line-height: 0;
 }
@@ -150,7 +151,7 @@ a, b, i, strong, em, small, code {
     text-align:center;
     margin-bottom: 0 !important;
 }
-
+.h-200 {height: 239px;}
 
 /* h1 {
   font-size: calc(1.475rem + 2.7vw);
