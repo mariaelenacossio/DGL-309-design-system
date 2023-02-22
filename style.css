@@ -20,6 +20,120 @@ BG #FAFBFC
 
 /* Global classes */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body, .article {
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  display: flex;
+}
+
+
+
+
+h1, .h1 {
+  /* font-size: 4.2222222rem;
+  line-height: 5.1111111rem;
+  margin-top: 1.2777778rem;
+  margin-bottom: 2.5555556rem; */
+
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 1rem 1rem 1rem 2rem;
+  display: flex;
+  margin-left: 2rem;
+
+
+
+}
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  line-height: 2.5714286rem;
+  margin-top: 1.2857143rem;
+  margin-bottom: 1.2857143rem;
+  padding: 1rem 1rem 1rem 2rem;
+  font-weight: lighter;
+}
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  line-height: 2.5714286rem;
+  font-weight: lighter;
+  margin-top: 1.2857143rem;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: 1.2857143rem;
+  margin-top: 1.2857143rem;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+h5, .h5 {
+  font-size: 1.25rem;
+  line-height: 1.2857143rem;
+  margin-top: 1.2857143rem;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+  line-height: 1.2857143rem;
+  margin-top: 1.2857143rem;
+  margin-bottom: 0rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0rem;
+  margin-bottom: 1.2857143rem;
+  padding: 1rem 1rem 1rem 2rem;
+  line-height: normal;
+  font-weight: 100;
+  text-align: left;
+
+}
+
+
+
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+/* Let's make sure all's aligned */
+
+
+
+
+
+hr, .hr {
+  margin: 1.5rem !important;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+.bold {font-weight: bold;}
+
+.pb-1 {padding-bottom: 1rem;}
+
+
+
 .container {
   /* --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0; */
@@ -57,22 +171,20 @@ h1 {
   margin-left: 2rem;
 
 }
-h2 {
+/* h2 {
   font-size: 1.25rem;
   font-weight: lighter;
   margin-left: 2rem;
-}
+} */
 
 /* h2:nth-of-type(1) {
 padding: 1rem;
 font-weight: bold;} */
 
 
-p {
-padding: 1rem;
-  line-height: normal;
-  font-weight: 100;
-  text-align: left;
+.separator {
+    position: relative;
+    top: 0;
 }
 
 
@@ -89,9 +201,11 @@ align-items: end;
 margin-left: 2rem;
 }
 
-.divider { 
-  margin: 1.5rem !important;
+.sub-h {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
+
 
 
 .flex-container {
@@ -190,19 +304,7 @@ margin-left: 2rem;
 }
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
 
-body {
-  width: 100%;
-  background: #fff;
-  position: relative;
-  display: flex;
-}
 
 /* Dropdown */
 
