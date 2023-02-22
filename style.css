@@ -170,6 +170,7 @@ details > summary {
 details > summary a {
   text-decoration: none;
   padding-left: 0.5rem;
+  color: black;
 }
 details > summary i {
   margin-left: 1rem;
