@@ -47,9 +47,14 @@ body, .article {
 
 
 h1, .h1 {
-  font-size: calc(4.25rem + 2.7vw);
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: calc(2.49rem + 2.7vw);
+  line-height: 5.25rem;
+  margin-top: 1.3125rem;
+  margin-bottom: 2.625rem;
+
+  
+  
+  /* line-height: 1.2; */
   padding: 1rem 1rem 1rem 2rem;
   display: flex;
   margin-left: 2rem;
@@ -154,12 +159,13 @@ a, b, i, strong, em, small, code {
 .hero {
     position: relative;
     padding:0 !important;
-    height: 239px;
+    height: auto;
     margin-top:70px !important;
     margin-top: 23px;
     text-align:center;
     margin-bottom: 0 !important;
 }
+
 
 /* h1 {
   font-size: calc(1.475rem + 2.7vw);
@@ -200,10 +206,10 @@ align-items: end;
 margin-left: 2rem;
 }
 
-.sub-h {
+/* .sub-h {
   font-size: 1.25rem;
   font-weight: 300;
-}
+} */
 
 
 
