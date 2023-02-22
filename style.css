@@ -44,57 +44,53 @@ body, .article {
 }
 
 
-
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
 
 h1, .h1 {
-  font-size: calc(2.49rem + 2.7vw);
-  line-height: 5.25rem;
-  margin-top: 1.3125rem;
-  margin-bottom: 2.625rem;
-
-  
-  
-  /* line-height: 1.2; */
+  font-size: calc(1.33rem + 2.7vw);
+  line-height: 2.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
   padding: 1rem 1rem 1rem 2rem;
   display: flex;
-  margin-left: 2rem;
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-  line-height: 2.5714286rem;
-  margin-top: 1.2857143rem;
-  margin-bottom: 1.2857143rem;
+  font-size: calc(1.26rem + 0.9vw);
+  line-height: 3.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   padding: 1rem 1rem 1rem 2rem;
-  font-weight: lighter;
 }
+
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
-  line-height: 2.5714286rem;
-  font-weight: lighter;
-  margin-top: 1.2857143rem;
+  font-size: calc(1.20rem + 0.6vw);
+  line-height: 2.5rem;
+  margin-top: 1.25rem;
   margin-bottom: 0rem;
   padding: 1rem 1rem 1rem 2rem;
 }
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
-  line-height: 1.2857143rem;
-  margin-top: 1.2857143rem;
+  font-size: calc(1.15rem + 0.3vw);
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
   margin-bottom: 0rem;
   padding: 1rem 1rem 1rem 2rem;
 }
 h5, .h5 {
-  font-size: 1.25rem;
-  line-height: 1.2857143rem;
-  margin-top: 1.2857143rem;
+  font-size: 1.09rem;
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
   margin-bottom: 0rem;
   padding: 1rem 1rem 1rem 2rem;
 }
 
 h6, .h6 {
-  font-size: 1rem;
-  line-height: 1.2857143rem;
-  margin-top: 1.2857143rem;
+  font-size: 1.04rem;
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
   margin-bottom: 0rem;
   padding: 1rem 1rem 1rem 2rem;
 }
@@ -103,16 +99,12 @@ h6, .h6 {
 
 p, ul, ol, pre, table, blockquote {
   margin-top: 0rem;
-  margin-bottom: 1.2857143rem;
+  margin-bottom: 1.25rem;
   padding: 1rem 1rem 1rem 2rem;
   line-height: normal;
   font-weight: 100;
   text-align: left;
-
 }
-
-
-
 
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0rem;
@@ -121,13 +113,6 @@ ul ul, ol ol, ul ol, ol ul {
 
 /* Let's make sure all's aligned */
 
-
-
-
-
-hr, .hr {
-  margin: 1.5rem !important;
-}
 a, b, i, strong, em, small, code {
   line-height: 0;
 }
