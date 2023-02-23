@@ -29,8 +29,8 @@ BG #FAFBFC
 
 html {
 	font-family: 'Open Sans';
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  line-height: 1.31rem;
 }
 
 body, .article {
@@ -45,7 +45,7 @@ body, .article {
 
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: lighter;
+	font-weight: 500;
 }
 
 h1, .h1 {
@@ -96,7 +96,7 @@ h6, .h6 {
 }
 
 hr, .hr {
-margin: 2rem;
+margin: 0 2rem 0 2rem;
 border: 1px solid #072ac8;
 border-radius: 10px;
 }
@@ -316,6 +316,10 @@ margin-left: 2rem;
     flex: 1 0 0%;
   }
 
+	/* @media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  { */
 
 
 
@@ -829,4 +833,5 @@ background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
   }
   .container{max-width: 540px;}
 }
+
 
