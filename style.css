@@ -305,7 +305,33 @@ line-height: 24px;
   border-radius: 10px;
 }
 
+@media 
+  only screen
+  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+    
+    /* Color Cards */
+    .flex-item {
+    width: 200px;
+    height: 200px;}
 
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      text-align: center;
+    }
+    .bottom {right: 100px;}
+    
+
+    /* Table typography */
+    .table > .table-header{display: none;}
+    .table-row {flex-direction: column;}
+    .col{margin-bottom: 1rem;}
+
+    .table li {
+      flex: flex-shrink;}
+}
 
 
 
@@ -842,7 +868,12 @@ background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
 
 
 @media (max-width: 767px){
- 
+  .side-bar {
+    width: 270px;
+    position: fixed;
+    left: -270px;
+    transition: 0.3s ease;
+}
 .side-bar.active {
     left: 0px;
 }
@@ -899,29 +930,3 @@ background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
 }
 
 
-@media 
-  only screen
-  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
-    
-    /* Color Cards */
-    .flex-item {
-    width: 200px;
-    height: 200px;}
-
-    /* Headings */
-    h1, h2, h3, h4, h5, h6 {
-      text-align: center;
-    }
-    .h1, .h2, .h3, .h4, .h5, .h6 {
-      text-align: center;
-    }
-    .bottom {right: 100px;}
-    
-
-    /* Table typography */
-    .table > .table-header {display: none;}
-    .table-row {flex-direction: column;}
-    .col{margin-bottom: 1rem;}
-    .table li {
-      flex: flex-shrink;}
-}
