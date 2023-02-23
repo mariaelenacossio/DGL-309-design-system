@@ -308,9 +308,16 @@ line-height: 24px;
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+    
+    /* Color Cards */
     .flex-item {
-      width: 200px;
+    width: 200px;
     height: 200px;}
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
 }
 
 
