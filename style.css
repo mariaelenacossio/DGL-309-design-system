@@ -79,7 +79,7 @@ h1, .h1 {
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
   padding: 1rem 1rem 1rem 2rem;
-  display: flex;
+  /* display: flex; for index*/
 }
 
 h2, .h2 {
@@ -318,6 +318,10 @@ line-height: 24px;
     h1, h2, h3, h4, h5, h6 {
       text-align: center;
     }
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      text-align: center;
+    }
+    .bottom {right: 100px;}
 }
 
 
@@ -357,7 +361,7 @@ line-height: 24px;
   padding-top: 3rem;
 }
 
-.h1-white {color: #FAFBFC;}
+.t-white {color: #FAFBFC;}
 
 /* Aligns text to bottom of the div */
 .bottom {
