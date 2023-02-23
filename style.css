@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, .h1 {
   font-size: calc(1.33rem + 2.7vw);
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
   padding: 1rem 1rem 1rem 2rem;
@@ -366,14 +366,15 @@ line-height: 24px;
     box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
   }
   .col {
-    flex: 1 0 0%;
+    flex: 1 1 0%;
   }
 
-	/* @media
-	  only screen 
-    and (max-width: 760px), (min-device-width: 768px) 
-    and (max-device-width: 1024px)  { */
-
+	@media 
+  only screen
+  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+    .table li {
+      flex: flex-shrink;}
+}
 
 
 
@@ -407,7 +408,6 @@ line-height: 24px;
   background-color: #1e96fc;
   border-color: transparent;
 }
-
 
 
 
