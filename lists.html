@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariaelena Cossio Clark">
+<!--CSS Stylesheet Link-->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Font Awesome Assets-->
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<title>BEYOND Skincare</title>
+</head>
+<body>
+
+  <section class="side-bar bg">
+    <div class="container-sidebar">
+    <img class="img-fluid" src="img/BEYOND.png" alt="Logo Design System"><!--Logo-->
+    </div>
+
+
+    <!--Side bar links-->
+    <div class="items">
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+        </summary>
+      </details>
+
+      <details>
+        <summary>
+        <li><i class="fab fa-uikit"></i><a href="#">Style Elements</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+          <!--Body text
+              H1 to H6
+              Headline, subheadline and image caption-->
+          <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+          <!--Color Palette
+              Body Text
+              Titles or display text
+              Background
+              Primary and secondary color for buttons
+              Success, danger, info and warning -->
+          <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+          <!--Margins and paddings for div, img etc.-->
+          <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+          <!--Styles
+              Required aspect ratios for diferent uses
+              Rounded corners
+              Borders-->
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#navbar"></i>Navbar</li>
+          <li><i class="fab fa-uikit" id="#dropdown"></i>Dropdown</li>
+          <li><i class="fab fa-uikit" id="#buttons"></i>Buttons</li>
+          <li><i class="fab fa-uikit" id="#breadcrumbs"></i>Breadcrums</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a href="forms.html">Forms</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#fields"></i>Fields</li>
+          <li><i class="fab fa-uikit" id="#labels"></i>Labels</li>
+          <li><i class="fab fa-uikit" id="#submit"></i>Submit</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a class="active" href="lists.html">Lists</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#unordered"></i>Unordered</li>
+          <li><i class="fab fa-uikit" id="#ordered"></i>Ordered</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a href="components.html">Components</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#cards"></i>Cards</li>
+          <li><i class="fab fa-uikit" id="#carousel"></i>Carousel</li>
+          <li><i class="fab fa-uikit" id="#table"></i>Table</li>
+          <li><i class="fab fa-uikit" id="#footer"></i>Footer</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-file"></i><a href="resources.html">Resources</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#support"></i>Support</li>
+        </ul>
+      </details>
+        <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
+    </div>
+</section>
+<!--End of Sidebar-->
+
+
+<!--Top navbar-->
+<section class="interface">
+  <div class="navigation-bar">
+    <div class="n1">
+    <div id="#menu-btn">
+        <i class="#menu-btn fa-solid fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="search-field">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+    </div>
+</div>
+
+    <div class="resources">
+        <a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+</section>
+
+<!-- Hero Section -->
+<section class="interface">
+  <div class="hero h-200 bg-primary">
+    <div class="bottom">
+    <h1 class="t-white">Lists</h1> <!--Align to bottom-->
+</div>
+    </div>
+    <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+    <g transform="translate(-18.298844,-77.973964)">
+        <path style="fill:#1e96fc;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+        <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+    </g>
+</svg>
+<!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
+                        
+                        
+<!-- End of Hero section -->
+<div class="container">
+<p>Colors are the most important aspect in any digital experience for the users.</p>
+<p>Overall, with this color palette the feel of the design blended with the action
+    points dictating a visual balance and constrast the structure of the project comes
+    all along.
+    It's important to follow this color palette to preserve the brand identity.
+</p>
+</div>
+
+<div class="container">
+<h2 id="unordered">Unordered</h2>
+<!--Style them differently to display colors-->
+<hr class="c-divider">
+
+<div class="container">
+    <div class="flex-container">
+        <div class="grid-container">
+        <div class="flex-item bg-primary"></div>
+        <p class="p">Color</p>
+        <p class="p">Hex</p>
+        </div>
+        <div class="grid-container">
+            <div class="flex-item bg-secondary"></div>
+            <p class="p">Color</p>
+            <p class="p">Hex</p>
+        </div>
+        <div class="grid-container">
+          <div class="flex-item bg-secondary"></div>
+          <p class="p">Color</p>
+          <p class="p">Hex</p>
+      </div>
+      <div class="grid-container">
+        <div class="flex-item bg-secondary"></div>
+        <p class="p">Color</p>
+        <p class="p">Hex</p>
+    </div>
+    </div>
+</div>
+
+<h2 class="p-top" id="ordered">Ordered</h2>
+<!--Display inside the flex-item the BG and the text color as an example-->
+<hr class="divider">
+<div class="container">
+    <div class="flex-container">
+        <div class="grid-container">
+        <div class="flex-item bg-primary"></div>
+        <p class="p">Color</p>
+        <p class="p">Hex</p>
+        </div>
+        <div class="grid-container">
+            <div class="flex-item bg-secondary"></div>
+            <p class="p">Color</p>
+            <p class="p">Hex</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</section>
+
+
+<!--Compiled JS-->
+<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
+
