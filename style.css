@@ -305,6 +305,51 @@ line-height: 24px;
   border-radius: 10px;
 }
 
+/* Code block container */
+.codeblock-container {
+  position: relative;
+}
+.content__default .codeblock-container {
+  margin-bottom: var(--spacing-xl);
+}
+
+.codeblock-container .example {
+border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid black;
+    border-bottom: 0;
+}
+
+.padding-xl{
+  padding: 2rem;
+}
+.codeblock.attached-top {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border: 1px solid black;
+}
+.codeblock {
+  position: relative;
+  margin: var(--spacing-xl) 0;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--fa-navy);
+  padding: var(--spacing-4xs);
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
