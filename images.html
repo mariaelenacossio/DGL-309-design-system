@@ -20,67 +20,103 @@
 </head>
 <body>
 
-  <!--Side Navbar-->
   <section class="side-bar bg">
     <div class="container-sidebar">
     <img class="img-fluid" src="img/BEYOND.png" alt="Logo Design System"><!--Logo-->
     </div>
-    <!--Side bar links-->
-        <div class="items">
-          <details>
-            <summary>
-              <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-            </summary>
-          </details>
 
-          <details>
-            <summary>
-            <li><i class="fab fa-uikit"></i><a class="active" href="#">Style</a></li>
-            </summary>
-            <ul>
-              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
-              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
-              <li><i class="fab fa-uikit"></i><a href="icons.html">Icons</a></li>
-              <li><i class="fab fa-uikit"></i><a class="active" href="images.html">Images</a></li>
-            </ul>
-          </details>
-    
-          <details>
-            <summary>
-              <li><i class="fa-solid fa-pen-to-square"></i><a href="#">Layout</a></li>
-            </summary>
-            <ul>
-              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
-              <li><i class="fab fa-uikit"></i><a href="grid.html">Grid</a></li>
-              <li><i class="fab fa-uikit"></i><a href="breakpoints.html">Breakpoints</a></li>
-            </ul>
-          </details>
-    
-          <details>
-            <summary>
-              <li><i class="fa-solid fa-star"></i></i><a href="#">Components</a></li>
-            </summary>
-            <ul>
-              <li><i class="fab fa-uikit"></i><a href="buttons.html">Buttons</a></li>
-              <li><i class="fab fa-uikit"></i><a href="cards.html">Cards</a></li>
-              <li><i class="fab fa-uikit"></i><a href="carousel.html">Carousel</a></li>
-              <li><i class="fab fa-uikit"></i><a href="dropdowns.html">Dropdowns</a></li>
-            </ul>
-          </details>
-    
-          <details>
-            <summary>
-              <li><i class="fa-solid fa-file"></i><a href="#">Resources</a></li>
-            </summary>
-            <ul>
-              <li><i class="fab fa-uikit"></i><a href="contact.html">Contact</a></li>
-              <li><i class="fab fa-uikit"></i><a href="support.html">Support</a></li>
-            </ul>
-          </details>
-            <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
-        </div>
-    </section>
-    <!--End of Sidebar-->
+
+    <!--Side bar links-->
+    <div class="items">
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+        </summary>
+      </details>
+
+      <details>
+        <summary>
+        <li><i class="fab fa-uikit"></i><a href="#">Style Elements</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+          <!--Body text
+              H1 to H6
+              Headline, subheadline and image caption-->
+          <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+          <!--Color Palette
+              Body Text
+              Titles or display text
+              Background
+              Primary and secondary color for buttons
+              Success, danger, info and warning -->
+          <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+          <!--Margins and paddings for div, img etc.-->
+          <li><i class="fab fa-uikit"></i><a class="active" href="images.html">Images</a></li>
+          <!--Styles
+              Required aspect ratios for diferent uses
+              Rounded corners
+              Borders-->
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#navbar"></i>Navbar</li>
+          <li><i class="fab fa-uikit" id="#dropdown"></i>Dropdown</li>
+          <li><i class="fab fa-uikit" id="#buttons"></i>Buttons</li>
+          <li><i class="fab fa-uikit" id="#breadcrumbs"></i>Breadcrums</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a href="forms.html">Forms</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#fields"></i>Fields</li>
+          <li><i class="fab fa-uikit" id="#labels"></i>Labels</li>
+          <li><i class="fab fa-uikit" id="#submit"></i>Submit</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a href="lists.html">Lists</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#unordered"></i>Unordered</li>
+          <li><i class="fab fa-uikit" id="#ordered"></i>Ordered</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-star"></i></i><a href="components.html">Components</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#cards"></i>Cards</li>
+          <li><i class="fab fa-uikit" id="#carousel"></i>Carousel</li>
+          <li><i class="fab fa-uikit" id="#table"></i>Table</li>
+          <li><i class="fab fa-uikit" id="#footer"></i>Footer</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>
+          <li><i class="fa-solid fa-file"></i><a href="resources.html">Resources</a></li>
+        </summary>
+        <ul>
+          <li><i class="fab fa-uikit" id="#support"></i>Support</li>
+        </ul>
+      </details>
+        <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
+    </div>
+</section>
+<!--End of Sidebar-->
 
 
 <!--Top navbar-->
@@ -115,123 +151,51 @@
         <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
     </g>
 </svg>
-
 <!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
                         
                         
 <!-- End of Hero section -->
 <div class="container">
-  <p> The font size on a website should be responsive to the screen size that displays it. 
-    Factors like type size, line height, and line length should also be considered.</p>
-  <p>Headings from <b>H1 to H6</b>, and the we can have <b>P </b>for paragraphs.
-  If needed we can have multiple variations of paragraphs, but its suggested to never have more than 
-  <b> 3 paragraph styles</b>.</p>
-  <p>In this design system the font we will use is <b>Open Sans</b></p>
+<p>Colors are the most important aspect in any digital experience for the users.</p>
+<p>Overall, with this color palette the feel of the design blended with the action
+    points dictating a visual balance and constrast the structure of the project comes
+    all along.
+    It's important to follow this color palette to preserve the brand identity.
+</p>
 </div>
 
 <div class="container">
-<h2>Headings</h2>
-<hr>
+<h2>Basic structure</h2>
+<!--Style them differently to display colors-->
+<hr class="c-divider">
 
-
-<div class="container"><!--Adjust responsiveness-->
-    <ul class="table">
-        <li class="table-header">
-          <div class="col">Tag</div>
-          <div class="col">Font Size</div>
-          <div class="col">Font Weight</div>
-          <div class="col">Example</div>
-        </li>
-        <li class="table-row align-items">
-          <div class="h1 col">h1</div>
-          <div class="col">1.33 rem</div>
-          <div class="col">Ligther</div>
-          <div class="h1 col">Open Sans</div>
-        </li>
-        <li class="table-row align-items">
-          <div class="h2 col">h2</div>
-          <div class="col">1.26 rem</div>
-          <div class="col">Ligther</div>
-          <div class="h2 col col-4">Open Sans</div>
-        </li>
-        <li class="table-row align-items">
-          <div class="h3 col">h3</div>
-          <div class="col">1.20 rem</div>
-          <div class="col">Ligther</div>
-          <div class="h3 col">Open Sans</div>
-        </li>
-        <li class="table-row align-items">
-          <div class="h4 col">h4</div>
-          <div class="col">1.15 rem</div>
-          <div class="col">Ligther</div>
-          <div class="h4 col col-4">Open Sans</div>
-        </li>
-          <li class="table-row align-items">
-            <div class="h5 col">h5</div>
-            <div class="col">1.09 rem</div>
-            <div class="col">Ligther</div>
-            <div class="h5 col">Open Sans</div>  
-          </li>
-          <li class="table-row align-items">
-            <div class="h6 col">h6</div>
-            <div class="col">1.04 rem</div>
-            <div class="col">Ligther</div>
-            <div class="h6 col">Open Sans</div>
-          </li>
-      </ul>
-      <div class="container">
-      <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOvqZOR" data-user="mariaelenacossio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/mariaelenacossio/pen/jOvqZOR">
-        Untitled</a> by Mariaelena Cossio Clark (<a href="https://codepen.io/mariaelenacossio">@mariaelenacossio</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<div class="container">
+    <div class="flex-container">
+        <div class="grid-container">
+        <div class="flex-item bg-primary"></div>
+        <p class="p">Color</p>
+        <p class="p">Hex</p>
+        </div>
+        <div class="grid-container">
+            <div class="flex-item bg-secondary"></div>
+            <p class="p">Color</p>
+            <p class="p">Hex</p>
+        </div>
+        <div class="grid-container">
+          <div class="flex-item bg-secondary"></div>
+          <p class="p">Color</p>
+          <p class="p">Hex</p>
       </div>
+      <div class="grid-container">
+        <div class="flex-item bg-secondary"></div>
+        <p class="p">Color</p>
+        <p class="p">Hex</p>
+    </div>
+    </div>
 </div>
-<!-- End of Headings -->
-
-<!--Paragrph sections-->
-<div class="container">
-  <h2>Paragraphs</h2>
-  <p>Factors like type size, line height, and line length are elements that we are considering in each paragraph.
-    See below for an example</p>
-<hr>
-</div>
-  <div class="flex-container">
-    <div class="p-flex">
-<h2>Headline</h2>
-<h4>Sub-headline</h4>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-  Optio voluptatem veritatis beatae esse fuga, repellendus corporis 
-  ullam sunt distinctio atque aspernatur nihil mollitia nemo molestias, 
-  laudantium quidem id repellat numquam? Lorem ipsum dolor sit amet 
-  consectetur adipisicing elit. Quo cumque maiores deserunt reprehenderit quod, 
-  delectus illo excepturi ut dolor? Facere necessitatibus blanditiis minus architecto! 
-  Facere ipsa sit dignissimos cumque optio.</p>
-  </div>
-  <div class="p-flex">
-<h2>Headline</h2>
-<h4>Sub-headline</h4>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-  Optio voluptatem veritatis beatae esse fuga, repellendus corporis 
-  ullam sunt distinctio atque aspernatur nihil mollitia nemo molestias, 
-  laudantium quidem id repellat numquam? Lorem ipsum dolor sit amet 
-  consectetur adipisicing elit. Quo cumque maiores deserunt reprehenderit quod, 
-  delectus illo excepturi ut dolor? Facere necessitatibus blanditiis minus architecto! 
-  Facere ipsa sit dignissimos cumque optio.</p>
-      </div>
-</div>
-
-<div class="container">
-  <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzOWzMK" data-user="mariaelenacossio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/mariaelenacossio/pen/YzOWzMK">
-    Untitled</a> by Mariaelena Cossio Clark (<a href="https://codepen.io/mariaelenacossio">@mariaelenacossio</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 </div>
 </section>
-<!--Add footer-->
+
 
 <!--Compiled JS-->
 <script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
