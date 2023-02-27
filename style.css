@@ -120,10 +120,12 @@ h6, .h6 {
   padding: 1rem 1rem 1rem 2rem;
 }
 
-.hero-subhead h2{
+.hero > h2{
 text-align: left;
-/* margin-right: 50%; */
-padding-bottom: 1.5rem;
+font-size: 1.25rem;
+font-weight: 300;
+margin-bottom: 0;
+color: #F3F4F6;
 }
 .hero-subhead button {
 align-items: end;
@@ -194,10 +196,10 @@ a, b, i, strong, em, small, code {
 .hero {
     position: relative;
     padding:0 !important;
-    height: auto;
+    height: 309.10px;
     margin-top:70px !important;
     margin-top: 23px;
-    text-align:center;
+    /* text-align: center; */
     margin-bottom: 0 !important;
 }
 .h-200 {height: 239px;}
@@ -415,7 +417,10 @@ border-top-left-radius: 10px;
   padding-top: 3rem;
 }
 
-.t-white {color: #FAFBFC;}
+.hero > h1 {
+  color: #FAFBFC;
+text-align: initial;
+padding-top: 5rem;}
 
 /* Aligns text to bottom of the div */
 .bottom {
