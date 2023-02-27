@@ -11,16 +11,28 @@ background: linear-gradient(180deg, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
 BG #FAFBFC
 
 
-*/
+/* Color Palette */
 .primary {color: #072ac8;}
 .secondary {color: #1e96fc}
 .accent {color: #a2d6f9}
 
+
+/* Background color for sections */
 .bg {background-color: #FAFBFC;}
 .bg-primary {background-color: #072ac8;}
 .bg-secondary{background-color: #1e96fc;}
+.bg-accent {background-color: #a2d6f9;}
+
+/* Background gradient */
+.bg-gdnt {background: linear-gradient(180deg, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 63%);}
 
 
+/* Text color */
+.t-primary {color: #072ac8;}
+.t-secondary {color: #1e96fc;}
+.t-accent {color: #a2d6f9;}
+.t-peppercorn {color: #2b2b2b;}
+.t-white {color: #F3F4F6;}
 
 /* Global classes */
 
