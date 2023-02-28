@@ -45,7 +45,11 @@ BG #FAFBFC
 /* Paddings */
 
 /* Borders */
-
+.b-neutral {border-color: 1px solid#d7dbe6;}
+.b-primary{border-color: 1px solid #072ac8;}
+.b-secondary{border-color: 1px solid #1e96fc;}
+.b-accent {border-color: 1px solid #a2d6f9;}
+.b-alt {border-color: 1px solid #fcf300}
 
 
 
@@ -565,6 +569,7 @@ border-top-left-radius: 10px;
 .img-x{
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* Groups of img */
@@ -581,9 +586,15 @@ figcaption {
   padding-bottom: 0.5rem;
   text-align: left;}
 
+/* Thumbnail */
 
-
-
+.img-thumbnail {
+  padding: 0.25rem;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  max-width: 100%;
+  height: auto;
+}
 
 
 
