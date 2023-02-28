@@ -588,18 +588,86 @@ figcaption {
 
 /* Thumbnail */
 
-.img-thumbnail {
-  padding: 0.25rem;
-  border: var(--bs-border-width) solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  max-width: 100%;
-  height: auto;
+
+
+.thumbnail {
+	width: 250px;
+	height: 150px;
+	background: #eee;
+	cursor: pointer;
+	float: left;
+	margin: 30px;
 }
-
-
-
-
-
+.thumbnail-1 {
+	background-image: url("img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg");
+	background-position: center center;
+	background-size: cover;
+	perspective: 450px;
+	position: relative;
+  border-radius: 10px;
+}
+.thumbnail .SocialIcons {
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 15px;
+	transform: rotateY(90deg);
+	transform-origin: left center 0;
+	transition: all 350ms ease;
+}
+.thumbnail-1 .SocialIcons a {
+	background: #ffffff none repeat scroll 0 0;
+	font-size: 20px;
+	height: 25px;
+	margin-bottom: 1px;
+	position: relative;
+	text-align: center;
+	width: 25px;
+  border-radius: 10px;
+}
+.thumbnail .SocialIcons a i {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.profilebox .SocialIcons a:nth-child(1) {
+}
+.profilebox .SocialIcons a:nth-child(2) {
+}
+.profilebox .SocialIcons a:nth-child(3) {
+}
+.thumbnail:hover .SocialIcons {
+	opacity: 1;
+	left: 15px;
+	transform: rotateY(0deg);
+}
+.thumbnail .profileInfo {
+	background: #ffffff none repeat scroll 0 0;
+	bottom: 0;
+	height: 25px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 90%;
+	transform: rotatex(90deg);
+	transform-origin: bottom center 0;
+	transition: all 350ms ease;
+	opacity: 0;
+  border-radius: 10px;
+}
+.thumbnail .profileInfo > p {
+    margin-bottom: 0rem;
+    padding-left: 3rem;
+}
+.thumbnail:hover .profileInfo {
+	opacity: 1;
+	bottom: 10px;
+	transform: rotatex(0deg);
+}
 
 
 
