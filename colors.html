@@ -172,24 +172,39 @@
 <div class="container">
     <div class="flex-container">
         <div class="grid-container">
-        <div class="flex-item bg-primary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
+        <div class="flex-item bg-primary">
+          <div class="container pt-3">
+          <p class="p t-white fz-200">Primary</p>
+        </div>
+        </div>
+        <p class="p">.primary {color: #072ac8;}</p>
         </div>
         <div class="grid-container">
-            <div class="flex-item bg-secondary"></div>
-            <p class="p">Color</p>
-            <p class="p">Hex</p>
+            <div class="flex-item bg-secondary">
+              <div class="container pt-3">
+                <p class="p t-white fz-200">Secondary</p>
+              </div>
+            </div>
+            <p class="p">.secondary {color: #1e96fc;}</p>
+            <!-- <p class="p">#1e96fc</p> -->
         </div>
         <div class="grid-container">
-          <div class="flex-item bg-secondary"></div>
-          <p class="p">Color</p>
-          <p class="p">Hex</p>
+          <div class="flex-item bg-accent">
+            <div class="container pt-3">
+              <p class="p t-white fz-200">Accent</p>
+            </div>
+          </div>
+          <p class="p">.accent {color: #a2d6f9;}</p>
+          <!-- <p class="p">#a2d6f9</p> -->
       </div>
       <div class="grid-container">
-        <div class="flex-item bg-secondary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
+        <div class="flex-item bg-alt">
+          <div class="container pt-3">
+            <p class="p t-black fz-200">Alernative</p>
+          </div>
+        </div>
+        <p class="p">.alt {color: #fcf300;}</p>
+        <!-- <p class="p">#fcf300</p> -->
     </div>
     </div>
 </div>
@@ -197,36 +212,239 @@
 <h2 class="p-top">Body Text</h2>
 <!--Display inside the flex-item the BG and the text color as an example-->
 <hr class="divider">
+<h4>
+  Here theres some examples on how the combinations of <b>background-color</b> and text color match for
+  users legibility.
+</h4>
 <div class="container">
     <div class="flex-container">
-        <div class="grid-container">
-        <div class="flex-item bg-primary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
+
+      <!-- Background -->
+      <div class="grid-container">
+        <div class="flex-item bg">
+              <div class="flex color-table justify-content--center flex-auto pt-3">
+                <table class="table-text c-table ">
+                        <thead>
+                            <tr class="c-table__row">
+                                <td><span class="v-visuallyHidden">Label</span></td>
+                                <td>1.5rem</td>
+                            </tr>
+                        </thead>
+                            <tbody>
+                            <tr class="c-table__row">
+                                <td class="t-primary">Primary Color</td>
+                                <td>Legible</td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="t-white">Body Text</td>
+                                <td>Not legible</td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="t-secondary">Secondary</td>
+                                <td>Legible</td>
+                            </tr>
+                            <tr>
+                              <td class="t-black">Accent text</td>
+                              <td>Pass</td>
+                          </tr>
+                            </tbody>
+                    </table>
+                  </div>
         </div>
-        <div class="grid-container">
-            <div class="flex-item bg-secondary"></div>
-            <p class="p">Color</p>
-            <p class="p">Hex</p>
+        <p class="p">.bg {background-color: #FAFBFC;}</p>
         </div>
+
+        <!-- Primary -->
+        <div class="grid-container">
+        <div class="flex-item bg-primary">
+              <div class="flex color-table justify-content--center flex-auto pt-3">
+                <table class="table-text c-table ">
+                        <thead>
+                            <tr class="c-table__row">
+                                <td><span class="v-visuallyHidden">Label</span></td>
+                                <td>1.5rem</td>
+                            </tr>
+                        </thead>
+                            <tbody>
+                            <tr class="c-table__row">
+                                <td class="t-primary">Primary Color</td>
+                                <td>Not legible</td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="t-white">Body Text</td>
+                                <td>Pass</td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="t-secondary">Secondary</td>
+                                <td>Not legible</td>
+                            </tr>
+                            <tr>
+                              <td class="t-black">Accent text</td>
+                              <td>Not legible</td>
+                          </tr>
+
+                            </tbody>
+                    </table>
+                  </div>
+        </div>
+        <p class="p">.bg-primary {background-color: #072ac8;}</p>
+        </div>
+
+<!-- Secondary -->
+        <div class="grid-container">
+          <div class="flex-item bg-secondary">
+                <div class="flex color-table justify-content--center flex-auto pt-3">
+                  <table class="table-text c-table ">
+                          <thead>
+                              <tr class="c-table__row">
+                                  <td><span class="v-visuallyHidden">Label</span></td>
+                                  <td>1.5rem</td>
+                                  <!-- <td class="p-right">1.5rem</td> -->
+                              </tr>
+                          </thead>
+                              <tbody>
+                              <tr class="c-table__row">
+                                  <td class="t-primary">Primary Color</td>
+                                  <td>Not legible</td>
+                              </tr>
+                              <tr class="c-table__row">
+                                  <td class="t-white">Body Text</td>
+                                  <td>Pass</td>
+                              </tr>
+                              <tr class="c-table__row">
+                                  <td class="t-secondary">Secondary</td>
+                                  <td>Not legible</td>
+                              </tr>
+                              <tr>
+                                <td class="t-black">Accent text</td>
+                                <td>Pass</td>
+                            </tr>
+                              </tbody>
+                      </table>
+                    </div>
+          </div>
+          <p class="p">.bg-secondary {background-color: #1e96fc;}</p>
+          </div>
+
+          <!-- Accent -->
+          <div class="grid-container">
+            <div class="flex-item bg-accent">
+                  <div class="flex color-table justify-content--center flex-auto pt-3">
+                    <table class="table-text c-table ">
+                            <thead>
+                                <tr class="c-table__row">
+                                    <td><span class="v-visuallyHidden">Label</span></td>
+                                    <td>1.5rem</td>
+                                    <!-- <td class="p-right">1.5rem</td> -->
+                                </tr>
+                            </thead>
+                                <tbody>
+                                <tr class="c-table__row">
+                                    <td class="t-primary">Primary Color</td>
+                                    <td>Not legible</td>
+                                </tr>
+                                <tr class="c-table__row">
+                                    <td class="t-white">Body Text</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr class="c-table__row">
+                                    <td class="t-secondary">Secondary</td>
+                                    <td>Not legible</td>
+                                </tr>
+                                <tr>
+                                  <td class="t-black">Accent text</td>
+                                  <td>Pass</td>
+                              </tr>
+
+                                </tbody>
+                        </table>
+                      </div>
+                <!-- </div>
+              </div> -->
+            </div>
+            <p class="p">.bg-accent {background-color: #a2d6f9;}</p>
+            </div>
+
+                      <!-- Alternative -->
+          <div class="grid-container">
+            <div class="flex-item bg-alt">
+                  <div class="flex color-table justify-content--center flex-auto pt-3">
+                    <table class="table-text c-table ">
+                            <thead>
+                                <tr class="c-table__row">
+                                    <td><span class="v-visuallyHidden">Label</span></td>
+                                    <td>1.5rem</td>
+                                    <!-- <td class="p-right">1.5rem</td> -->
+                                </tr>
+                            </thead>
+                                <tbody>
+                                <tr class="c-table__row">
+                                    <td class="t-primary">Primary Color</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr class="c-table__row">
+                                    <td class="t-white">Body Text</td>
+                                    <td>Not legible</td>
+                                </tr>
+                                <tr class="c-table__row">
+                                    <td class="t-secondary">Secondary</td>
+                                    <td>Not legible</td>
+                                </tr>
+                                <tr>
+                                  <td class="t-black">Accent text</td>
+                                  <td>Pass</td>
+                              </tr>
+                                </tbody>
+                        </table>
+                      </div>
+            </div>
+            <p class="p">.bg-alt {background-color: #fcf300;}</p>
+            </div>
+  
     </div>
 </div>
 
 <h2 class="p-top">Headings</h2>
+<h4>In this section we demostrate how it supposed to look with the <b>.bg {background-color: #FAFBFC;}</b>
+the diferent kinds of text</h4>
 <!--Display inside the flex-item the BG and the text color as an example-->
 <hr class="divider">
 <div class="container">
-    <div class="flex-container">
-        <div class="grid-container">
-        <div class="flex-item bg-primary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
-        </div>
-        <div class="grid-container">
-            <div class="flex-item bg-secondary"></div>
-            <p class="p">Color</p>
-            <p class="p">Hex</p>
-        </div>
+    <div class="flex-containe bg">
+        <!-- <div class="grid-container"> -->
+        <!-- <div class="flex-item bg"> -->
+          <div class="flex color-table justify-content--center flex-auto pt-3">
+            <table class="table-text c-table ">
+                    <thead>
+                        <tr class="c-table__row">
+                            <td><span class="v-visuallyHidden">Label</span></td>
+                            <td>1.5rem</td>
+                            <!-- <td class="p-right">1.5rem</td> -->
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr class="c-table__row">
+                            <td class="t-primary">Primary Color</td>
+                            <td>Pass</td>
+                        </tr>
+                        <tr class="c-table__row">
+                            <td class="t-white">Body Text</td>
+                            <td>Not legible</td>
+                        </tr>
+                        <tr class="c-table__row">
+                            <td class="t-secondary">Secondary</td>
+                            <td>Not legible</td>
+                        </tr>
+                        <tr>
+                          <td class="t-black">Accent text</td>
+                          <td>Pass</td>
+                      </tr>
+                        </tbody>
+                </table>
+              </div>
+        <!-- </div> -->
+        <!-- <p class="p">Color</p> -->
+        <!-- </div> -->
     </div>
 </div>
 
