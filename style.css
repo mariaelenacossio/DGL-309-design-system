@@ -391,20 +391,9 @@ span {margin: 0;
 
 
 .flex-container {
-  /* We first create a flex layout context */
   display: flex;
-  
-  /* Then we define the flow direction 
-     and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
   flex-flow: row wrap;
-  
-  /* Then we define how is distributed the remaining space */
   justify-content: space-around;
-  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -497,7 +486,184 @@ line-height: 24px;
   background: #072ac8;
   color: #FAFBFC;
 }
+.b-crumb > .flex-container{
+  /* padding-left: 15rem; */
+  margin-left: 19rem;
+    justify-content: space-between;
+}
+
+
+
+/* Forms */
   
+/* form { */
+  /* Center the form on the page */
+  /* margin: 0 auto;
+  width: 400px; */
+  /* Form outline */
+  /* padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+} */
+
+/* .label { */
+  /* Uniform size & alignment */
+  /* display: inline-block;
+  width: 90px;
+  text-align: right;
+} */
+
+/* input,
+textarea { */
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  /* font: 1em sans-serif; */
+
+  /* Uniform text field size */
+  /* width: 300px;
+  box-sizing: border-box; */
+
+  /* Match form field borders */
+  /* border: 1px solid #999;
+} */
+
+/* input:focus,
+textarea:focus { */
+  /* Additional highlight for focused elements */
+  /* border-color: #000;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+} */
+
+/* textarea { */
+  /* Align multiline text fields with their labels */
+  /* vertical-align: top; */
+
+  /* Provide space to type some text */
+  /* height: 5em;
+  font-size: 1rem;
+  font-weight: lighter;
+} */
+
+/* .button { */
+  /* Align buttons with the text fields 
+   padding-left: 90px; /* same size as the label elements */
+/* } */
+
+/* button { */
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  /* margin-left: 0.5em;
+} */
+
+
+.form-container {
+  max-width: 500px;
+  height: 725px;
+  padding-right: calc(2rem * 0.5);
+  padding-left: calc(2rem * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+form{
+  display: flex;
+  flex-flow: column;
+}
+
+.label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+
+input,
+select,
+textarea {
+  font-size: 1em;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* This is only for container in design system */
+
+
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+
+textarea {
+  font-family: 'Open Sans', sans-serif;;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly ;
+}
+
+.label-required {
+  font-size: 0.8rem;
+  color: #2b2b2b;
+}
+.flex-item > button {
+  text-align: center;
+  margin: auto;
+}
+
+.form-container > h2 {
+  text-align: center;
+  padding-top: 0;
+}
+
+
+
+
+
+
 
 
 
@@ -580,6 +746,12 @@ margin: auto;
       .breadcrumbs__item {
         width: 75px;
       padding: 1rem;}
+
+      .b-crumb > .flex-container {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+      }
 
         .flex-item > p {
           padding: 0.5rem;
@@ -1015,7 +1187,7 @@ padding-top: 5rem;}
   width: 150px;
   text-align: center;
 }
-label {
+.label {
   width: 100%;
   position: absolute;
   line-height: 45px;
@@ -1088,29 +1260,64 @@ label {
 
 
 
+/* Unordered list */
 
-
-
-
-
-
-
-.show {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0rem);
+.u-list{
+  width: 300px;
+  color: #2b2b2b;
 }
 
-.arrow {
-  transform: rotate(180deg);
-  transition: 0.2s ease;
+.u-list > ul {
+justify-content: center;
+border: 1px solid #072ac8;
+max-width: 300px;
+}
 
-}/* Sidebar title */
+.u-list > li {
+border-bottom: 1px solid #072ac8;
+}
+
+
+.ul-1 { list-style-type: disc; }
+.ul-2 { list-style-type: circle; }
+.ul-3 { list-style-type: square; }
+.ul-4 { list-style-type: none; }
+
+.flex-container > .ul {
+  height: 300px;
+}
+
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  width: 315px;
+}
+
+.list-group > ul {
+  max-width: 500px;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 1rem;
+  color: #2b2b2b;
+  text-decoration: none;
+  background-color: #FAFBFC;
+  border: 1px solid #072ac8;
+}
+
+
+
+
+
+/* Sidebar title */
 .side-bar {
   position: fixed;
   top: auto;
-  /* background: rgb(30,150,252);
-  background: linear-gradient(180deg, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 63%);  height: 100%; */
   overflow-y: scroll;
   width: 300px;
   border-right: 1px solid #072ac8;
@@ -1125,168 +1332,12 @@ label {
 }
 
 .container-sidebar {
-  /* --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0; */
-
   width: 100%;
-  /* padding-top: 1rem; */
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
 }
-
-
-
-/* .side-bar .logo img {
-  width: 300px;
-  height: 300px;
-  /* margin-right: 15px; */
-/* /////////////////////////////////////////////////////////////////// */
-
-/* .flex-shrink-0 {
-  flex-shrink: 0 !important;
-}
-.p-3 {
-  padding: 1rem !important;
-}
-
-.bg-white {
-  background-color: white;
-}
-.d-flex {
-  display: flex !important;
-}
-.align-items-center {
-  align-items: center !important;
-}
-
-.pb-3 {
-  padding-bottom: 1rem !important;
-}
-.mb-3 {
-  margin-bottom: 1rem !important;
-}
-.link-dark {
-  color: #212529 !important;
-}
-.text-decoration-none {
-  text-decoration: none !important;
-}
-
-.border-bottom {
-  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-}
-
-.me-2 {
-  margin-right: 0.5rem !important;
-}
-.fs-5 {
-  font-size: 1.25rem !important;
-}
-.fw-semibold {
-  font-weight: 600 !important;
-}
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
-}
-
-.ps-0 {
-  padding-left: 0 !important;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem !important;
-}
-.bi {
-  vertical-align: -.125em;
-  pointer-events: none;
-  fill: currentColor;
-}
-
-.dropdown-toggle { outline: 0; }
-
-.btn-toggle {
-  display: inline-flex;
-  align-items: center;
-  padding: .25rem .5rem;
-  font-weight: 600;
-  color: rgba(0, 0, 0, .65);
-  background-color: transparent;
-  border: 0;
-}
-.btn-toggle:hover,
-.btn-toggle:focus {
-  color: rgba(0, 0, 0, .85);
-  background-color: #d2f4ea;
-}
-
-.btn-toggle::before {
-  width: 1.25em;
-  line-height: 0;
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  transition: transform .35s ease;
-  transform-origin: .5em 50%;
-}
-
-.btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
-}
-.btn-toggle[aria-expanded="true"]::before {
-  transform: rotate(90deg);
-}
-
-.btn-toggle-nav a {
-  display: inline-flex;
-  padding: .1875rem .5rem;
-  margin-top: .125rem;
-  margin-left: 1.25rem;
-  text-decoration: none;
-}
-.btn-toggle-nav a:hover,
-.btn-toggle-nav a:focus {
-  background-color: #d2f4ea;
-}
-
-/* .scrollarea {
-  overflow-y: auto;
-} */
-
-/* .lh-tight { line-height: 1.25; }
-
-.align-items-center {
-  align-items: center !important;
-}
-
-.rounded {
-  border-radius: var(--bs-border-radius) !important;
-}
-.collapse:not(.show) {
-  display: none;
-}
-
-.fw-normal {
-  font-weight: 400 !important;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem !important;
-}
-
-small, .small {
-  font-size: 0.875em;
-} */ 
-
-
-
-
-
-
-/* /////////////////////////////////////////////////////////////////// */
-
-
 
 .h2-sidebar {
   display: flex;
@@ -1377,11 +1428,13 @@ font-weight: bold;
   margin-right: 14px;
 }
 
-.interface .navigation-bar .search-field input {
+.interface .navigation-bar .search-field > input {
   border: none;
   outline: none;
   font-size: 14px;
 }
+
+
 
 .interface .navigation-bar .resources {
   display: flex;
