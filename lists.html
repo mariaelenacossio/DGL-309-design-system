@@ -128,7 +128,7 @@
     </div>
     <div class="search-field">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search">
+        <input type="search" placeholder="Search">
     </div>
 </div>
 
@@ -168,31 +168,68 @@
 <h2 id="unordered">Unordered</h2>
 <!--Style them differently to display colors-->
 <hr class="c-divider">
+<p>displays elements in bulleted format . 
+  We can use unordered list where we do not need to display items in any particular order. 
+  The HTML ul tag is used for the unordered list. There can be 4 types of bulleted list:
+</p>
 
 <div class="container">
-    <div class="flex-container">
-        <div class="grid-container">
-        <div class="flex-item bg-primary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
-        </div>
-        <div class="grid-container">
-            <div class="flex-item bg-secondary"></div>
-            <p class="p">Color</p>
-            <p class="p">Hex</p>
-        </div>
-        <div class="grid-container">
-          <div class="flex-item bg-secondary"></div>
-          <p class="p">Color</p>
-          <p class="p">Hex</p>
-      </div>
-      <div class="grid-container">
-        <div class="flex-item bg-secondary"></div>
-        <p class="p">Color</p>
-        <p class="p">Hex</p>
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="block-container">
+        <div class="u-list">
+          <h4>This is an example of an .u-list</h4>
+          <ul>
+            <li class="ul-1">Disc</li>
+            <li class="ul-2">Circle</li>
+            <li class="ul-3">Square</li>
+            <li class="ul-4">None</li>
+          </ul>
+        </div> 
+        <p class="b-primary">
+          &lt;div class="u-list"&gt;
+          <br>&lt;h4&gt;This is an example of a list header&lt;/h4&gt;
+          <br>&lt;ul&gt;
+          <br>&lt;li class="ul-1"&gt;Disc&lt;/li&gt;
+          <br>&lt;li class="ul-2"&gt;Circle&lt;/li&gt;
+          <br>&lt;li class="ul-3"&gt;Square&lt;/li&gt;
+          <br>&lt;li class="ul-4"&gt;None&lt;/li&gt;
+          <br>&lt;/ul&gt;
+          <br>&lt;/div&gt;
+        </p>
     </div>
     </div>
+  </div>
+<!--End of felx-container-->
+<div class="flex-container">
+  <div class="grid-container">
+    <div class="block-container">
+      <h4>This is an example of an unordered .list-group</h4>
+      <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+      <p class="b-primary">
+        &lt;ul class="list-group"&gt;
+        <br>&lt;li class="list-group-item"&gt;An item&lt;/li&gt;
+        <br>&lt;li class="list-group-item"&gt;A second item&lt;/li&gt;
+        <br>&lt;li class="list-group-item"&gt;A third item&lt;/li&gt;
+        <br>&lt;li class="list-group-item"&gt;A fourth item&lt;/li&gt;
+        <br>&lt;li class="list-group-item"&gt;And a fifth one&lt;/li&gt;
+        <br>&lt;/ul&gt;
+      </p>
+  </div>
+  </div>
 </div>
+<!--End of felx-container-->
+
+
+</div><!--End of container-->
+
+</div><!--End of container-->
 
 <h2 class="p-top" id="ordered">Ordered</h2>
 <!--Display inside the flex-item the BG and the text color as an example-->
