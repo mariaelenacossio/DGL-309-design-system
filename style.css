@@ -968,6 +968,92 @@ padding-top: 5rem;}
 
 /* Dropdown */
 
+.dropdown {
+  display: inline-block;
+  margin: 30px;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+label {
+  width: 100%;
+  position: absolute;
+  line-height: 45px;
+  top: 0px;
+  left: 0px;
+  background-color: #072ac8;
+  color: #FAFBFC;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);  font-weight: 700;
+  text-align: center;
+  -webkit-transition: 0.04s ease-in-out;
+  transition: 0.04s ease-in-out;
+}
+.list {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  left: 0px;
+  border-top: 1px solid #eee;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.option {
+  width: 100%;
+  line-height: 45px;
+  background-color: #fff;
+  border-radius: 45px;
+  margin-top: 0.5rem;
+  text-align: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);  
+  font-weight: 700;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  font-weight: 400;
+}
+.option:hover {
+  background-color: #eee;
+}
+.flex-container > .block-container {
+  height: 400px;
+  margin-top: 3rem;
+}
+
+.flex-container .block-container > p{
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/**********
+***********/
+
+#drop:checked~ .opt-list {
+  visibility: visible;
+  opacity: 2;
+  z-index: 10;
+}
+
+
+@media 
+  only screen
+  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+.dropdown {margin-left: 4.5rem;}
+ .flex-container > .block-container {margin-top: 15rem;}
+
+  }
+
+
+
+
+
+
+
+
+
 
 .show {
   visibility: visible;
@@ -1332,8 +1418,7 @@ font-weight: bold;
   display: inline;
   float: right;
   font-size: 18px;
-  padding-right: 1rem;
-    padding-top: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .nav > .nav-links > a {
