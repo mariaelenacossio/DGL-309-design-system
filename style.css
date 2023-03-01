@@ -219,6 +219,96 @@ font-size: 1.25rem;
 font-weight: 300;
 }
 
+/* Hero Sample Page */
+
+
+.banner-inner {
+  display: flex;
+  /* position: absolute; */
+  flex-direction: column;
+  align-items: flex-start;
+  /* row-gap: 1.75rem; */
+}
+
+.flex-grid {
+  position: absolute;
+  padding: 10rem 0 1rem 2.5rem;
+  width: 600px;
+}
+
+.heading-xl {
+  font-family: inherit;
+      font-size: clamp(2.648rem, 6vw, 4.241rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #FAFBFC;
+}
+
+.paragraph {
+  font-family: inherit;
+   font-size: clamp(1rem, 2vw, 1.125rem);
+   line-height: inherit;
+   max-width: 95%;
+   height: auto;
+   text-transform: unset;
+   color: #FAFBFC;
+}
+
+.banner-inner > button {
+  margin-left: 2rem
+}
+
+.banner-inner > h1 {margin-bottom: 0;}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  /* font-weight: bold; */
+  text-align: left; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+
+
+
+
+
+
+
+@media 
+  only screen
+  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+.flex-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+         justify-content: center;
+      }
+}
+
+
+
+
 
 /* Divider */
 hr, .hr {
@@ -285,8 +375,20 @@ a, b, i, strong, em, small, code {
     /* text-align: center; */
     margin-bottom: 0 !important;
 }
-.h-200 {height: 239px;}
 
+.bg-img{
+background-image: url(/img/ryan-moreno-mkKqRSpIAi4-unsplash.jpg);
+background-size: cover;
+width: 100vw;
+height: 100vh;
+/* opacity: 80%; */
+}
+
+.bg-img > * {
+  box-sizing: 0;
+}
+
+.h-200 {height: 239px;}
 
 
 /* to remove the arrow */
@@ -1487,10 +1589,17 @@ font-weight: bold;
 
 .nav {
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-color: #072ac8;
   position: relative;
+  z-index: 2;
 }
+
+.bg-t{background-color: transparent;}
+
+/* This is for design system view */
+
+.container > .nav {width: 100%;}
 
 .nav > .nav-header {
   display: inline;
@@ -1499,7 +1608,7 @@ font-weight: bold;
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  color: #2b2b2b;
   padding: 10px 10px 10px 10px;
 }
 
@@ -1519,11 +1628,11 @@ font-weight: bold;
   margin-top: 0.5rem;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #efefef;
+  color: #2b2b2b;
 }
 
 .nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline #1e94fcb1 4px solid;
 }
 
 .nav > #nav-check {
