@@ -1577,15 +1577,15 @@ font-weight: bold;
   border-radius: 50%;
 }
 
-.n1 {
+/* .n1 { This was for the search field
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
+} */
 
-.n1 i {
+/* .n1 i {
   display: none;
-}
+} */
 
 .side-bar-btn {
   display: none;
@@ -1817,10 +1817,10 @@ background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
 .side-bar-btn {
     display: initial;
 }
-.n1 i {
+/* .n1 i {
   display: initial;
   margin-right: 1rem;
-}
+} */
 
 .interface {
     width: 100%;
