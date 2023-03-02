@@ -63,14 +63,13 @@ BG #FAFBFC
 .b-alt {border: 1px solid #fcf300}
 
 
+/* Codesnippets */
 
-
-
-code {
-  font-size: .875em;
-  color: #072ac8;
-  word-wrap: break-word;
+.code-s > ul {
+  width: 800px;
 }
+.code-s {padding-bottom: 1rem;}
+
 
 
 
