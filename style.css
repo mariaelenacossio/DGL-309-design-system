@@ -36,7 +36,9 @@ BG #FAFBFC
 .t-secondary {color: #1e96fc;}
 .t-accent {color: #a2d6f9;}
 .t-black {color: #2b2b2b;} /*Accent Text*/
-.t-white {color: #F3F4F6;}
+.t-white {color: #FAFBFC;}
+
+.t-dl:hover { text-decoration: 4px solid #FAFBFC;}
 
 /* Font weight */
 /* Font Size */
@@ -1649,7 +1651,7 @@ font-weight: bold;
 .nav {
   height: 50px;
   width: 100vw;
-  background-color: #072ac8;
+  /* background-color: #072ac8; */
   position: relative;
   z-index: 2;
 }
@@ -1665,7 +1667,7 @@ font-weight: bold;
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #FAFBFC;
+  /* color: #FAFBFC; */
   padding: 10px 10px 10px 10px;
 }
 
@@ -1685,11 +1687,11 @@ font-weight: bold;
   margin-top: 0.5rem;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #FAFBFC
+  /* color: #FAFBFC */
 }
 
 .nav > .nav-links > a:hover {
-  text-decoration: underline #1e94fcb1 4px solid;
+  text-decoration: underline #FAFBFC 4px solid;
 }
 
 .nav > #nav-check {
