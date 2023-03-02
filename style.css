@@ -203,6 +203,14 @@ h6 {
   padding: 1rem 1rem 1rem 2rem;
 }
 
+
+
+.hero {height: 100px;}
+.hero > h1 {
+  color: #FAFBFC;
+text-align: initial;
+padding-top: 2rem;}
+
 .hero > h2{
 text-align: left;
 font-size: 1.25rem;
@@ -220,8 +228,6 @@ font-weight: 300;
 }
 
 /* Hero Sample Page */
-
-
 .banner-inner {
   display: flex;
   /* position: absolute; */
@@ -1016,10 +1022,7 @@ figcaption {
 
 
 
-.hero > h1 {
-  color: #FAFBFC;
-text-align: initial;
-padding-top: 5rem;}
+
 
 /* Aligns text to bottom of the div */
 .bottom {
