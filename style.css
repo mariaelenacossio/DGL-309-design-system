@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: calc(1.33rem + 2.7vw);
   /* line-height: 2.5rem; */
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
   margin-bottom: 2.5rem;
   padding: 1rem 1rem 1rem 2rem;
   /* display: flex; for index*/
@@ -386,15 +386,7 @@ a, b, i, strong, em, small, code {
 
 
 
-.hero {
-    position: relative;
-    padding:0 !important;
-    height: 309.10px;
-    margin-top:70px !important;
-    margin-top: 23px;
-    /* text-align: center; */
-    margin-bottom: 0 !important;
-}
+
 
 .bg-img{
 background-image: url(/img/ryan-moreno-mkKqRSpIAi4-unsplash.jpg);
@@ -914,7 +906,7 @@ margin: auto;
 /* For the logo */
 .img-fluid {
   max-width: 100%;
-  height: 309.10px;
+  height: 250px;
   border-bottom: 1px solid #072ac8;
 }
 
@@ -1441,7 +1433,7 @@ border-bottom: 1px solid #072ac8;
   position: fixed;
   top: auto;
   overflow-y: scroll;
-  width: 300px;
+  width: 250px;
   border-right: 1px solid #072ac8;
   height: 100vh; /*Extend it to the max viewport*/
 }
@@ -1468,7 +1460,7 @@ border-bottom: 1px solid #072ac8;
 }
 
 .side-bar .items {
-  margin-top: 40px;
+  margin-top: 1rem;
 }
 
 .side-bar .items li {
@@ -1516,8 +1508,8 @@ font-weight: bold;
 }
 
 .interface {
-  width: calc(100% - 300px);
-  margin-left: 300px;
+  width: calc(100% - 250px);
+  margin-left: 250px;
   position: absolute;
 }
 
