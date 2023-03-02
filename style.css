@@ -65,12 +65,17 @@ BG #FAFBFC
 
 /* Codesnippets */
 
-.code-s > ul {
-  width: 800px;
-}
+.code-s > ul {width: 800px;}
 .code-s {padding-bottom: 1rem;}
 
-
+@media 
+  only screen
+  and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
+  .code-s > ul {
+    width: 350px;
+    padding: 0;
+}
+  }
 
 
 
