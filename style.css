@@ -220,7 +220,7 @@ hr, .hr {
   /* Text/paragraphs tags */
   
   p, ul, ol, blockquote { /*pre*/
-    margin-top: 0rem;
+    margin-top: 0;
     margin-bottom: 1.25rem;
     padding: 1rem 1rem 1rem 2rem;
     line-height: normal;
@@ -1775,12 +1775,17 @@ font-weight: bold;
   margin: 30px auto;
   width: 300px;
   height: 300px;
-  border: 1px solid #072ac8;
+    /* box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.069), 
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.069); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
   transition: 0.4s;
 }
+
+
+
 
 /* Card link */
 .box a{
@@ -1789,14 +1794,16 @@ font-weight: bold;
   font-weight: lighter;
 }
 .box .card_image {
-  width: 298px;
+  width: 230px;
   height: 225px;
   border-radius: 10px;
+  padding-left: 2rem;
+  padding-top: 1.5rem;
 }
 
 .box > .card_image > img {
   width: inherit;
-    height: inherit;
+    height: auto;
     border-radius: inherit;
     object-fit: cover;
 }
@@ -1804,8 +1811,9 @@ font-weight: bold;
 .box > .card_title > p {
   text-align: center;
   font-weight: lighter;
-  font-size: 30px;
- padding: 0;
+  font-size: 1.5rem;
+ padding: 2rem 0 0 0;
+ margin-bottom: 0;
 }
 
 .box:hover {
