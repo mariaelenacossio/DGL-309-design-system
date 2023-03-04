@@ -366,10 +366,22 @@ font-weight: 300;
    /* Hero design system    */
    .hero > h1 {
   text-align: center;
+   }
 
+  /* Table design system */
+  .headings > .c-table td {
+    padding: 3px 6px;
+  width: 500px;
+  }
+/* Table headings design system */
+.headings > .c-table td > h1,
+.headings > .c-table td  > h2, 
+.headings > .c-table td > h3,
+.headings > .c-table td > h4,
+.headings > .c-table td > h5,
+.headings > .c-table td > h6 {
+  text-align: left;
 }
-
-
   .banner-inner > h1 {
     text-align: left;
     padding: 1rem;
@@ -391,6 +403,8 @@ nav > .nav-btn > label {
   background-color: #a2d6f9;
 }
 }
+
+
 
 
 .align-items{
@@ -467,7 +481,7 @@ tr {
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
   line-height: 24px;
 }
 tr {display: table-row;}
@@ -486,10 +500,23 @@ tr {display: table-row;}
 
 .c-table td {
   padding: 3px 6px;
-  min-width: 15ch;
-  line-height: 1.1;
+width: 500px;
+line-height: 1.1;
 }
 
+
+.headings > .c-table td > h1,
+.headings > .c-table td > h2,
+.headings > .c-table td > h3,
+.headings > .c-table td > h4,
+.headings > .c-table td > h5,
+.headings > .c-table td > h6,
+.headings > .c-table td > span {
+line-height: inherit; 
+    margin-top: inherit; 
+    margin-bottom: inherit;
+    padding: inherit; 
+}
 
 
 span {margin: 0;
@@ -1890,7 +1917,7 @@ font-weight: bold;
 
 /* Smaller Screens */
 @media (max-width:477px) {
-h1{padding: 1rem 3rem 1rem 2rem;}
+/* h1 {padding: 1rem 3rem 1rem 2rem;} */
 
 
 
