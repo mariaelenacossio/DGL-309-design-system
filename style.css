@@ -362,6 +362,14 @@ font-weight: 300;
          justify-content: center;
          width: 500px;
       }
+
+   /* Hero design system    */
+   .hero > h1 {
+  text-align: center;
+
+}
+
+
   .banner-inner > h1 {
     text-align: left;
     padding: 1rem;
@@ -1768,10 +1776,8 @@ font-weight: bold;
   width: 300px;
   height: 300px;
   border: 1px solid #072ac8;
-  border-radius: 10%;
-/* background: rgb(30,150,252);
-background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 63%);  border-radius: 40px; */
-/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+  border-radius: 10px;
+  background-color: #fff;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -1779,28 +1785,27 @@ background: radial-gradient(circle, rgba(30,150,252,1) 25%, rgba(162,214,249,1) 
 /* Card link */
 .box a{
   text-decoration: none;
+  color: #072ac8;
+  font-weight: lighter;
 }
-/* .box .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
+.box .card_image {
+  width: 298px;
+  height: 225px;
+  border-radius: 10px;
 }
 
-.box .card_image img {
+.box > .card_image > img {
   width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-} */
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+}
 
-.box .card_title {
+.box > .card_title > p {
   text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
   font-weight: lighter;
   font-size: 30px;
-  margin-top: 120px;
-  height: 40px;
+ padding: 0;
 }
 
 .box:hover {
