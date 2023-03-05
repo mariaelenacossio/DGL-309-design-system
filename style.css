@@ -241,8 +241,8 @@ hr, .hr {
     color: #2b2b2b;
   }
   
-  .p{
-    padding: 1rem 1rem 0 1rem;
+  .p {
+    padding: 1rem 1rem 1rem 1rem;
     text-align: center;
   }
  
@@ -484,15 +484,22 @@ details > summary i {
   padding-top: 2rem;
   width: 300px;
 }
+
+/* This is for BG-text examples */
+.color-table > .table-text{
+  margin-left: 0.5rem;
+}
 .bg-example > .flex-item {width: 313px;}
 .bg-example > p {
   padding: 1rem 0 1rem;
-  text-align: center;}
+  text-align: center;
+margin-left: 0;}
 
 
 .justify-content--center {justify-content: center;}
 .flex-auto {flex: 1 1 auto;}
 .c-table {border-collapse: collapse;}
+
 .table-text {
   font-size: 1rem;
   line-height: inherit;
