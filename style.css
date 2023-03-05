@@ -91,7 +91,10 @@ BG #FAFBFC
 /* Codesnippets */
 
 .code-s > ul {width: 800px;}
-.code-s {padding-bottom: 1rem;}
+.code-s {
+  padding-bottom: 1rem;
+  margin-left: 1rem;}
+.code-s > summary li {padding-bottom: 1rem;}
 
 @media 
   only screen
@@ -100,6 +103,7 @@ BG #FAFBFC
     width: 350px;
     padding: 0;
 }
+.gist .gist-file {width: 300px;}
   }
 
 
@@ -143,7 +147,7 @@ h1 {
   font-size: calc(1.33rem + 2.7vw);
   /* line-height: 2.5rem; */
   /* margin-top: 1.25rem; */
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
   padding: 1rem 1rem 1rem 2rem;
   /* display: flex; for index*/
 }
@@ -152,7 +156,7 @@ h2 {
   font-size: calc(1.26rem + 0.9vw);
   line-height: 3.75rem;
   margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   padding: 1rem 1rem 1rem 2rem;
 }
 
@@ -173,7 +177,7 @@ h4 {
 h5 {
   font-size: 1.09rem;
   line-height: 1.25rem;
-  margin-top: 1.25rem;
+  /* margin-top: 1.25rem; */
   margin-bottom: 0rem;
   padding: 1rem 1rem 1rem 2rem;
 }
@@ -227,8 +231,9 @@ hr, .hr {
   
   p, ul, ol, blockquote { /*pre*/
     margin-top: 0;
-    margin-bottom: 1.25rem;
-    padding: 1rem 1rem 1rem 2rem;
+    /* margin-bottom: 1.25rem; */
+    margin-left: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     line-height: normal;
     font-weight: 100;
     text-align: left;
@@ -240,7 +245,9 @@ hr, .hr {
     padding: 1rem 1rem 0 1rem;
     text-align: center;
   }
-  
+ 
+
+
   ul ul, ol ol, ul ol, ol ul {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -283,10 +290,12 @@ color: #F3F4F6;
 align-items: end;
 margin-left: 2rem;
 }
-.subheading{
+.subheading {
 font-size: 1.25rem;
 font-weight: 300;
+margin-left: 1rem;
 }
+
 
 /* Hero for Sample Page */
 .banner-inner {
@@ -408,6 +417,13 @@ nav > .nav-btn > label {
 .nav > .nav-links {
   background-color: #a2d6f9;
 }
+
+/* This is for the text-block in typography */
+.text-block > h1 {
+  text-align: left;
+  margin-left: 2rem;
+}
+
 }
 
 
@@ -451,8 +467,6 @@ details > summary a {
 details > summary i {
   margin-left: 1rem;
 }
-
-
 
 
 .separator {
@@ -884,9 +898,15 @@ margin: auto;
     height: 200px;}
 
     /* Headings */
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4 {
       text-align: center;
       padding: 1rem 1rem 0 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h5, h6 {
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .h1, .h2, .h3, .h4, .h5, .h6 {
       text-align: center;
@@ -933,18 +953,15 @@ margin-top: 0;
 
 
 
-
+/* Responsive paragraphs */
 .p-flex{
-  /* background: tomato; */
   padding: 5px;
   width: 500px;
   height: 200px;
   margin-top: 10px;
   line-height: 150px;
-  /* color: white; */
   font-weight: bold;
   font-size: 3em;
-  /* text-align: center; */
   border-radius: 10px;
 }
 
