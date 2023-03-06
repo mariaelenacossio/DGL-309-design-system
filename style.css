@@ -93,7 +93,7 @@ BG #FAFBFC
 .code-s > ul {width: 720px;}
 .code-s {
   padding-bottom: 1rem;
-  margin-left: 1rem;}
+  margin-left: 0.5rem;}
 .code-s > summary li {padding-bottom: 1rem;}
 
 @media 
@@ -667,6 +667,16 @@ line-height: 24px;
 .breadcrumb__item.is-active {
   background: #072ac8;
   color: #FAFBFC;
+}
+
+.b-crumb > h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 1rem 0 2rem;
+}
+
+.b-crumb > .container > .code-s {
+  margin-left: 0;
 }
 
 @media 
@@ -1376,27 +1386,32 @@ figcaption {
   border-color: transparent;
 }
 
-.buttons > .flex-container {
+.buttons > .container > .flex-container {
   padding: 0 1rem;
   margin: 0.5rem;
   justify-content: flex-start;
 }
-.buttons > .flex-container > button {
+.buttons >.container > .flex-container > button {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.buttons > .flex-container > div {
+.buttons > .container > .flex-container > div {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
+.buttons > h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 1rem 0 2rem;
+}
 
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
 
-.buttons > .flex-container > .btn-primary,
-.buttons > .flex-container > button > .btn-cta {
+.buttons > .container > .flex-container > .btn-primary,
+.buttons > .container > .flex-container > button > .btn-cta {
   width: fit-content;
 }
   }
@@ -1685,6 +1700,19 @@ font-weight: bold;
     display: none;
   }
 
+  .navigation .container {
+    padding-top: 0;
+  }
+  /* This is to resize it  in navigation section*/
+
+.navigation > h2 {
+margin-top: 0;
+margin-bottom: 0;
+padding: 1rem 1rem 0 2rem;
+}
+
+
+
   /* This is only for larger screens to hide the nav links */
 @media (max-width: 1500px){
   .navigation-bar > .nav-links {display: none;}
@@ -1808,17 +1836,7 @@ font-weight: bold;
   display: none;
 }
 
-/* This is to resize it  in navigation section*/
-.nav-ds > .container {
-  padding-right: calc(1.5rem * 1);
-  padding-left: calc(1.5rem * 1.5);
-}
 
-.navigation > h2 {
-margin-bottom: 0;
-padding: 1rem 1rem 0 1rem;
-margin-top: 0;
-}
 
 /* This is for toggle style-2 */
 
