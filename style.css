@@ -88,9 +88,9 @@ BG #FAFBFC
 .b-alt {border: 1px solid #fcf300}
 
 
-/* Codesnippets */
+/* Code snippets */
 
-.code-s > ul {width: 800px;}
+.code-s > ul {width: 720px;}
 .code-s {
   padding-bottom: 1rem;
   margin-left: 1rem;}
@@ -1375,7 +1375,7 @@ figcaption {
 
 .dropdown {
   display: inline-block;
-  margin: 30px;
+  /* margin: 30px; */
   position: relative;
   width: 150px;
   text-align: center;
@@ -1431,10 +1431,25 @@ figcaption {
   z-index: 10;
 }
 
+.dd-ds > .container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
-.dropdown {margin-left: 4.5rem;}
+/* .dropdown {margin-left: 4.5rem;} */
+.dd-ds > .container > .dropdown > .label {
+  position: initial;
+}
+.dd-ds > .container {
+  padding: 1rem 2rem 1rem 2rem;
+}
   }
 
 
