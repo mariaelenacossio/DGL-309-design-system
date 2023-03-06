@@ -1424,17 +1424,6 @@ figcaption {
 .option:hover {
   background-color: #eee;
 }
-.flex-container > .block-container {
-  height: 400px;
-  margin-top: 3rem;
-}
-
-.flex-container .block-container > p{
-  padding: 1rem 1rem 1rem 1rem;
-}
-
-/**********
-***********/
 
 #drop:checked~ .opt-list {
   visibility: visible;
@@ -1442,13 +1431,10 @@ figcaption {
   z-index: 10;
 }
 
-
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
 .dropdown {margin-left: 4.5rem;}
- .flex-container > .block-container {margin-top: 15rem;}
-
   }
 
 
