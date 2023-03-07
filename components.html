@@ -264,26 +264,46 @@
 
 </section>
 
-<section class="card-sw">
+<section class="carousel-ds">
   <h2 id="cards">Carousel</h2>
   <hr class="c-divider">
   
   <p>Description of cards</p>
   
   <div class="container">
-    <div class="card">
-      <div class="card_img"> 
-        <img src="img/fleur-kaan-pq2rbxu0Kpk-unsplash.jpg"/> 
+    <div class="carousel">
+      <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item">
+              <img src="img/danist-soh-bviex5lwf3s-unsplash.jpg">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="img/fernando-cferdophotography-Ri_PdjPWZk0-unsplash.jpg">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg">
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+              <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+          </ol>
       </div>
-      <div class="card_title">
-        <h4>Title</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          Aspernatur totam, enim dolor nobis debitis facere animi, 
-          itaque est temporibus dolorem minima magnam doloribus sit!
-        </p>
-      </div>
-        <button type="button" class="btn-primary">Button</button>
-      </div>
+  </div>
     </div>
   </section>
 
