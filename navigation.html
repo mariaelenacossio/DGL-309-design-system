@@ -165,16 +165,16 @@
 
 
 <!-- Navbar section -->
-<section class="navigation">
 <p>The navigation is an important element that represents a section to provide the user guidance througout
    the website. Here we will display examples of how it should be display on our site.</p>
    <h2 id="navbar">Navbar</h2>
    <hr class="divider">
-   <p>The responsive navigation bar is a UI element in the website which contains 
+   <h5>The responsive navigation bar is a UI element in the website which contains 
     links to other sections of the website. At the moment we have only two variations
     that can be use depending on the hero section.
- </p> 
-    <div class="container">
+   </h5> 
+
+<section class="navigation container">
 
 <!-- Style #1 -->
 <div class="style-1 container">
@@ -227,8 +227,8 @@
   </div>
 </div>
 
-<div class="container">
-  <details class="code-s">
+<div class="code-s container">
+  <details>
     <summary>
       <li><i class="fa-solid fa-code"> HTML</i></li>
     </summary>
@@ -253,31 +253,34 @@
 </div>
 <p>It is important to mention that theres slightly variations for the links alignment and all that
   can be formatted accordingly overriding the class .nav &gt; .nav-links &gt; a.</p>
-</div>
-</section>
+
+
 
 <!-- End of Navbar section -->
 
-<section class="dd">
+<!-- <section class="dd"> -->
 <h2 id="Dropdown">Dropdown</h2>
 <!--Display inside the flex-item the BG and the text color as an example-->
 <hr class="divider">
-<div class="dd-ds">
-<div class="container">
+<h5>This navigation component will hold hidden information for the user unless
+  they click on in to discover the links to a different section of the site.
+</h5>
+<!-- <div class="dd"> -->
+<div class="dd-ds container">
             <div class="dropdown">
               <input type="checkbox" id="drop" hidden>
               <label class=" label dropHeader dropHeader-1" for="drop">Dropdown</label>
               <div class="list opt-list">
-              <div class="option">Option one</div>
-              <div class="option">Option two</div>
-              <div class="option">Option three</div>
-              <div class="option">Option four</div>
+              <div class="option"><a href="#">Option one</a></div>
+              <div class="option"><a href="#">Option two</a></div>
+              <div class="option"><a href="#">Option three</a></div>
+              <div class="option"><a href="#">Option four</a></div>
               </div>
           </div>
 </div>
-</div><!--End of dd-ds-->         
-    <div class="container">
-      <details class="code-s">
+
+    <div class="code-s container">
+      <details>
         <summary>
           <li><i class="fa-solid fa-code"> HTML</i></li>
         </summary>
@@ -298,9 +301,9 @@
         </ul>
       </details>
     </div>
-  </section>
 
-  <section class="buttons">
+
+  <!-- <section class="buttons"> -->
 <h2 id="buttons">Buttons</h2>
 <!--Display inside the flex-item the BG and the text color as an example-->
 <hr class="divider">
@@ -308,7 +311,7 @@
   See below how classes should be implemented to ensure the responsiveness of it.
 </p>
 
-<div class="container">
+<div class="buttons container">
   <div class="flex-container">
     <button type="button" class="btn-primary">Primary</button>
     <button type="button" class="btn-secondary">Secondary</button>
@@ -320,8 +323,8 @@
     <button type="button" class="btn-primary-block">Block</button>
   </div>
 </div>
-<div class="container">
-  <details class="code-s">
+<div class="code-s container">
+  <details>
     <summary>
       <li><i class="fa-solid fa-code"> HTML</i></li>
     </summary>
@@ -340,25 +343,25 @@
         <script src="https://gist.github.com/mariaelenacossio/74602d11d8a0522b26cacbb5c0fbec10.js"></script>    </ul>
   </details>
 </div>
-</section>
+<!-- </section> -->
 
-<section class="b-crumb">
+<!-- <section class="b-crumb"> -->
 <h2 id="breadcrumbs">Breadcrumbs</h2>
 <hr class="divider">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia, 
-  facere accusantium nam tempore distinctio quam, vitae nulla blanditiis 
-  veritatis vel qui voluptates ad illo quia corrupti nisi ex minus!</p>
+<p>Breadcrumb navigation will help the user to understand their location 
+  in the website by providing a breadcrumb trail back to the start page.</p>
 
-<div class="container">
+<div class="b-crumb container">
           <div class="breadcrumb">
             <a href="#home" class="breadcrumb__item">Home</a>
             <a href="#shop" class="breadcrumb__item">Shop</a> 
             <a href="#cart" class="breadcrumb__item">Cart</a>
             <a href="#checkout" class="breadcrumb__item is-active">Checkout</a> 
           </div>
-
-<div class="container">
-  <details class="code-s">
+        </div>
+        
+<div class="code-s container">
+  <details>
     <summary>
       <li><i class="fa-solid fa-code"> HTML</i></li>
     </summary>
@@ -377,7 +380,7 @@
 </div>
 
 
-</div>
+
 </section><!--End of breadcrumb-->
 </section>
 
