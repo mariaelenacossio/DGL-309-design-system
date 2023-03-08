@@ -22,7 +22,7 @@
 
   <section class="side-bar bg">
     <div class="container-sidebar">
-    <img class="img-fluid" src="img/BEYOND.png" alt="Logo Design System"><!--Logo-->
+    <img class="img-fluid" src="img/Skincare (3).png" alt="Logo Design System"><!--Logo-->
     </div>
 
 
@@ -42,7 +42,7 @@
           <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
           <!--Body text
               H1 to H6
-              Headline, subheadline and image caption-->
+              Headline, sub headline and image caption-->
           <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
           <!--Color Palette
               Body Text
@@ -54,7 +54,7 @@
           <!--Margins and paddings for div, img etc.-->
           <li><i class="fab fa-uikit"></i><a class="active" href="images.html">Images</a></li>
           <!--Styles
-              Required aspect ratios for diferent uses
+              Required aspect ratios for different uses
               Rounded corners
               Borders-->
         </ul>
@@ -163,42 +163,67 @@
                         
                         
 <!-- End of Hero section -->
-<div class="container">
-<p>For the images is esential to take in consideration that our <b>.bg-color</b> is light
+<div class="images container">
+<h5>For the images is essential to take in consideration that our <b>.bg-color</b> is light
    so the pattern that we must use is the following. This should resize any image in the 
-  library according the screen.</p>
-</div>
+  library according the screen.</h5>
 
-<div class="container">
+<!-- <div class="container"> -->
 <h2>Basic structure</h2>
-<hr class="c-divider">
+<hr class="divider">
+<h5>The aspect ratio is a proportional relationship between an image's width and height. 
+  <br>Essentially, it describes an image's shape.
+  <br>Aspect ratios are written as a formula of width to height, like this: <b>3:2</b> for 
+  smaller screen and for large screens <b>16:9</b>.
+ </h5>
 
-<div class="container">
-  <div class="container">
+<!-- <div class="container"> -->
+  <div class="single-img container">
     <figure>
+    <img class="img" src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg" alt="skincare, mirror">
+    <figcaption>Aspect ratio 16:9 for max-width 1024px</figcaption>
+  </figure>
+  <figure>
     <img class="img-x" src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg" alt="skincare, mirror">
-    <figcaption>BEYOND Skincare</figcaption>
+    <figcaption>Aspect ratio 3:2 for min-width 768px</figcaption>
   </figure>
 </div>
+<!-- Code snippet -->
 <div class="container">
-  <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="BaOpKZd" data-user="mariaelenacossio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/mariaelenacossio/pen/BaOpKZd">
-    Single img</a> by Mariaelena Cossio Clark (<a href="https://codepen.io/mariaelenacossio">@mariaelenacossio</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-  <p>*It is important to mention that this is only for landscape/horizontal images</p>
+  <details class="code-s">
+    <summary>
+      <li><i class="fa-solid fa-code"> HTML</i></li>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/7d907b0892955fd264bae1718a9cacf3.js"></script>
+      </li>    
+      </ul>
+  </details>
+  <details class="code-s">
+    <summary>
+      <li><i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/e6e1e763f35ded97f7fbf57cffc04e44.js"></script>
+        </li>
+      </ul>
+  </details>
 </div>
+
 
 <!-- Group of images -->
 
 <h2>Group of images</h2>
-<hr class="c-divider">
-<p>For responsive group of images its necessary to use the following classes to ensure the same ratio
-  as well, to display accordingly in different screens.</p>
+<hr class="divider">
+<h5>For responsive group of images its necessary to use the following classes to ensure the same ratio
+  as well, to display accordingly in different screens.</h5>
 
-<div class="container">
-    <div class="flex-container">
+<div class="gp-img container">
+    <div class="group-img">
         <div class="flex-img">
     <img class="img-x b-primary" src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg" alt="skincare, mirror">
     <figcaption>BEYOND Skincare</figcaption>
@@ -215,31 +240,42 @@
           <img class="img-x b-alt" src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg" alt="skincare, mirror">
           <figcaption>BEYOND Skincare</figcaption>
         </div>
-        <div class="flex-img">
-          <img class="img-x b-neutral" src="img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg" alt="skincare, mirror">
-          <figcaption>BEYOND Skincare</figcaption>
-        </div>
     </div>
 </div>
-</div>
+<!-- </div> -->
+<!-- Code snippet -->
 <div class="container">
-  <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWqJyJq" data-user="mariaelenacossio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/mariaelenacossio/pen/MWqJyJq">
-    Group of images</a> by Mariaelena Cossio Clark (<a href="https://codepen.io/mariaelenacossio">@mariaelenacossio</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+  <details class="code-s">
+    <summary>
+      <li><i class="fa-solid fa-code"> HTML</i></li>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/77654698dafa764f14d82e2ea992e993.js"></script>
+      </li>
+      </ul>
+  </details>
+  <details class="code-s">
+    <summary>
+      <li><i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/a43ed3d228e4007446dc22d1b2ccd70e.js"></script></li>
+          </ul>
+  </details>
 </div>
+
 
 <h2>Thumbnails</h2>
-<hr class="c-divider">
-<p>This is asmaller version of an image. 
+<hr class="divider">
+<h5>This is a smaller version of an image. 
    When we hover on a thumbnail image, it displays social icons and a text banner. As well, when you click
-   on the social icon, is redirected to the social site.</p>
+   on the social icon, is redirected to the social site.</h5>
 
-<div class="container">
-  <div class="flex-container">
-    <div class="grid-container">
+<div class="thumbnails container">
 <div class="thumbnail thumbnail-1">
     <div class="SocialIcons">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -251,49 +287,32 @@
     </div>
 </div>
 </div>
-<div class="grid-container">
-    <div class="thumbnail thumbnail-1">
-        <div class="SocialIcons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <div class="profileInfo">
-          <p class="h4">Sample Text</p>
-        </div>
-    </div>
-    </div>
-    <div class="grid-container">
-        <div class="thumbnail thumbnail-1">
-            <div class="SocialIcons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <div class="profileInfo">
-              <p class="h4">Sample Text</p>
-            </div>
-        </div>
-        </div>
+
+<!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary>
+      <li><i class="fa-solid fa-code"> HTML</i></li>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/139342598101a82a67cca2c2d2306563.js"></script>   
+      </li>
+      </ul>
+  </details>
+  <details class="code-s">
+    <summary>
+      <li><i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/1d05a335cdc78ba2a4eb6c591b1910af.js"></script>    
+        </li>
+      </ul>
+  </details>
 </div>
-
-<div class="container">
-  <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYzgXYQ" data-user="mariaelenacossio" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-    <span>See the Pen <a href="https://codepen.io/mariaelenacossio/pen/vYzgXYQ">
-    Untitled</a> by Mariaelena Cossio Clark (<a href="https://codepen.io/mariaelenacossio">@mariaelenacossio</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-  </p>
-  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-</div>
-
-</div>
-
-
-
-
-
-
-
 </div>
 
 </section>
