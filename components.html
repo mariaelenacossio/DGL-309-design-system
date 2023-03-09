@@ -21,7 +21,7 @@
 <body>
 
   <section class="side-bar bg">
-    <div class="container-sidebar">
+    <div class="sidebar container">
     <img class="img-fluid" src="img/Skincare (3).png" alt="Logo Design System"><!--Logo-->
     </div>
 
@@ -113,8 +113,12 @@
           <li><i class="fab fa-uikit" id="#support"></i>Support</li>
         </ul>
       </details>
+      <details>
+        <summary>
         <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
-    </div>
+      </summary>
+      </details>
+      </div>
 </section>
 <!--End of Sidebar-->
 
@@ -164,7 +168,7 @@
                         
                         
 <!-- End of Hero section -->
-<div class="container">
+<div class="components container">
 <p>This elements are created individually that will be use to
   build and structure the user interface with focus, clarity, usability
   and accessibility.</p>
@@ -172,11 +176,16 @@
   to work together to form a cohesive user experience as well, considering the 
   different needs when interacting with the website.</p>
 
-<section class="single-card">
+<div class="single-card">
 <h2 id="cards">Cards</h2>
-<hr class="c-divider">
+<hr class="divider">
 
-<p>Below is an example of a basic card with mixed content and a fixed width.</p>
+<h6>In this example, the card is set to take up 100% of the width of its container, 
+  and its contents are stacked vertically using the flex-direction property. 
+  The image is set to fill the width of the card, and the text elements are given 
+  some margin to create space between them and the edges of the card. 
+  The box-shadow property creates a shadow effect around the card to give it some depth. 
+  This code can be modified as needed to create different layouts and styles for the responsive card.</h6>
 
 <div class="container">
   <!-- Simple Card/Testimonial -->
@@ -193,6 +202,8 @@
     </div>
       <button type="button" class="btn-primary"><a href="#"></a>View more</button>
     </div>
+    </div>
+</div>
 
 <!-- Code snippet -->
 <div class="code-s container">
@@ -220,10 +231,15 @@
 <h2 id="cards">Product Card</h2>
 <hr class="divider">
 
-<p>Description of cards</p>
+<h6>This component contributes to the deciding factor of whether users should make a decision
+  over buying our products or not. In this example it is essential to display an image of the 
+product and a brief description with an action button that potentially turns into a sale. Also, 
+keep in mind that this card build according the image sizing values for example this one follows 
+the <b>3:2 ratio</b>.</h6>
 
 
 <!-- Product Card -->
+<div class="p-card container">
 <div class="product-card">
   <div class="product-img"> 
     <img src="img/birgith-roosipuu-CJFG-GOAeVk-unsplash.jpg"/> 
@@ -237,6 +253,7 @@
   </div>
   </div>
   </div>
+
 
 <!-- Code snippet -->
 <div class="code-s container">
@@ -262,15 +279,17 @@
   </details>
 </div>
 
-</section>
+<!-- </section> -->
 
-<section class="carousel-ds">
+<!-- <section class="carousel-ds"> -->
   <h2 id="cards">Carousel</h2>
   <hr class="divider">
   
-  <p>Description of cards</p>
+  <h6>This slideshow will contain a series of content with control indicators for the previous
+    and next slide as well, the images must be in <b>landscape</b> orientation also, it is important
+    to follow the <a href="images.html">sizing guidelines for images</a></h6>
   
-  <div class="container">
+  <div class="carousel-ds container">
     <div class="carousel">
       <div class="carousel-inner">
           <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
@@ -327,54 +346,128 @@
   </details>
 </div>
    
-  </section>
+  <!-- </section> -->
 
   
-  <section class="table-sw">
-    <h2 id="cards">Table</h2>
-    <hr class="c-divider">
+  <!-- <section class="table-sw"> -->
+    <h2 id="table">Table</h2>
+    <hr class="divider">
     
-    <p>Description of cards</p>
+    <h6>In this example, the table is set to take up 100% of the width of its container, 
+      and the border-collapse property is used to collapse the borders of the table cells. 
+      The th and td elements are given some padding and a border, so they are separated visually. 
+      The media query at the end applies styles only to screens with a maximum width of 767 pixels. 
+      In this case, the table is set to display as a block element with horizontal scrollbars, 
+      so the table can be scrolled horizontally as needed on small screens.</h6>
     
-    <div class="container">
-      <div class="card">
-        <div class="card_img"> 
-          <img src="img/fleur-kaan-pq2rbxu0Kpk-unsplash.jpg"/> 
-        </div>
-        <div class="card_title">
-          <h4>Title</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Aspernatur totam, enim dolor nobis debitis facere animi, 
-            itaque est temporibus dolorem minima magnam doloribus sit!
-          </p>
-        </div>
-          <button type="button" class="btn-primary">Button</button>
-        </div>
-      </div>
-    </section>
+    <div class="table-sw container">
+      <table>
+        <thead>
+          <tr>
+            <th class="th">Name</th>
+            <th class="th">Age</th>
+            <th class="th">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td">Jane Doe</td>
+            <td class="td">25</td>
+            <td class="td">jane@example.com</td>
+          </tr>
+          <tr>
+            <td class="td">John Smith</td>
+            <td class="td">30</td>
+            <td class="td">john@example.com</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <section class="card-sw">
-      <h2 id="cards">Footer</h2>
-      <hr class="c-divider">
+      </div>
+
+
+      <!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary>
+      <li><i class="fa-solid fa-code"> HTML</i></li>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/b94bceef3f70703ad7d79a8657ed3f50.js"></script>
+      </li>
+        </ul>
+  </details>
+  <details>
+    <summary>
+      <li><i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/860787ee928c3e2b58d0cfc76bc1b122.js"></script>   
+        </li>
+       </ul>
+  </details>
+</div>
+
+
+    <!-- <section class="card-sw"> -->
+      <h2 id="footer">Footer</h2>
+      <hr class="divider">
       
-      <p>Description of cards</p>
+      <p>In this example, the &lt;footer&gt; tag is used to wrap the footer content, 
+        and CSS class <b>.footer-basic</b>is used to style the footer's background color, padding, and alignment. 
+        The &lt;ul&gt; tag is used to hold the footer content, and CSS is used to set its 
+        margin to 0 to remove extra space. </p>
       
-      <div class="container">
-        <div class="card">
-          <div class="card_img"> 
-            <img src="img/fleur-kaan-pq2rbxu0Kpk-unsplash.jpg"/> 
-          </div>
-          <div class="card_title">
-            <h4>Title</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Aspernatur totam, enim dolor nobis debitis facere animi, 
-              itaque est temporibus dolorem minima magnam doloribus sit!
-            </p>
-          </div>
-            <button type="button" class="btn-primary">Button</button>
-          </div>
+      <div class="footer container">
+        <!-- <div class="footer-basic"> -->
+          <footer class="footer-basic">
+              <div class="social">
+                <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+                <a href="index.html"><i class="fab fa-uikit"></i></a>
+                <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Home</a></li>
+                  <li class="list-inline-item"><a href="#">Services</a></li>
+                  <li class="list-inline-item"><a href="#">About</a></li>
+                  <li class="list-inline-item"><a href="#">Terms</a></li>
+                  <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              </ul>
+              <p class="copyright">BEYOND Skincare © 2023</p>
+          </footer>
+      <!-- </div> -->
         </div>
-      </section>
+      <!-- </section> -->
+
+        <!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary>
+      <li><i class="fa-solid fa-code"> HTML</i></li>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/1ca08c750d17ed616f44e51dfd3e5b2c.js"></script>
+      </li>
+        </ul>
+  </details>
+  <details>
+    <summary>
+      <li><i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/84f8f0a63f3e55465043992c04d9f064.js"></script> 
+      </li>
+      </ul>
+  </details>
+</div>
+
 </div>
   
 </section>
