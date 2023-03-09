@@ -1682,11 +1682,10 @@ max-width: 300px;
 
 .side-bar .items li a {
   text-decoration: none;
-  color: black;
+  color: #072ac8;
   font-weight: 300px;
   transition: 0.3s ease;
 }
-
 /* Side bar links */
 .active {
 font-weight: bold;
@@ -2427,7 +2426,7 @@ table {
 }
 
 .footer-basic .social > a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 40px;
   height: 40px;
   line-height: 2.5rem;
@@ -2456,7 +2455,11 @@ table {
   margin-left: 1rem;
   padding-right: 3rem;
 }
-
+/* .footer-basic > .social a > i{
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+} */
 /* This is for sidebar icons */
 
 .side-bar > .items li > i {
