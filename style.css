@@ -1595,7 +1595,15 @@ max-width: 300px;
 .ordered > .u-list > ol {
   margin-left: 2rem;
 }
-
+.g-list h6,
+.ordered h6,
+.unordered h6 {
+  padding-left: 1rem;
+  margin-top: 0;
+}
+.g-list > .container {
+  padding-top: 0;
+}
 /* Sidebar title */
 .side-bar {
   position: fixed;
@@ -2185,14 +2193,14 @@ flex-flow: column;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     /* margin-top: 2rem; */
-    max-width: 731px;
+    max-width: 100%;
 
 }
 
 .carousel-inner {
     position: relative;
     overflow: hidden;
-    max-width: 731px;
+    max-width: 100%;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -2210,7 +2218,7 @@ flex-flow: column;
 .carousel-item img {
     display: block;
     height: 500px;
-    max-width: 731px;
+    max-width: 100%;
 }
 
 .carousel-control {
