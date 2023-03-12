@@ -284,7 +284,7 @@ hr, .hr {
   /* Images */
   /* Hero image for sample site */
   .bg-img{
-    background-image: url(/img/ryan-moreno-mkKqRSpIAi4-unsplash.jpg);
+    background-image: url(/img/birgith-roosipuu-CJFG-GOAeVk-unsplash.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -342,6 +342,7 @@ margin-left: 1rem;
       font-weight: 700;
       line-height: 1.15;
       color: #FAFBFC;
+      padding: 1rem;
 }
 
 .paragraph {
@@ -349,17 +350,49 @@ margin-left: 1rem;
    font-size: clamp(1rem, 2vw, 1.125rem);
    line-height: inherit;
    max-width: 95%;
+   text-transform: uppercase;
    height: auto;
-   text-transform: unset;
+   font-weight: bold;
+   /* text-transform: unset; */
    color: #FAFBFC;
 }
 
-.banner-inner > button {
-  margin-left: 2rem
-}
+.flex-grid > .banner-inner p {margin-left: 0;}
+
+.flex-grid > .banner-inner  button {
+display: flex;
+margin-left: 1rem;}
 
 .banner-inner > h1 {margin-bottom: 0;}
 
+/* Navbar for design system */
+
+.wrapper > .header > .nav > .nav-links {
+  display: flex;
+  float: right;
+  font-size: 1.12rem;
+  padding-right: 2rem;
+  /* padding-left: 1rem; */
+}
+
+/* Navbar logo sample site */
+.sample-logo {
+  width: 200px ;
+  height: 100px;
+}
+.wrapper > .header > .nav > .nav-links > a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  color: #FAFBFC
+}
+
+.wrapper > .header > .nav > .nav-links button {
+  width: fit-content;
+  border-radius: 20px;
+  height: min-content;
+}
 
 
 /* Wrapper for responsiveness */
@@ -399,8 +432,38 @@ margin-left: 1rem;
 .flex-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
          justify-content: center;
-         width: 500px;
-      }
+         width: auto;
+         padding: 10rem 1rem 0 1rem;      }
+
+.wrapper > * {padding: 0;}         
+.wrapper > .header > .nav > .nav-header {
+/* margin-left: 5rem; */
+display: flex;
+place-content: center
+;
+}
+
+/* Sub-menu open sample site */
+
+.wrapper > .header > .nav > .nav-links {
+  display: list-item;
+  padding-left: 0;
+  background-color: #a2d6f9;
+  position: fixed;
+  top: 61px;
+}
+
+.wrapper > .header > .nav > .nav-links > a {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-bottom: 2rem;
+}
+
+.wrapper > .header > .nav > .nav-links button {
+  margin-left: 1.5rem;
+}
+
 
    /* Hero design system    */
    .hero > h1 {
@@ -422,12 +485,24 @@ margin-left: 1rem;
   text-align: left;
 }
   .banner-inner > h1 {
-    text-align: left;
+    text-align: center;
     padding: 1rem;
   }
-  .banner-inner > button {
-  margin-left: 5rem;
-  }  
+
+  .banner-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-grid > .banner-inner p {
+    display: flex;
+    align-self: center;
+  }
+  .flex-grid > .banner-inner button { 
+    margin-left: 0;
+    align-self: center;
+  }
+
 nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
@@ -1891,7 +1966,7 @@ padding: 1rem 1rem 0 2rem;
 .nav > .nav-links > a {
   display: inline-block;
   margin-top: 0.5rem;
-  padding: 13px 10px 13px 10px;
+  padding: 0.8rem 0.6rem;
   text-decoration: none;
   /* color: #FAFBFC */
 }
