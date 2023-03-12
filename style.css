@@ -284,10 +284,12 @@ hr, .hr {
   /* Images */
   /* Hero image for sample site */
   .bg-img{
-    background-image: url(/img/birgith-roosipuu-CJFG-GOAeVk-unsplash.jpg);
+    background-image: url(img/birgith-roosipuu-CJFG-GOAeVk-unsplash.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
+    position: 3;
     /* opacity: 80%; */
     }
     .bg-img > * {
@@ -334,6 +336,10 @@ margin-left: 1rem;
   position: absolute;
   padding: 10rem 0 1rem 2.5rem;
   width: 600px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 100%; */
 }
 
 .heading-xl {
@@ -366,7 +372,7 @@ margin-left: 1rem;}
 .banner-inner > h1 {margin-bottom: 0;}
 
 /* Navbar for design system */
-
+.wrapper > .header > .nav{padding-top: 1rem;}
 .wrapper > .header > .nav > .nav-links {
   display: flex;
   float: right;
@@ -396,16 +402,21 @@ margin-left: 1rem;}
 
 
 /* Wrapper for responsiveness */
-.wrapper {
+/* .wrapper {
   display: flex;  
   flex-flow: row wrap;
-  /* font-weight: bold; */
+  font-weight: bold;
   text-align: left; 
 }
 
 .wrapper > * {
   padding: 10px;
   flex: 1 100%;
+} */
+
+
+.b-f > .cards {
+  position: absolute;
 }
 
 /* Medium screens */
@@ -435,12 +446,11 @@ margin-left: 1rem;}
          width: auto;
          padding: 10rem 1rem 0 1rem;      }
 
-.wrapper > * {padding: 0;}         
+/* .wrapper > * {padding: 0;}          */
 .wrapper > .header > .nav > .nav-header {
 /* margin-left: 5rem; */
 display: flex;
-place-content: center
-;
+place-content: center;
 }
 
 /* Sub-menu open sample site */
