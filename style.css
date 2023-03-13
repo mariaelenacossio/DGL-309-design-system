@@ -61,12 +61,14 @@ BG #FAFBFC
 .t-white {color: #FAFBFC;}
 
 .t-dl:hover { text-decoration: 4px solid #FAFBFC;}
+.t-tu {text-transform: uppercase;}
 
 /* Font weight */
 /* Font Size */
 .fz-200{font-size: 2rem;}
 
 .bold {font-weight: bold;}
+.lighter{font-weight: 100;}
 
 /* Paddings */
 /* Bottom */
@@ -448,6 +450,7 @@ padding: 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 2rem;
 }
 .cards > .b-f > .box {height: 350px;}
 .cards > .b-f > .box > .card_title{
@@ -464,7 +467,9 @@ padding: 0;
   font-size: 1rem;
   padding: 0;
   margin-left: 0;
+  line-height: 2rem;
 }
+
 
 /* .box > .card_title > p {
   text-align: center;
@@ -474,7 +479,65 @@ padding: 0;
  margin-bottom: 0;
 } */
 
+/* About section */
 
+.about{
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding-top: 2rem; */
+}
+
+.about > .container {
+  padding-left: 0;
+padding-top: 0;
+padding-right: 0;}
+.about > .container > .flex-container {
+  flex-flow: row;
+  justify-content: flex-start;
+  width: max-content;
+  padding-bottom: 0;
+}
+.about > .container > .flex-container img{
+  width: 50vw;
+  height: 80vh;
+  border-radius: 50%;
+}
+.about-p {
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+}
+.about > .container > .flex-container h2 {
+  color: #1e96fc;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about > .container > .flex-container > .about-h {
+flex-flow: column;
+width: min-content;
+}
+.about > .container > .flex-container > .about-h > .flex-container {
+  flex-flow: row;
+  }
+
+/* .about-p p {
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 2rem;
+} */
+
+/* .about > .divider {
+margin: 0 2rem 0 2rem;
+border: 1px solid #072ac8;
+border-radius: 10px;
+width: 50px;
+} */
 
 
 /* Medium screens */
@@ -532,6 +595,11 @@ place-content: center;
   margin-left: 1.5rem;
 }
 
+/* Features and Benefits section */
+.cards > .title h2 {
+  padding: 0;
+  line-height: initial;
+}
 
    /* Hero design system    */
    .hero > h1 {
