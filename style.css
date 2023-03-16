@@ -451,6 +451,7 @@ padding: 0;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .cards > .b-f > .box {height: 350px;}
 .cards > .b-f > .box > .card_title{
@@ -497,16 +498,17 @@ padding-top: 0;
 }
 .about > .container > .flex-container {
   flex-flow: row;
-  justify-content: flex-start;
-width: fit-content;
-  padding-bottom: 0;
+  /* justify-content: flex-start; */
+/* width: fit-content; */
+padding: 1rem 0 1rem;
   /* padding-right: calc(1.5rem * 0.5); */
   /* margin-right: 2rem; */
 }
 .about > .container > .flex-container img{
-  width: 50vw;
-  height: auto;
-  border-radius: 0 10px 10px 0;
+  width: 55vw;
+  height: 60vh;
+  opacity: 60%;
+  /* border-radius: 0 10px 10px 0; */
 }
 .about-p {
   display: flex;
@@ -517,16 +519,16 @@ width: fit-content;
   color: #1e96fc;
   text-transform: uppercase;
   font-weight: lighter;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   text-align: center;
-  margin-left: 2rem;
+  margin-left: 0;
   margin-top: 0;
 }
 
 .about > .container > .flex-container > .about-h {
 flex-flow: column;
-width: 600px;
-justify-content: center;
+width: 700px;
+justify-content: flex-start;
 align-items: center;
   padding-right: calc(1.5rem * 0.5);
   /* padding-left: calc(1.5rem * 0.5); */
@@ -534,15 +536,27 @@ align-items: center;
 }
 .about > .container > .flex-container > .about-h > .flex-item {
   display: flex;
-  flex-flow: row;
-padding: 1rem;
+  flex-flow: column;
+padding: 0 1rem 0 1rem;
 height: auto;
+margin-top: 1rem;
+width: auto;
   }
   .about > .container > .flex-container > .about-h > .flex-item p {
   line-height: 2rem;
   border-left: 1px solid #a2d6f9;
   }
-
+  .about > .container > .flex-container > .about-h > .flex-item >.btn {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    place-self: center;
+  }
+  .about > .container > .flex-container > .about-h > .flex-item >.btn .btn-secondary {
+  width: 115px;
+  }
 
 
 /* .about-p p {
@@ -723,6 +737,7 @@ nav > .nav-btn > label {
 
   /* About section */
   .about{max-width: 540px;}
+  .about > .container {padding-right: 0;}
   .about > .container > .flex-container {
     display: flex;
 flex-flow: column;
@@ -739,6 +754,7 @@ flex-flow: column;
     display: flex;
     flex-flow: column;
     align-items: baseline;
+    width: auto;
   }
 
   .about > .container > .flex-container > .about-h > .flex-item {
@@ -752,7 +768,6 @@ border: none;
 margin: 0;
 padding: 0;
   }
-
 
   }
 
