@@ -2309,7 +2309,7 @@ border-top: 2px solid #1e96fc;}
     border-radius: inherit;
     object-fit: cover;
 }
-
+.box > .card_title > h4 {color: #1e96fc;}
 .box > .card_title > p {
   text-align: center;
   font-weight: lighter;
