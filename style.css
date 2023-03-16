@@ -498,15 +498,15 @@ padding-top: 0;
 .about > .container > .flex-container {
   flex-flow: row;
   justify-content: flex-start;
-  /* width: max-content; */
+width: fit-content;
   padding-bottom: 0;
-  padding-right: calc(1.5rem * 0.5);
+  /* padding-right: calc(1.5rem * 0.5); */
   /* margin-right: 2rem; */
 }
 .about > .container > .flex-container img{
   width: 50vw;
-  height: 80vh;
-  border-radius: 50%;
+  height: auto;
+  border-radius: 0 10px 10px 0;
 }
 .about-p {
   display: flex;
@@ -519,13 +519,18 @@ padding-top: 0;
   font-weight: lighter;
   padding: 1rem;
   text-align: center;
+  margin-left: 2rem;
+  margin-top: 0;
 }
 
 .about > .container > .flex-container > .about-h {
 flex-flow: column;
-width: 700px;
+width: 600px;
 justify-content: center;
 align-items: center;
+  padding-right: calc(1.5rem * 0.5);
+  /* padding-left: calc(1.5rem * 0.5); */
+
 }
 .about > .container > .flex-container > .about-h > .flex-item {
   display: flex;
@@ -575,11 +580,12 @@ width: 50px;
 @media 
   only screen
   and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){
-.flex-grid {
+.wrapper > .flex-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
          justify-content: center;
          width: auto;
-         padding: 10rem 1rem 0 1rem;      }
+         padding: 0 1rem 0 1rem;      }
+.bg-img {height: 70vh;}         
 
 /* .wrapper > * {padding: 0;}          */
 .wrapper > .nav > .nav-header {
@@ -714,6 +720,39 @@ nav > .nav-btn > label {
     width: 310px;
   margin-left: 1rem;
   }
+
+  /* About section */
+  .about{max-width: 540px;}
+  .about > .container > .flex-container {
+    display: flex;
+flex-flow: column;
+  }
+  .about > .container > .flex-container img{
+  max-width: 540px;
+  width: auto;
+  }
+  .about > .container > .flex-container h2 {
+    margin-left: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+  .about > .container > .flex-container > .about-h {
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+  }
+
+  .about > .container > .flex-container > .about-h > .flex-item {
+width: 350px;
+margin-top: 0;
+  }
+
+  .about > .container > .flex-container > .about-h > .flex-item p {
+text-align: center;
+border: none;
+margin: 0;
+padding: 0;
+  }
+
 
   }
 
