@@ -602,13 +602,6 @@ margin: 0;
 }
 
 
-/* .product {
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
-} */
-
-
 main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
