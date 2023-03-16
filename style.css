@@ -745,6 +745,7 @@ flex-flow: column;
   .about > .container > .flex-container img{
   max-width: 540px;
   width: auto;
+  height: auto;
   }
   .about > .container > .flex-container h2 {
     margin-left: 1.5rem;
