@@ -656,6 +656,7 @@ padding: 0;
 .shop-c > .p-card > .product-card > .product-img img{
   width: 125px;
   height: inherit;
+  border-radius: 7px 0 0 7px;
 }
 .shop-c > .p-card > .product-card > .product-card-text {
   width: 125px;
