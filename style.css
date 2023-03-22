@@ -112,7 +112,7 @@ BG #FAFBFC
 .code-s {
   padding-bottom: 1rem;
   margin-left: 0.5rem;}
-.code-s > details > summary li {padding-bottom: 1rem;}
+.code-s > details > summary i {padding-bottom: 1rem;}
 .code-s > details > ul > li::marker {list-style-type: none;}
 .gist .gist-data {border-left: 3px solid #072ac8}
 .gist .blob-num::before {display: none;}
@@ -2708,11 +2708,11 @@ border-top: 2px solid #1e96fc;}
   transition: 0.4s;
 }
 
-.card a{
+/* .card a{
   text-decoration: none;
   color: #072ac8;
   font-weight: lighter;
-}
+} */
 .card .card_img {
   width: 300px;
   height: 200px;
@@ -2748,12 +2748,10 @@ border-top: 2px solid #1e96fc;}
   width: inherit;
   word-wrap: break-word;
 }
-.card > button {
+
+.card > .c-btn{ 
   display: flex;
-  align-items: flex-end;
-  text-align: center;
-  margin:auto;
-}
+justify-content: center;}
 
 .card:hover {transform: scale(0.9, 0.9);}
 
@@ -2810,10 +2808,14 @@ border-top: 2px solid #1e96fc;}
   margin-top: 0;
 }
 
-.product-card-text > button{
- margin-left: 4rem;
-  margin-top: 1rem;
-}
+.product-card-text > .c-btn{
+    display: flex;
+  justify-content: center;
+padding-top: 1rem;}
+
+ /* margin-left: 4rem;
+  margin-top: 1rem; */
+
 
 
 
