@@ -8,6 +8,9 @@
 <!--CSS Stylesheet Link-->
 <link rel="stylesheet" href="style.css">
 
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
   <!--Google Fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +23,25 @@
 </head>
 <body>
 
-  <section class="side-bar bg">
+  <!--Side Navbar-->
+  <div class="side-bar bg">
     <div class="logo container">
-    <img class="img-fluid" src="img/Skincare (3).png" alt="Logo Design System"><!--Logo-->
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
     </div>
     <!--Side bar links-->
         <div class="items">
           <details>
             <summary>
-              <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-            </summary>
-          </details>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
 
           <details>
             <summary>
-            <li><i class="fab fa-uikit"></i><a href="#">Style Elements</a></li>
-            </summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
             <ul>
-              <li><i class="fab fa-uikit"></i><a class="active" href="typography.html">Typography</a></li>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
               <!--Body text
                   H1 to H6
                   Headline, subheadline and image caption-->
@@ -56,68 +60,69 @@
                   Rounded corners
                   Borders-->
             </ul>
-          </details>
-    
+          </details><!--.details-->
+
           <details>
             <summary>
-              <li><i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a></li>
-            </summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
             <ul>
               <li><i class="fab fa-uikit" id="#navbar"></i>Navbar</li>
               <li><i class="fab fa-uikit" id="#dropdown"></i>Dropdown</li>
               <li><i class="fab fa-uikit" id="#buttons"></i>Buttons</li>
               <li><i class="fab fa-uikit" id="#breadcrumbs"></i>Breadcrums</li>
             </ul>
-          </details>
+          </details><!--.details-->
     
           <details>
             <summary>
-              <li><i class="fa-solid fa-star"></i></i><a href="forms.html">Forms</a></li>
-            </summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
             <ul>
               <li><i class="fab fa-uikit" id="#fields"></i>Fields</li>
               <li><i class="fab fa-uikit" id="#labels"></i>Labels</li>
               <li><i class="fab fa-uikit" id="#submit"></i>Submit</li>
             </ul>
-          </details>
+          </details><!--.details-->
     
           <details>
             <summary>
-              <li><i class="fa-solid fa-star"></i></i><a href="lists.html">Lists</a></li>
-            </summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
             <ul>
               <li><i class="fab fa-uikit" id="#unordered"></i>Unordered</li>
               <li><i class="fab fa-uikit" id="#ordered"></i>Ordered</li>
             </ul>
-          </details>
+          </details><!--.details-->
 
           <details>
             <summary>
-              <li><i class="fa-solid fa-star"></i></i><a href="components.html">Components</a></li>
-            </summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
             <ul>
               <li><i class="fab fa-uikit" id="#cards"></i>Cards</li>
               <li><i class="fab fa-uikit" id="#carousel"></i>Carousel</li>
               <li><i class="fab fa-uikit" id="#table"></i>Table</li>
               <li><i class="fab fa-uikit" id="#footer"></i>Footer</li>
             </ul>
-          </details>
+          </details><!--.details-->
 
           <details>
             <summary>
-              <li><i class="fa-solid fa-file"></i><a href="resources.html">Resources</a></li>
-            </summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
             <ul>
               <li><i class="fab fa-uikit" id="#support"></i>Support</li>
             </ul>
-          </details>
+          </details><!--.details-->
+
           <details>
             <summary>
-            <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
-          </summary>
-          </details>  
-                </div>
-    </section>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
     <!--End of Sidebar-->
 
 
@@ -183,7 +188,7 @@
 <hr class="divider">
 
 <h5>In this section we demonstrate how it supposed to look with the <b>.bg {background-color: #FAFBFC;}</b>
-the different kinds of text</></h5>
+the different kinds of text</h5>
 
 <!-- <div class="container"> -->
     <!-- <div class="flex-container bg"> -->
@@ -200,7 +205,7 @@ the different kinds of text</></h5>
                         <tr class="c-table__row">
                             <td>&lt;h1&gt;&lt;/h1&gt;</td>
                             <td>1.33</td>
-                            <td><h1>h1. Heading</h1></td>
+                            <td class="h1">h1. Heading</td>
                         </tr>
                         <tr class="c-table__row">
                           <td>&lt;h2&gt;&lt;/h2&gt;</td>
@@ -247,35 +252,29 @@ the different kinds of text</></h5>
 <div class="code-s container">
   <p>We provided as well, .h1 through .h6 classes in case is difficult to target the heading</p>
   <details>
-    <summary>
-      <li><i class="fa-solid fa-code"> HTML</i></li>
+    <summary><i class="fa-solid fa-code"> HTML</i>
     </summary>
     <ul>
       <li>  
         <!-- HTML -->
-        <script src="https://gist.github.com/mariaelenacossio/a51844769b8cca69f607e6d5be5b9c71.js"></script>      </li>
+        <script src="https://gist.github.com/mariaelenacossio/a51844769b8cca69f607e6d5be5b9c71.js"></script>      
+      </li>
     </ul>
   </details>
   <details>
-    <summary>
-      <li><i class="fa-solid fa-file-code"> CSS</i> 
-      </summary>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
       <ul>
         <li>
         <!-- CSS -->
-        <script src="https://gist.github.com/mariaelenacossio/e82f6795963cdf02c16cd4687a54091a.js"></script>      </li>
+        <script src="https://gist.github.com/mariaelenacossio/e82f6795963cdf02c16cd4687a54091a.js"></script>     
+       </li>
     </ul>
   </details>
 </div>
 
-
-
-<!-- </div> -->
-
 <!-- End of Headings -->
 
 <!--Paragraph sections-->
-<!-- <div class="container"> -->
   <h2>Paragraphs</h2>
   <hr>
   <h5>Factors like type size, line height, and line length are elements that we are considering in each paragraph.
@@ -298,23 +297,21 @@ the different kinds of text</></h5>
 <!--Code snippet for paragraphs-->
 <div class="code-s container">
   <details>
-    <summary>
-      <li><i class="fa-solid fa-code"> HTML</i></li>
-    </summary>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
     <ul>
       <li>  
         <!-- HTML -->
-        <script src="https://gist.github.com/mariaelenacossio/b0be3aa7fb7e668eadae4fb6d6d8c993.js"></script>      </li>
+        <script src="https://gist.github.com/mariaelenacossio/b0be3aa7fb7e668eadae4fb6d6d8c993.js"></script>      
+      </li>
     </ul>
   </details>
   <details>
-    <summary>
-      <li><i class="fa-solid fa-file-code"> CSS</i> 
-      </summary>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
       <ul>
         <li>
         <!-- CSS -->
-        <script src="https://gist.github.com/mariaelenacossio/4cf2c0cd4d5e90b450338605cfc7df51.js"></script>      </li>
+        <script src="https://gist.github.com/mariaelenacossio/4cf2c0cd4d5e90b450338605cfc7df51.js"></script>      
+      </li>
     </ul>
   </details>
 </div>
@@ -332,6 +329,7 @@ the different kinds of text</></h5>
       <li class="list-inline-item"><a href="#">Terms</a></li>
       <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
   </ul> -->
+  </div><!--.social-->
   <p class="copyright">BEYOND Skincare © 2023</p>
 </footer>
 
