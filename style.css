@@ -293,7 +293,7 @@ hr, .hr {
   /* Images */
   /* Hero image for sample site */
   .bg-img{
-    background-image: url(img/birgith-roosipuu-CJFG-GOAeVk-unsplash.jpg);
+    background-image: url(img/img-2.jpg);
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
@@ -404,7 +404,7 @@ margin-left: 1rem;}
   color: #FAFBFC
 }
 
-.wrapper > .nav > .nav-links button {
+.wrapper > .nav > .nav-links > .c-btn a {
   width: fit-content;
   border-radius: 20px;
   height: min-content;
@@ -885,8 +885,13 @@ place-content: center;
   padding-bottom: 2rem;
 }
 
-.wrapper > .nav > .nav-links button {
+.wrapper > .nav > .nav-links > .c-btn a {
   margin-left: 1.5rem;
+}
+.wrapper > .nav > .nav-btn{
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
 }
 
 /* Features and Benefits section */
@@ -2350,8 +2355,15 @@ font-weight: bold;
   position: absolute;
 }
 
+/* Resources section */
 
-
+.support > .flex-container > .product-card > .product-card-text h4 {
+  font-size: 1.5rem;
+}
+.support > .flex-container > .product-card > .product-card-text > .c-btn a {
+color: #FAFBFC;
+padding-right: 0.75rem;
+}
 
 /* Navigation bar  for design system*/
 
@@ -2366,7 +2378,7 @@ font-weight: bold;
   }
 
 /* This is for the links */
-  .resources a { 
+  .resources  a { 
     color: #072ac8;
       padding-right: 2rem;
       text-decoration: none;
@@ -2476,6 +2488,11 @@ padding: 1rem 1rem 0 2rem;
     }
     .resources {
     padding-right: 2rem;
+    }
+
+    /* Support Section */
+    .support > .flex-container > .product-card > .product-card-text h4 {
+    text-align: center;
     }
 
   }
@@ -3086,10 +3103,12 @@ table {
 
 
 /* Footer */
+
 .footer-basic {
   padding: 1rem 0;
   background-color: #072ac8;
   color: #FAFBFC;
+  margin-top: auto;
 }
 
 .footer-basic ul {
