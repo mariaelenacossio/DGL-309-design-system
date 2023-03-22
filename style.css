@@ -410,6 +410,21 @@ margin-left: 1rem;}
   border-radius: 20px;
   height: min-content;
 }
+/* Dropdown for nav Sample site */
+.wrapper > .nav > .nav-links > .dropdown {
+  margin-right: 1rem;
+}
+.wrapper > .nav > .nav-links > .dropdown > label {
+background-color: transparent;
+box-shadow: none;
+}
+.wrapper > .nav > .nav-links > .dropdown > .list > .option a {
+color: #072ac8;
+font-size: 1rem;
+}
+.wrapper > .nav > .nav-links > .dropdown > .list > .option {
+border-bottom: 1px solid #1e96fc;
+}
 
 
 /* Wrapper for responsiveness */
