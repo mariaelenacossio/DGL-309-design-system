@@ -1106,21 +1106,7 @@ justify-content: center;
 
 
 
-/* to remove the arrow */
-details summary::-webkit-details-marker {
-  display:none;
-}
-details > summary {
-  list-style: none;
-}
-details > summary a {
-  text-decoration: none;
-  padding-left: 0.5rem;
-  color: black;
-}
-details > summary i {
-  margin-left: 1rem;
-}
+
 
 
 .separator {
@@ -2262,17 +2248,6 @@ max-width: 300px;
   height: 250px;
 }
 
-/* .h2-sidebar {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-} */
-
-
-/* Add a border when is active */
-/* .side-bar .items {
-
-} */
 
 .side-bar .items li {
   list-style: none;
@@ -2280,31 +2255,51 @@ max-width: 300px;
   transition: 0.3s ease;
 }
 
-/* Links hover */
-.side-bar .items li:hover {
-  background: #a2d6f9;
-  cursor: pointer;
+.side-bar .items li a {
+  text-decoration: none;
+  color: #072ac8;
+  transition: 0.3s ease;
+}
+/* Side bar links */
+.active {
+font-weight: bold;
 }
 
-.side-bar .items li:nth-child(1) {
-  border-left: 4px solid #fff;
+.side-bar > .items > details > summary i {
+  list-style: none;
+  padding: 1rem 1rem 1rem 0;
+  transition: 0.3s ease;
+}
+
+/* Side-bar links hover */
+.side-bar > .items > details > summary:hover {
+  background: #a2d6f9;
+  cursor: pointer;
+  border-left: 4px solid #072ac8;
 }
 
 /* Sidebar link text color */
-.side-bar .items li i {
-  color: black;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 14px;
-  margin: 0 10px 0 25px;
+
+.side-bar > .items > details > summary i {
+  color: #072ac8;
+  line-height: 1.8rem;
 }
+
+.side-bar > .items > details > summary a {
+  color: #072ac8;
+}
+
 /* Sidebar link text color hover */
-.side-bar .items li:hover i,
-.side-bar .items li:hover a {
-  color: #F3F4F6;
-}
+.side-bar > .items > details > summary:hover i,
+.side-bar > .items > details > summary:hover a
+ {color: #FAFBFC;}
+
+ .side-bar > .items > details > i,
+ .side-bar > .items > details > a{
+  display: inline-block;
+  padding: 1rem 1rem 1rem 0;
+  transition: 0.3s ease;
+ }
 
 .side-bar .items li a {
   text-decoration: none;
@@ -2312,6 +2307,34 @@ max-width: 300px;
   font-weight: 300px;
   transition: 0.3s ease;
 }
+.side-bar > .items > details ul{
+  margin-left: 1rem;
+    padding-top: 0;
+}
+
+.side-bar > .items > details ul > li {padding-left: 1rem;}
+.side-bar > .items > details ul > li i {padding-right: 1rem;}
+.side-bar > .items > details ul > li a {color: #2b2b2b;}
+
+
+
+
+/* to remove the arrow */
+details summary::-webkit-details-marker {
+  display:none;
+}
+details > summary {
+  list-style: none;
+}
+details > summary a {
+  text-decoration: none;
+  padding-left: 0.5rem;
+  color: black;
+}
+details > summary i {
+  margin-left: 1rem;
+}
+
 /* Side bar links */
 .active {
 font-weight: bold;
