@@ -1631,6 +1631,10 @@ figcaption {
   list-style: none;
   padding-bottom: 1rem;
 }
+.group-img > .flex-img p {
+  text-align: center;
+  margin-left: 0;
+}
 
 .flex-img {
 display: flex;
@@ -1654,7 +1658,7 @@ padding: 1rem;
 	margin: 30px;
 }
 .thumbnail-1 {
-	background-image: url("img/kevin-laminto-LL1vA5sUs6g-unsplash.jpg");
+	background-image: url("img/img-6.jpg");
 	background-position: center center;
 	background-size: cover;
 	perspective: 450px;
