@@ -13,6 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
 <!--Font Awesome Assets-->
 <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
 <link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
@@ -20,103 +23,107 @@
 </head>
 <body>
 
-  <section class="side-bar bg">
+  <!--Side Navbar-->
+  <div class="side-bar bg">
     <div class="logo container">
-    <img class="img-fluid" src="img/Skincare (3).png" alt="Logo Design System"><!--Logo-->
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
     </div>
-
-
     <!--Side bar links-->
-    <div class="items">
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-        </summary>
-      </details>
+        <div class="items">
+          <details>
+            <summary>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
 
-      <details>
-        <summary>
-        <li><i class="fab fa-uikit"></i><a href="#">Style Elements</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
-          <!--Body text
-              H1 to H6
-              Headline, subheadline and image caption-->
-          <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
-          <!--Color Palette
-              Body Text
-              Titles or display text
-              Background
-              Primary and secondary color for buttons
-              Success, danger, info and warning -->
-          <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
-          <!--Margins and paddings for div, img etc.-->
-          <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
-          <!--Styles
-              Required aspect ratios for diferent uses
-              Rounded corners
-              Borders-->
-        </ul>
-      </details>
+          <details>
+            <summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+              <!--Body text
+                  H1 to H6
+                  Headline, subheadline and image caption-->
+              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+              <!--Color Palette
+                  Body Text
+                  Titles or display text
+                  Background
+                  Primary and secondary color for buttons
+                  Success, danger, info and warning -->
+              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+              <!--Margins and paddings for div, img etc.-->
+              <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+              <!--Styles
+                  Required aspect ratios for diferent uses
+                  Rounded corners
+                  Borders-->
+            </ul>
+          </details><!--.details-->
 
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit" id="#navbar"></i>Navbar</li>
-          <li><i class="fab fa-uikit" id="#dropdown"></i>Dropdown</li>
-          <li><i class="fab fa-uikit" id="#buttons"></i>Buttons</li>
-          <li><i class="fab fa-uikit" id="#breadcrumbs"></i>Breadcrums</li>
-        </ul>
-      </details>
+          <details>
+            <summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit" id="#navbar"></i>Navbar</li>
+              <li><i class="fab fa-uikit" id="#dropdown"></i>Dropdown</li>
+              <li><i class="fab fa-uikit" id="#buttons"></i>Buttons</li>
+              <li><i class="fab fa-uikit" id="#breadcrumbs"></i>Breadcrums</li>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit" id="#fields"></i>Fields</li>
+              <li><i class="fab fa-uikit" id="#labels"></i>Labels</li>
+              <li><i class="fab fa-uikit" id="#submit"></i>Submit</li>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit" id="#unordered"></i>Unordered</li>
+              <li><i class="fab fa-uikit" id="#ordered"></i>Ordered</li>
+            </ul>
+          </details><!--.details-->
 
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-star"></i></i><a class="active" href="forms.html">Forms</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit" id="#fields"></i>Fields</li>
-          <li><i class="fab fa-uikit" id="#labels"></i>Labels</li>
-          <li><i class="fab fa-uikit" id="#submit"></i>Submit</li>
-        </ul>
-      </details>
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit" id="#cards"></i>Cards</li>
+              <li><i class="fab fa-uikit" id="#carousel"></i>Carousel</li>
+              <li><i class="fab fa-uikit" id="#table"></i>Table</li>
+              <li><i class="fab fa-uikit" id="#footer"></i>Footer</li>
+            </ul>
+          </details><!--.details-->
 
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-star"></i></i><a href="lists.html">Lists</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit" id="#unordered"></i>Unordered</li>
-          <li><i class="fab fa-uikit" id="#ordered"></i>Ordered</li>
-        </ul>
-      </details>
-
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-star"></i></i><a href="components.html">Components</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit" id="#cards"></i>Cards</li>
-          <li><i class="fab fa-uikit" id="#carousel"></i>Carousel</li>
-          <li><i class="fab fa-uikit" id="#table"></i>Table</li>
-          <li><i class="fab fa-uikit" id="#footer"></i>Footer</li>
-        </ul>
-      </details>
-
-      <details>
-        <summary>
-          <li><i class="fa-solid fa-file"></i><a href="resources.html">Resources</a></li>
-        </summary>
-        <ul>
-          <li><i class="fab fa-uikit" id="#support"></i>Support</li>
-        </ul>
-      </details>
-        <li><i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a></li>
-    </div>
-</section>
-<!--End of Sidebar-->
+          <details>
+            <summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit" id="#support"></i>Support</li>
+            </ul>
+          </details><!--.details-->
+          
+          <details>
+            <summary>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
+    <!--End of Sidebar-->
 
 
 <section class="interface">
@@ -195,7 +202,7 @@
           placeholder="In a few sentences let me know about you and what are you looking for..." 
           style="height:200px"></textarea>
           <!-- <div class="flex-item"> -->
-            <button role="button" class="btn-primary">Submit</button>
+            <button class="btn-primary">Submit</button>
           <!-- </div> -->
         </form>
       </div>
@@ -204,8 +211,7 @@
 <!-- Code snippet -->
 <div class="code-s">
   <details>
-    <summary>
-      <li><i class="fa-solid fa-code"> HTML</i></li>
+    <summary><i class="fa-solid fa-code"> HTML</i>
     </summary>
     <ul>
       <li>  
@@ -215,8 +221,7 @@
        </ul>
   </details>
   <details>
-    <summary>
-      <li><i class="fa-solid fa-file-code"> CSS</i></li> 
+    <summary><i class="fa-solid fa-file-code"> CSS</i>
       </summary>
       <ul>
         <li>
@@ -239,6 +244,7 @@
       <li class="list-inline-item"><a href="#">Terms</a></li>
       <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
   </ul> -->
+  </div><!--.social-->
   <p class="copyright">BEYOND Skincare © 2023</p>
 </footer>
 
