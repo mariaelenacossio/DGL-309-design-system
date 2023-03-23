@@ -1007,6 +1007,15 @@ nav > .nav-btn > label {
   margin-left: 2rem;
 }
 
+/* Contact page carousel/hero section */
+.contact > .carousel > .carousel-inner {
+height: 70vh;
+}
+.contact > .carousel > .carousel-inner > .carousel-item img{
+  height: 70vh;
+}
+.contact > .flex-grid {top:10rem;}
+
 }
 
 
