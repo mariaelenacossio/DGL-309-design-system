@@ -928,7 +928,7 @@ place-content: center;
   padding-right: 0;
   background-color: #a2d6f9;
   position: fixed;
-  top: 0;
+  top: 43px;
 }
 .wrapper > .nav > .nav-links > .dropdown {
 margin-right: 0;
@@ -2748,7 +2748,7 @@ float: right;
   .nav > .nav-links {
     position: absolute;
     display: block;
-    width: 100%;
+    width: auto;
     background-color: #333;
     height: 0px;
     transition: all 0.3s ease-in;
@@ -2762,14 +2762,13 @@ float: right;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
+    position: relative;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(60vh - 50px);
+    height: calc(69vh - 50px);
     overflow-y: auto;
 position: relative;
 width: fit-content;
-
-
   }
   .nav > #nav1-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -2788,6 +2787,7 @@ width: fit-content;
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+
 
 }
 
