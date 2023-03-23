@@ -3070,7 +3070,7 @@ flex-flow: column;
     transform: translate(0, -50%);
     text-align: center;
     width: 2.5rem;
-    z-index: 10;
+    z-index: 1;
 }
 
 
