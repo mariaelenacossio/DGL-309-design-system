@@ -426,6 +426,35 @@ font-size: 1rem;
 border-bottom: 1px solid #1e96fc;
 }
 
+/* Design system Nav contact page */
+
+.contact > .carousel {
+  width: 100vw;
+  height: 80vh;
+}
+.contact > .nav {
+  position: absolute;
+  top: 0;
+}
+
+.contact > .flex-grid {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  padding: 20rem 0 1rem 2.5rem;
+}
+.contact > .flex-grid > .banner-inner {
+  align-items: center;
+}
+
+.contact > .flex-grid > .banner-inner button{
+margin-left: 0;
+}
+.contact > .flex-grid > .banner-inner > .btn-cta {
+  width: auto;
+  padding: 0.275rem 0.75rem 0.275rem 1rem;
+}
+
 
 /* Wrapper for responsiveness */
 .wrapper {
