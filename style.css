@@ -430,7 +430,7 @@ border-bottom: 1px solid #1e96fc;
 
 .contact > .carousel {
   width: 100vw;
-  height: 80vh;
+  /* height: 80vh; */
 }
 .contact > .nav {
   position: absolute;
@@ -441,7 +441,13 @@ border-bottom: 1px solid #1e96fc;
   position: absolute;
   top: 0;
   width: 100vw;
-  padding: 20rem 0 1rem 2.5rem;
+  padding: 20rem 1rem;
+}
+.contact > .carousel > .carousel-inner{
+  height: 100vh;
+}
+.contact > .carousel > .carousel-inner > .carousel-item img {
+  height: auto;
 }
 .contact > .flex-grid > .banner-inner {
   align-items: center;
@@ -449,10 +455,11 @@ border-bottom: 1px solid #1e96fc;
 
 .contact > .flex-grid > .banner-inner button{
 margin-left: 0;
+margin-top: 1rem;
 }
 .contact > .flex-grid > .banner-inner > .btn-cta {
   width: auto;
-  padding: 0.275rem 0.75rem 0.275rem 1rem;
+  padding: 0.5rem;
 }
 
 
