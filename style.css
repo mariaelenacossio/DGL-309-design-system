@@ -910,9 +910,10 @@ font-weight: lighter;
          justify-content: center;
          width: auto;
          padding: 0 1rem 0 1rem;      }
-.bg-img {height: 70vh;}         
+.bg-img {height: 90vh;}         
 
 /* .wrapper > * {padding: 0;}          */
+.wrapper > .nav {padding-top: 0;}
 .wrapper > .nav > .nav-header {
 /* margin-left: 5rem; */
 display: contents;
