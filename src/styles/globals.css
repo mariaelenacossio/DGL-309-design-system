@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Token CSS Variables ─────────────────────────────────────────── */
+@layer base {
+  :root {
+    /* Light mode surfaces (RGB triplets for Tailwind alpha support) */
+    --surface:         250 251 252;   /* neutral-50  */
+    --surface-raised:  255 255 255;   /* white        */
+    --surface-overlay: 255 255 255;   /* white        */
+    --surface-sunken:  241 243 245;   /* neutral-100  */
+
+    /* Light mode text */
+    --on-surface:  43 43 43;          /* neutral-800  */
+    --on-primary:  255 255 255;
+    --on-secondary:255 255 255;
+
+    /* Light mode borders */
+    --border:        209 213 219;     /* neutral-300  */
+    --border-strong: 107 114 128;     /* neutral-500  */
+
+    /* Focus ring */
+    --focus-ring:   7 42 200;         /* primary-500  */
+
+    /* Semantic colours */
+    --color-success: 22 163 74;
+    --color-warning: 217 119 6;
+    --color-error:   220 38 38;
+    --color-info:    3 105 161;
+
+    /* Scrollbar */
+    color-scheme: light;
+  }
+
+  .dark {
+    --surface:         17 24 39;      /* neutral-900  */
+    --surface-raised:  31 41 55;      /* neutral-800 approx */
+    --surface-overlay: 55 65 81;      /* neutral-700  */
+    --surface-sunken:  11 17 27;      /* deeper dark  */
+
+    --on-surface:  249 250 251;       /* neutral-50   */
+    --on-primary:  255 255 255;
+    --on-secondary:255 255 255;
+
+    --border:        55 65 81;        /* neutral-700  */
+    --border-strong: 156 163 175;     /* neutral-400  */
+
+    --focus-ring:   100 142 255;      /* primary-300  */
+
+    --color-success: 74 222 128;
+    --color-warning: 251 191 36;
+    --color-error:   248 113 113;
+    --color-info:    56 189 248;
+
+    color-scheme: dark;
+  }
+
+  /* Base resets */
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-neutral-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-50;
+    @apply font-sans antialiased;
+    min-height: 100dvh;
+    transition: background-color 200ms ease, color 200ms ease;
+  }
+
+  /* Focus visible — keyboard only */
+  :focus-visible {
+    outline: 2px solid rgb(var(--focus-ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Smooth theme transitions */
+  *, *::before, *::after {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: ease;
+    transition-duration: 150ms;
+  }
+
+  /* Override transitions for motion-sensitive users */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Typography base */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold leading-tight;
+  }
+
+  p { @apply leading-relaxed; }
+
+  a {
+    @apply text-primary-500 dark:text-primary-300 underline-offset-2;
+    @apply hover:text-primary-700 dark:hover:text-primary-200;
+    @apply transition-colors;
+  }
+
+  code, kbd, pre {
+    @apply font-mono;
+  }
+
+  /* Scrollbar — webkit */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-neutral-300 dark:bg-neutral-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-neutral-400 dark:bg-neutral-500; }
+}
+
+/* ─── Component Layer ─────────────────────────────────────────────────────── */
+@layer components {
+  /* Container */
+  .container-ds {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Code block */
+  .code-block {
+    @apply font-mono text-sm bg-neutral-900 dark:bg-neutral-800 text-neutral-100;
+    @apply rounded-xl p-4 overflow-x-auto;
+    @apply border border-neutral-700;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply border-t border-neutral-200 dark:border-neutral-700 my-12;
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4;
+    @apply focus:z-50 focus:bg-primary-500 focus:text-white focus:px-4 focus:py-2;
+    @apply focus:rounded-lg focus:shadow-elevation-3;
+  }
+
+  /* Colour swatch */
+  .color-swatch {
+    @apply h-16 w-full rounded-lg shadow-elevation-1 transition-transform hover:scale-105;
+  }
+
+  /* DS sidebar nav link */
+  .ds-nav-link {
+    @apply flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium;
+    @apply text-neutral-600 dark:text-neutral-400;
+    @apply hover:bg-neutral-100 dark:hover:bg-neutral-800;
+    @apply hover:text-neutral-900 dark:hover:text-neutral-100;
+    @apply transition-colors;
+  }
+
+  .ds-nav-link.active {
+    @apply bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-300;
+  }
+}
+
+/* ─── Utility Layer ───────────────────────────────────────────────────────── */
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+
+  .gradient-brand {
+    background: linear-gradient(135deg, #072ac8 0%, #1e96fc 60%, #a2d6f9 100%);
+  }
+
+  .gradient-dark {
+    background: linear-gradient(135deg, #020d4a 0%, #041b88 50%, #072ac8 100%);
+  }
+
+  .glass {
+    @apply bg-white/10 dark:bg-white/5 backdrop-blur-md border border-white/20;
+  }
+}

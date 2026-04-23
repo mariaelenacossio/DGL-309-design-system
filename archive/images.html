@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariaelena Cossio Clark">
+<!--CSS Stylesheet Link-->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
+<!--Font Awesome Assets-->
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<title>BEYOND Skincare</title>
+</head>
+<body>
+
+  <!--Side Navbar-->
+  <div class="side-bar bg">
+    <div class="logo container">
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
+    </div>
+    <!--Side bar links-->
+        <div class="items">
+          <details>
+            <summary>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+              <!--Body text
+                  H1 to H6
+                  Headline, subheadline and image caption-->
+              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+              <!--Color Palette
+                  Body Text
+                  Titles or display text
+                  Background
+                  Primary and secondary color for buttons
+                  Success, danger, info and warning -->
+              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+              <!--Margins and paddings for div, img etc.-->
+              <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+              <!--Styles
+                  Required aspect ratios for diferent uses
+                  Rounded corners
+                  Borders-->
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#nav-bar"></a><li><i class="fab fa-uikit"></i>Navbar</li></a>
+              <a href="#dropdown"><li><i class="fab fa-uikit"></i>Dropdown</li></a>
+              <a href="#buttons"><li><i class="fab fa-uikit"></i>Buttons</li></a>
+              <a href="#breadcrumbs"><li><i class="fab fa-uikit"></i>Breadcrumbs</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#fields"><li><i class="fab fa-uikit"></i>Fields</li></a>
+              <a href="#labels"><li><i class="fab fa-uikit"></i>Labels</li></a>
+              <a href="#submit"><li><i class="fab fa-uikit" id="#submit"></i>Submit</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#unordered"><li><i class="fab fa-uikit"></i>Unordered</li></a>
+              <a href="#ordered"><li><i class="fab fa-uikit"></i>Ordered</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#cards"><li><i class="fab fa-uikit"></i>Cards</li></a>
+              <a href="#carousel"><li><i class="fab fa-uikit"></i>Carousel</li></a>
+              <a href="#table"><li><i class="fab fa-uikit"></i>Table</li></a>
+              <a href="#footer"><li><i class="fab fa-uikit"></i>Footer</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#support"><li><i class="fab fa-uikit" id="#support"></i>Support</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
+    <!--End of Sidebar-->
+
+
+
+<section class="interface">
+  <!--Top navbar-->
+  <nav class="navigation-bar bg-t">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header"></div>
+    <div class="nav-btn">
+      <label class="label" for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+        <div class="resources">
+      <a href="sample.html" target="_blank">BEYOND Skincare</a>
+        <a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    <div class="nav-links">
+      <a href="typography.html">Typography</a>
+      <a href="colors.html">Colors</a>
+      <a href="spacing.html">Spacing</a>
+      <a href="images.html">Images</a>
+      <a href="navigation.html">Navigation</a>
+      <a href="forms.html">Forms</a>
+      <a href="lists.html">Lists</a>
+      <a href="components.html">Components</a>
+    </div>
+</nav><!-- End of Top navbar -->
+<!-- </section> -->
+
+<!-- Hero Section -->
+<!-- <section class="interface"> -->
+  <div class="hero bg-primary">
+    <h1>Images</h1>
+  </div>
+  <svg class="separator" width="100%" height="100" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+    <g transform="translate(-18.298844,-77.973964)">
+        <path style="fill:#1e96fc;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+        <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+    </g>
+</svg>
+<!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
+                        
+                        
+<!-- End of Hero section -->
+<div class="images container">
+<p>For the images is essential to take in consideration that our <b>.bg-color</b> is light
+   so the pattern that we must use is the following. This should resize any image in the 
+  library according the screen.</p>
+
+<!-- <div class="container"> -->
+<h2>Basic structure</h2>
+<hr class="divider">
+<h5>The aspect ratio is a proportional relationship between an image's width and height. 
+  <br>Essentially, it describes an image's shape.
+  <br>Aspect ratios are written as a formula of width to height, like this: <b>3:2</b> for 
+  smaller screen and for large screens <b>16:9</b>.
+ </h5>
+
+<!-- <div class="container"> -->
+  <div class="single-img container">
+    <figure>
+    <img class="img" src="img/img-6.jpg" alt="Skincare routine tips, Skincare routine for beginners, Natural skincare routine">
+    <figcaption>Aspect ratio 16:9 for max-width 1024px</figcaption>
+  </figure>
+  <figure>
+    <img class="img" src="img/img-6.jpg" alt="Skincare routine tips, Skincare routine for beginners, Natural skincare routine">
+    <figcaption>Aspect ratio 3:2 for min-width 768px</figcaption>
+  </figure>
+</div>
+<!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/7d907b0892955fd264bae1718a9cacf3.js"></script>
+      </li>    
+      </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/e6e1e763f35ded97f7fbf57cffc04e44.js"></script>
+        </li>
+      </ul>
+  </details>
+</div>
+
+
+<!-- Group of images -->
+
+<h2>Group of images</h2>
+<hr class="divider">
+<h5>For responsive group of images its necessary to use the following classes to ensure the same ratio
+  as well, to display accordingly in different screens.</h5>
+
+<div class="gp-img container">
+    <div class="group-img">
+        <div class="flex-img">
+    <img class="img-x b-primary" src="img/img-6.jpg" alt="skincare, mirror">
+    <p>BEYOND Skincare</p>
+  </div>
+            <div class="flex-img">
+              <img class="img-x b-secondary" src="img/img-6.jpg" alt="Skincare routine tips, Skincare routine for beginners, Natural skincare routine">
+              <p>BEYOND Skincare</p>
+            </div>
+          <div class="flex-img">
+            <img class="img-x b-accent" src="img/img-6.jpg" alt="Skincare routine tips, Skincare routine for beginners, Natural skincare routine">
+            <p>BEYOND Skincare</p>
+          </div>
+        <div class="flex-img">
+          <img class="img-x b-alt" src="img/img-6.jpg" alt="Skincare routine tips, Skincare routine for beginners, Natural skincare routine">
+          <p>BEYOND Skincare</p>
+        </div>
+    </div><!--.group-img-->
+</div>
+<!-- </div> -->
+<!-- Code snippet -->
+<div class="container">
+  <details class="code-s">
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/77654698dafa764f14d82e2ea992e993.js"></script>
+      </li>
+      </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/a43ed3d228e4007446dc22d1b2ccd70e.js"></script>
+      </li>
+          </ul>
+  </details>
+</div>
+
+
+<h2>Thumbnails</h2>
+<hr class="divider">
+<h5>This is a smaller version of an image. 
+   When we hover on a thumbnail image, it displays social icons and a text banner. As well, when you click
+   on the social icon, is redirected to the social site.</h5>
+
+<div class="thumbnails container">
+<div class="thumbnail thumbnail-1">
+    <div class="SocialIcons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="profileInfo">
+        <p class="h4">Sample Text</p>
+    </div>
+</div>
+</div>
+
+<!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/139342598101a82a67cca2c2d2306563.js"></script>   
+      </li>
+      </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/1d05a335cdc78ba2a4eb6c591b1910af.js"></script>    
+        </li>
+      </ul>
+  </details>
+</div>
+</div>
+
+<footer class="footer-basic">
+  <div class="social">
+    <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+    <a href="index.html"><i class="fab fa-uikit"></i></a>
+    <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+  <!-- <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Home</a></li>
+      <li class="list-inline-item"><a href="#">Services</a></li>
+      <li class="list-inline-item"><a href="#">About</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+  </ul> -->
+  </div><!--.social-->
+  <p class="copyright">BEYOND Skincare © 2023</p>
+</footer>
+</section>
+
+
+<!--Compiled JS-->
+<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
+

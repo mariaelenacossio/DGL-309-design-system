@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariaelena Cossio Clark">
+<!--CSS Stylesheet Link-->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
+<!--Font Awesome Assets-->
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<title>BEYOND Skincare</title>
+</head>
+<body>
+
+  <!--Side Navbar-->
+  <div class="side-bar bg">
+    <div class="logo container">
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
+    </div>
+    <!--Side bar links-->
+        <div class="items">
+          <details>
+            <summary>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+              <!--Body text
+                  H1 to H6
+                  Headline, subheadline and image caption-->
+              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+              <!--Color Palette
+                  Body Text
+                  Titles or display text
+                  Background
+                  Primary and secondary color for buttons
+                  Success, danger, info and warning -->
+              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+              <!--Margins and paddings for div, img etc.-->
+              <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+              <!--Styles
+                  Required aspect ratios for diferent uses
+                  Rounded corners
+                  Borders-->
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#nav-bar"></a><li><i class="fab fa-uikit"></i>Navbar</li></a>
+              <a href="#dropdown"><li><i class="fab fa-uikit"></i>Dropdown</li></a>
+              <a href="#buttons"><li><i class="fab fa-uikit"></i>Buttons</li></a>
+              <a href="#breadcrumbs"><li><i class="fab fa-uikit"></i>Breadcrumbs</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#fields"><li><i class="fab fa-uikit"></i>Fields</li></a>
+              <a href="#labels"><li><i class="fab fa-uikit"></i>Labels</li></a>
+              <a href="#submit"><li><i class="fab fa-uikit" id="#submit"></i>Submit</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#unordered"><li><i class="fab fa-uikit"></i>Unordered</li></a>
+              <a href="#ordered"><li><i class="fab fa-uikit"></i>Ordered</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#cards"><li><i class="fab fa-uikit"></i>Cards</li></a>
+              <a href="#carousel"><li><i class="fab fa-uikit"></i>Carousel</li></a>
+              <a href="#table"><li><i class="fab fa-uikit"></i>Table</li></a>
+              <a href="#footer"><li><i class="fab fa-uikit"></i>Footer</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#support"><li><i class="fab fa-uikit" id="#support"></i>Support</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
+    <!--End of Sidebar-->
+
+
+<section class="interface">
+  <!--Top navbar-->
+  <nav class="navigation-bar bg-t">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header"></div>
+    <div class="nav-btn">
+      <label class="label" for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+        <div class="resources">
+      <a href="sample.html" target="_blank">BEYOND Skincare</a>
+        <a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    <div class="nav-links">
+      <a href="typography.html">Typography</a>
+      <a href="colors.html">Colors</a>
+      <a href="spacing.html">Spacing</a>
+      <a href="images.html">Images</a>
+      <a href="navigation.html">Navigation</a>
+      <a href="forms.html">Forms</a>
+      <a href="lists.html">Lists</a>
+      <a href="components.html">Components</a>
+    </div>
+</nav><!-- End of Top navbar -->
+<!-- </section> -->
+
+<!-- Hero Section -->
+<!-- <section class="interface"> -->
+  <div class="hero bg-primary">
+    <h1>Forms</h1>
+  </div>
+  <svg class="separator" width="100%" height="100" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+    <g transform="translate(-18.298844,-77.973964)">
+        <path style="fill:#1e96fc;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+        <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+    </g>
+</svg>
+<!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
+                        
+                        
+<!-- End of Hero section -->
+  <p>This section represents the interaction between the user and us with an
+  interactive control to submit the information.</p>
+  
+  <div class="forms container">
+
+
+<h2 id="fields">Fields, Label & Submit</h2>
+<!--Style them differently to display colors-->
+<hr class="divider">
+<h6>In this section we demonstrate the simple form we will work with in the contact
+   section for users to contact.
+   Be sure to use an appropriate type attribute on all inputs (e.g., email for 
+   email address or number for numerical information) to take advantage of newer 
+   input controls like email verification, number selection, and more. 
+</h6>
+
+      <div class="form-container bg-gdnt">
+        <h2>Form</h2>
+        <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+          <label for="fname">First Name <span class="label-required">* (required)</span></label>
+          <input type="text" id="fname" name="firstname" placeholder="Ex: Mariaelena" required>
+      
+          <label for="phone">Phone Number <span class="label-required">* (required)</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="2028450968" required>
+          <label for="email">Email <span class="label-required">* (required)</span></label>
+          <input type="email" id="email" name="email" placeholder="Ex: example@domain.com" required>      
+      
+          <label for="Message">Message</label>
+          <textarea id="Message" name="Message" 
+          placeholder="In a few sentences let me know about you and what are you looking for..." 
+          style="height:200px"></textarea>
+          <!-- <div class="flex-item"> -->
+            <button class="btn-primary">Submit</button>
+          <!-- </div> -->
+        </form>
+      </div>
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- Code snippet -->
+<div class="code-s">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/ce740698ae20c41a65841a9ff089050a.js"></script> 
+      </li>  
+       </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i>
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/19b03eefc1d750276de28a1bf30b796e.js"></script> 
+        </li>
+      </ul>
+     </details>
+</div>
+</div>
+<footer class="footer-basic">
+  <div class="social">
+    <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+    <a href="index.html"><i class="fab fa-uikit"></i></a>
+    <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+  <!-- <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Home</a></li>
+      <li class="list-inline-item"><a href="#">Services</a></li>
+      <li class="list-inline-item"><a href="#">About</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+  </ul> -->
+  </div><!--.social-->
+  <p class="copyright">BEYOND Skincare © 2023</p>
+</footer>
+
+
+</section>
+
+
+<!--Compiled JS-->
+<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
+

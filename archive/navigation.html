@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariaelena Cossio Clark">
+<!--CSS Stylesheet Link-->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
+<!--Font Awesome Assets-->
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<title>BEYOND Skincare</title>
+</head>
+<body>
+
+  <!--Side Navbar-->
+  <div class="side-bar bg">
+    <div class="logo container">
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
+    </div>
+    <!--Side bar links-->
+        <div class="items">
+          <details>
+            <summary>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+              <!--Body text
+                  H1 to H6
+                  Headline, subheadline and image caption-->
+              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+              <!--Color Palette
+                  Body Text
+                  Titles or display text
+                  Background
+                  Primary and secondary color for buttons
+                  Success, danger, info and warning -->
+              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+              <!--Margins and paddings for div, img etc.-->
+              <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+              <!--Styles
+                  Required aspect ratios for diferent uses
+                  Rounded corners
+                  Borders-->
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#nav-bar"></a><li><i class="fab fa-uikit"></i>Navbar</li></a>
+              <a href="#dropdown"><li><i class="fab fa-uikit"></i>Dropdown</li></a>
+              <a href="#buttons"><li><i class="fab fa-uikit"></i>Buttons</li></a>
+              <a href="#breadcrumbs"><li><i class="fab fa-uikit"></i>Breadcrumbs</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#fields"><li><i class="fab fa-uikit"></i>Fields</li></a>
+              <a href="#labels"><li><i class="fab fa-uikit"></i>Labels</li></a>
+              <a href="#submit"><li><i class="fab fa-uikit" id="#submit"></i>Submit</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#unordered"><li><i class="fab fa-uikit"></i>Unordered</li></a>
+              <a href="#ordered"><li><i class="fab fa-uikit"></i>Ordered</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#cards"><li><i class="fab fa-uikit"></i>Cards</li></a>
+              <a href="#carousel"><li><i class="fab fa-uikit"></i>Carousel</li></a>
+              <a href="#table"><li><i class="fab fa-uikit"></i>Table</li></a>
+              <a href="#footer"><li><i class="fab fa-uikit"></i>Footer</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#support"><li><i class="fab fa-uikit" id="#support"></i>Support</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
+    <!--End of Sidebar-->
+
+
+
+<section class="interface">
+  <!--Top navbar-->
+  <nav class="navigation-bar bg-t">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header"></div>
+    <div class="nav-btn">
+      <label class="label" for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+        <div class="resources">
+      <a href="sample.html" target="_blank">BEYOND Skincare</a>
+        <a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="typography.html">Typography</a>
+      <a href="colors.html">Colors</a>
+      <a href="spacing.html">Spacing</a>
+      <a href="images.html">Images</a>
+      <a href="navigation.html">Navigation</a>
+      <a href="forms.html">Forms</a>
+      <a href="lists.html">Lists</a>
+      <a href="components.html">Components</a>
+    </div>
+</nav><!-- End of Top navbar -->
+<!-- </section> -->
+
+<!-- Hero Section -->
+<!-- <section class="interface"> -->
+  <div class="hero bg-primary">
+    <h1>Navigation</h1>
+  </div>
+  <svg class="separator" width="100%" height="100" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+    <g transform="translate(-18.298844,-77.973964)">
+        <path style="fill:#1e96fc;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+        <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+    </g>
+</svg>
+<!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
+<!-- End of Hero section -->
+
+
+<!-- Navbar section -->
+<p>The navigation is an important element that represents a section to provide the user guidance througout
+   the website. Here we will display examples of how it should be display on our site.</p>
+
+<section class="navigation container">
+  
+  <h2 id="nav-bar">Navbar</h2>
+  <hr class="divider">
+  <h5>The responsive navigation bar is a UI element in the website which contains 
+   links to other sections of the website. At the moment we have only two variations
+   that can be use depending on the hero section.
+  </h5> 
+
+<!-- Style #1 -->
+<div class="style-1 container">
+  <div class="nav bg-primary">
+    <input type="checkbox" id="nav1-check">
+    <div class="nav-header t-white">
+      <div class="nav-title">
+        BEYOND Skincare
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label class="label" for="nav1-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div><!--.nav-btn-->
+  
+    <div class="nav-links">
+      <a class="t-white" href="#" target="_blank">Link</a>
+      <a class="t-white" href="#" target="_blank">Link</a>
+      <a class="t-white" href="#" target="_blank">Link</a>
+    </div>
+  </div>
+</div><!--.style-1 .container-->
+
+<!-- Style #2 -->
+
+<div class="style-2 container">
+  <div class="nav bg-t">
+    <input type="checkbox" id="nav2-check">
+    <div class="nav-header">
+      <div class="nav-title t-secondary">
+        BEYOND Skincare
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label class="label" for="nav2-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div><!--.nav-btn-->
+    
+    <div class="nav-links">
+      <a class="t-secondary" href="#" target="_blank">Link</a>
+      <a class="t-secondary" href="#" target="_blank">Link</a>
+      <a class="t-secondary" href="#" target="_blank">Link</a>
+    </div><!--.nav-links-->
+  </div>
+</div>
+
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/3e6c4612a78e40f579a0532dfa930083.js"></script>  
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/a52d1cb92575886a0b850882bb3e14e3.js"></script>
+      </li>
+    </ul>
+  </details>
+</div>
+<p>It is important to mention that theres slightly variations for the links alignment and all that
+  can be formatted accordingly overriding the class .nav &gt; .nav-links &gt; a.</p>
+
+
+
+<!-- End of Navbar section -->
+
+<!-- <section class="dd"> -->
+<h2 id="dropdown">Dropdown</h2>
+<!--Display inside the flex-item the BG and the text color as an example-->
+<hr class="divider">
+<h5>This navigation component will hold hidden information for the user unless
+  they click on in to discover the links to a different section of the site.
+</h5>
+<!-- <div class="dd"> -->
+<div class="dd-ds container">
+            <div class="dropdown">
+              <input type="checkbox" id="drop" hidden>
+              <label class=" label dropHeader dropHeader-1" for="drop">Dropdown</label>
+              <div class="list opt-list">
+              <div class="option"><a href="#">Option one</a></div>
+              <div class="option"><a href="#">Option two</a></div>
+              <div class="option"><a href="#">Option three</a></div>
+              <div class="option"><a href="#">Option four</a></div>
+              </div>
+          </div>
+</div><!--.dd-ds .container-->
+
+    <div class="code-s container">
+      <details>
+        <summary><i class="fa-solid fa-code"> HTML</i></summary>
+        <ul>
+          <li>  
+            <!-- HTML -->
+            <script src="https://gist.github.com/mariaelenacossio/18bffe980ebe308fa155d96e0ea6197c.js"></script>          \
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+          <ul>
+            <li>
+            <!-- CSS -->
+            <script src="https://gist.github.com/mariaelenacossio/cb8db2619af1653943d4488bcf2f0b63.js"></script>          
+          </li>
+        </ul>
+      </details>
+    </div>
+
+
+  <!-- <section class="buttons"> -->
+<h2 id="buttons">Buttons</h2>
+<!--Display inside the flex-item the BG and the text color as an example-->
+<hr class="divider">
+<h5>Buttons are categorized by importance also, theres a few variations of it.
+  See below how classes should be implemented to ensure the responsiveness of it.
+</h5>
+
+<div class="buttons container">
+  <div class="flex-container">
+    <button type="button" class="btn-primary">Primary</button>
+    <button type="button" class="btn-secondary">Secondary</button>
+    <button type="button" class="btn-cta">CTA</button>
+    <div class="btn-link">Link</div>
+    <button type="button" class="btn-outlined">Outlined</button>
+    <button type="button" class="btn-primary-lg">Large</button>
+    <button type="button" class="btn-primary-sm">Small</button>
+    <button type="button" class="btn-primary-block">Block</button>
+  </div>
+</div><!--.buttons .container-->
+
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/5bc44a03e522c8f2a9b5a473e4d3bef2.js"></script>    
+      </li>
+      </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/74602d11d8a0522b26cacbb5c0fbec10.js"></script>    
+        </li>
+      </ul>
+  </details>
+</div>
+<!-- </section> -->
+
+<!-- <section class="b-crumb"> -->
+<h2 id="breadcrumbs">Breadcrumbs</h2>
+<hr class="divider">
+<h5>Breadcrumb navigation will help the user to understand their location 
+  in the website by providing a breadcrumb trail back to the start page.</h5>
+
+<div class="b-crumb container">
+          <div class="breadcrumb">
+            <a href="#home" class="breadcrumb__item">Home</a>
+            <a href="#shop" class="breadcrumb__item">Shop</a> 
+            <a href="#cart" class="breadcrumb__item">Cart</a>
+            <a href="#checkout" class="breadcrumb__item is-active">Checkout</a> 
+          </div>
+        </div>
+        
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/24b0f30f8126f61fe4322c22cc662963.js"></script> 
+      </li>
+    </ul>
+   </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/ec750cecaf3aee647a6551a7841aa81c.js"></script> 
+        </li>
+      </ul> 
+      </details>
+</div>
+</section>
+
+<footer class="footer-basic">
+  <div class="social">
+    <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+    <a href="index.html"><i class="fab fa-uikit"></i></a>
+    <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+  <!-- <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Home</a></li>
+      <li class="list-inline-item"><a href="#">Services</a></li>
+      <li class="list-inline-item"><a href="#">About</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+  </ul> -->
+  </div><!--.social-->
+  <p class="copyright">BEYOND Skincare © 2023</p>
+</footer>
+
+</section>
+
+
+<!--Compiled JS-->
+<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
+

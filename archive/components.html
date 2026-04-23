@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mariaelena Cossio Clark">
+<!--CSS Stylesheet Link-->
+<link rel="stylesheet" href="style.css">
+
+  <!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!--Icon-->
+<link rel="icon" type="image/x-icon" href="img/B-Skincare.png">
+
+<!--Font Awesome Assets-->
+<link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+<link rel="stylesheet" href="https://kit.fontawesome.com/e8edda8eee.css" crossorigin="anonymous">
+<title>BEYOND Skincare</title>
+</head>
+<body>
+
+  <!--Side Navbar-->
+  <div class="side-bar bg">
+    <div class="logo container">
+    <img class="img-fluid" src="img/B-logo.png" alt="Logo Design System"><!--Logo-->
+    </div>
+    <!--Side bar links-->
+        <div class="items">
+          <details>
+            <summary>
+              <i class="fa-solid fa-house"></i><a class="active" href="index.html">Home</a>
+            </summary><!--.summary-->
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fab fa-uikit"></i><a href="#">Style Elements</a>
+            </summary><!--.summary-->
+            <ul>
+              <li><i class="fab fa-uikit"></i><a href="typography.html">Typography</a></li>
+              <!--Body text
+                  H1 to H6
+                  Headline, subheadline and image caption-->
+              <li><i class="fab fa-uikit"></i><a href="colors.html">Color</a></li>
+              <!--Color Palette
+                  Body Text
+                  Titles or display text
+                  Background
+                  Primary and secondary color for buttons
+                  Success, danger, info and warning -->
+              <li><i class="fab fa-uikit"></i><a href="spacing.html">Spacing</a></li>
+              <!--Margins and paddings for div, img etc.-->
+              <li><i class="fab fa-uikit"></i><a href="images.html">Images</a></li>
+              <!--Styles
+                  Required aspect ratios for diferent uses
+                  Rounded corners
+                  Borders-->
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-pen-to-square"></i><a href="navigation.html">Navigation</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#nav-bar"></a><li><i class="fab fa-uikit"></i>Navbar</li></a>
+              <a href="#dropdown"><li><i class="fab fa-uikit"></i>Dropdown</li></a>
+              <a href="#buttons"><li><i class="fab fa-uikit"></i>Buttons</li></a>
+              <a href="#breadcrumbs"><li><i class="fab fa-uikit"></i>Breadcrumbs</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="forms.html">Forms</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#fields"><li><i class="fab fa-uikit"></i>Fields</li></a>
+              <a href="#labels"><li><i class="fab fa-uikit"></i>Labels</li></a>
+              <a href="#submit"><li><i class="fab fa-uikit" id="#submit"></i>Submit</li></a>
+            </ul>
+          </details><!--.details-->
+    
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="lists.html">Lists</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#unordered"><li><i class="fab fa-uikit"></i>Unordered</li></a>
+              <a href="#ordered"><li><i class="fab fa-uikit"></i>Ordered</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-star"></i><a href="components.html">Components</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#cards"><li><i class="fab fa-uikit"></i>Cards</li></a>
+              <a href="#carousel"><li><i class="fab fa-uikit"></i>Carousel</li></a>
+              <a href="#table"><li><i class="fab fa-uikit"></i>Table</li></a>
+              <a href="#footer"><li><i class="fab fa-uikit"></i>Footer</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+              <i class="fa-solid fa-file"></i><a href="resources.html">Resources</a>
+            </summary><!--.summary-->
+            <ul>
+              <a href="#support"><li><i class="fab fa-uikit" id="#support"></i>Support</li></a>
+            </ul>
+          </details><!--.details-->
+
+          <details>
+            <summary>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank">Github Repo</a>
+          </summary><!--.summary-->
+          </details><!--.details-->      
+         </div><!--.items-->
+        </div><!--.side-bar-->
+    <!--End of Sidebar-->
+
+
+<div class="interface">
+
+  <!--Top navbar-->
+  <nav class="navigation-bar bg-t">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header"></div>
+    <div class="nav-btn">
+      <label class="label" for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+        <div class="resources">
+      <a href="sample.html" target="_blank">BEYOND Skincare</a>
+        <a href="https://github.com/mariaelenacossio/DGL-309-design-system" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    <div class="nav-links">
+      <a href="typography.html">Typography</a>
+      <a href="colors.html">Colors</a>
+      <a href="spacing.html">Spacing</a>
+      <a href="images.html">Images</a>
+      <a href="navigation.html">Navigation</a>
+      <a href="forms.html">Forms</a>
+      <a href="lists.html">Lists</a>
+      <a href="components.html">Components</a>
+    </div>
+</nav><!-- End of Top navbar -->
+<!-- </section> -->
+
+<!-- Hero Section -->
+<!-- <section class="interface"> -->
+  <div class="hero bg-primary">
+    <h1>Components</h1>
+  </div>
+  <svg class="separator" width="100%" height="100" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+    <g transform="translate(-18.298844,-77.973964)">
+        <path style="fill:#1e96fc;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+        <path style="fill: #072ac8;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+    </g>
+</svg>
+<!-- Source code for separator: https://codepen.io/xyzzyestudioweb/pen/JgdKOR -->
+                        
+                        
+<!-- End of Hero section -->
+<div class="components container">
+<p>This elements are created individually that will be use to
+  build and structure the user interface with focus, clarity, usability
+  and accessibility.</p>
+<p>Each components has a clear purpose and behavior where they were designed
+  to work together to form a cohesive user experience as well, considering the 
+  different needs when interacting with the website.</p>
+
+<div class="single-card">
+<h2 id="#cards">Cards</h2>
+<hr class="divider">
+
+<h6>In this example, the card is set to take up 100% of the width of its container, 
+  and its contents are stacked vertically using the flex-direction property. 
+  The image is set to fill the width of the card, and the text elements are given 
+  some margin to create space between them and the edges of the card. 
+  The box-shadow property creates a shadow effect around the card to give it some depth. 
+  This code can be modified as needed to create different layouts and styles for the responsive card.</h6>
+
+<div class="container">
+  <!-- Simple Card/Testimonial -->
+  <div class="card">
+    <div class="card_img"> 
+      <img src="img/img-1.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps"> 
+    </div>
+    <div class="card-text">
+      <h4>Title</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Aspernatur totam, enim dolor nobis debitis facere animi, 
+        itaque est temporibus dolorem minima magnam doloribus sit!
+      </p>
+    </div>
+    <div class="c-btn">
+      <a class="btn-primary" href="#" role="button">View more</a>
+    </div>
+    </div><!--.card-->
+    </div>
+</div>
+
+<!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary>
+      <i class="fa-solid fa-code"> HTML</i>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/95f2c506f199a3983d2dfac09713d44d.js"></script>      
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary>
+      <i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/9e6fe4bfd972d36ddd0df4a49214fd06.js"></script>    
+        </li>
+      </ul>
+  </details>
+</div>
+
+<h2>Product Card</h2>
+<hr class="divider">
+
+<h6>This component contributes to the deciding factor of whether users should make a decision
+  over buying our products or not. In this example it is essential to display an image of the 
+product and a brief description with an action button that potentially turns into a sale. Also, 
+keep in mind that this card build according the image sizing values for example this one follows 
+the <b>3:2 ratio</b>.</h6>
+
+
+<!-- Product Card -->
+<div class="p-card container">
+<div class="product-card">
+  <div class="product-img"> 
+    <img src="img/img-2.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps"> 
+  </div>
+  <div class="product-card-text">
+    <h4>Title</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <div class="c-btn">
+      <a class="btn-primary" href="#" role="button">View more</a>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+<!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary>
+      <i class="fa-solid fa-code"> HTML</i>
+    </summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/f67fac40749bb5918f45a88bebbe5372.js"></script>      
+      </li>
+    </ul>
+  </details>
+  <details>
+    <summary>
+      <i class="fa-solid fa-file-code"> CSS</i> 
+      </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/e80a66f21a5c83aba3b69fea62d8773c.js"></script>      
+      </li>
+    </ul>
+  </details>
+</div>
+
+<!-- </section> -->
+
+<!-- <section class="carousel-ds"> -->
+  <h2 id="carousel">Carousel</h2>
+  <hr class="divider">
+  
+  <h6>This slideshow will contain a series of content with control indicators for the previous
+    and next slide as well, the images must be in <b>landscape</b> orientation also, it is important
+    to follow the <a href="images.html">sizing guidelines for images</a></h6>
+  
+  <div class="carousel-ds container">
+    <div class="carousel">
+      <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item">
+              <img src="img/img-4.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="img/img-5.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="img/img-6.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+              <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+          </ol>
+      </div>
+  </div><!--.carousel-->
+</div>
+  <!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/495ce6eb62ea199dbd2ecce752bc1873.js"></script>    
+      </li>
+      </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i> </summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/a915a4101cdb5d513bd5409478d5050d.js"></script>  
+        </li>
+        </ul>
+  </details>
+</div>
+
+<div class="carousel-2 container">
+  <p>This is a second version of a carousel where we display products and allows 
+    you to display multiple products or images in a single container element to 
+    showcase featured products or product categories.</p>
+ <p>For displaying purposes in the design system the container <b>main#carousel</b> is <b>
+  justify: flex-start</b> but in the example is set as <b>center</b> to follow the guidelines.</p>
+<div class="product-carousel container">
+  <input type="radio" name="position" checked>
+    <input type="radio" name="position">
+    <input type="radio" name="position">
+    <input type="radio" name="position">
+    <input type="radio" name="position">
+    <main id="carousel">
+      <div class="item">
+       <div class="item_img">
+            <img src="img/product-1.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+            </div>
+            <p>Name of product</p>
+            <p class="bold">$$</p>
+      </div>
+      <div class="item">
+        <div class="item_img">
+          <img src="img/product-2.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <p>Name of product</p>
+          <p class="bold">$$</p>
+    </div>
+      <div class="item">
+        <div class="item_img">
+          <img src="img/product-3.jpg" alt="Anti-aging skincare, Natural skincare, Organic skincare,
+          Cruelty-free skincare, Sensitive skin products, Acne treatment, Beauty routines/regimens">
+          </div>
+          <p>Name of product</p>
+          <p class="bold">$$</p>
+      </div>
+      <div class="item">
+        <div class="item_img">
+          <img src="img/product-4.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <p>Name of product</p>
+          <p class="bold">$$</p>
+      </div>
+      <div class="item">
+        <div class="item_img">
+          <img src="img/product-5.jpg" alt="Skincare routine, Skin health, Skin care secrets, Skin care steps">
+          </div>
+          <p>Name of product</p>
+          <p class="bold">$$</p>
+      </div>
+    </main>
+    </div>
+  </div>
+      <!-- Code snippet -->
+      <div class="code-s container">
+        <details>
+          <summary><i class="fa-solid fa-code"> HTML</i></summary>
+          <ul>
+            <li>  
+              <!-- HTML -->
+              <script src="https://gist.github.com/mariaelenacossio/7478700216407924bfdf320a1eb0419f.js"></script>
+            </li>
+              </ul>
+        </details>
+        <details>
+          <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+            <ul>
+              <li>
+              <!-- CSS -->
+              <script src="https://gist.github.com/mariaelenacossio/c4541d4e362d5746e519ac5f2056116b.js"></script>   
+              </li>
+             </ul>
+        </details>
+      </div><!--code-s .container-->
+
+   
+  <!-- </section> -->
+
+  
+  <!-- <section class="table-sw"> -->
+    <h2 id="table">Table</h2>
+    <hr class="divider">
+    
+    <h6>In this example, the table is set to take up 100% of the width of its container, 
+      and the border-collapse property is used to collapse the borders of the table cells. 
+      The th and td elements are given some padding and a border, so they are separated visually. 
+      The media query at the end applies styles only to screens with a maximum width of 767 pixels. 
+      In this case, the table is set to display as a block element with horizontal scrollbars, 
+      so the table can be scrolled horizontally as needed on small screens.</h6>
+    
+    <div class="table-sw container">
+      <table>
+        <thead>
+          <tr>
+            <th class="th">Name</th>
+            <th class="th">Age</th>
+            <th class="th">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td">Jane Doe</td>
+            <td class="td">25</td>
+            <td class="td">jane@example.com</td>
+          </tr>
+          <tr>
+            <td class="td">John Smith</td>
+            <td class="td">30</td>
+            <td class="td">john@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div><!--table .container-->
+
+
+      <!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/b94bceef3f70703ad7d79a8657ed3f50.js"></script>
+      </li>
+        </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/860787ee928c3e2b58d0cfc76bc1b122.js"></script>   
+        </li>
+       </ul>
+  </details>
+</div><!--code-s .container-->
+
+
+    <!-- <section class="card-sw"> -->
+      <h2 id="footer">Footer</h2>
+      <hr class="divider">
+      
+      <p>In this example, the &lt;footer&gt; tag is used to wrap the footer content, 
+        and CSS class <b>.footer-basic</b> is used to style the footer's background color, padding, and alignment. 
+        The &lt;ul&gt; tag is used to hold the footer content, and CSS is used to set its 
+        margin to 0 to remove extra space. </p>
+      
+      <div class="footer-example container">
+        <!-- <div class="footer-basic"> -->
+          <footer class="footer-basic">
+              <div class="social">
+                <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+                <a href="index.html"><i class="fab fa-uikit"></i></a>
+                <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#">Home</a></li>
+                  <li class="list-inline-item"><a href="#">Services</a></li>
+                  <li class="list-inline-item"><a href="#">About</a></li>
+                  <li class="list-inline-item"><a href="#">Terms</a></li>
+                  <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              </ul>
+              </div><!--.social-->
+              <p class="copyright">BEYOND Skincare © 2023</p>
+          </footer>
+        </div>
+      <!-- </section> -->
+
+        <!-- Code snippet -->
+<div class="code-s container">
+  <details>
+    <summary><i class="fa-solid fa-code"> HTML</i></summary>
+    <ul>
+      <li>  
+        <!-- HTML -->
+        <script src="https://gist.github.com/mariaelenacossio/1ca08c750d17ed616f44e51dfd3e5b2c.js"></script>
+      </li>
+        </ul>
+  </details>
+  <details>
+    <summary><i class="fa-solid fa-file-code"> CSS</i></summary>
+      <ul>
+        <li>
+        <!-- CSS -->
+        <script src="https://gist.github.com/mariaelenacossio/84f8f0a63f3e55465043992c04d9f064.js"></script> 
+      </li>
+      </ul>
+  </details>
+</div>
+
+</div><!--components .container-->
+<footer class="footer-basic">
+  <div class="social">
+    <a href="https://github.com/mariaelenacossio/DGL-309-design-system"><i class="fa-brands fa-github"></i></a>
+    <a href="index.html"><i class="fab fa-uikit"></i></a>
+    <a href="sample.html"><i class="fa-solid fa-sun"></i></a>
+  <!-- <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Home</a></li>
+      <li class="list-inline-item"><a href="#">Services</a></li>
+      <li class="list-inline-item"><a href="#">About</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+  </ul> -->
+  </div><!--.social-->
+  <p class="copyright">BEYOND Skincare © 2023</p>
+</footer>
+
+</div>
+
+
+<!--Compiled JS-->
+<script src="https://kit.fontawesome.com/e8edda8eee.js" crossorigin="anonymous"></script>
+<script src="/fontawesome/js/fontawesome.js"></script>
+
+</body>
+</html>
+
