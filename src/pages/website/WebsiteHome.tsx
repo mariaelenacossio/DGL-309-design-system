@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Star, Leaf, Shield, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
+import { imgUrl } from '@/utils/assets'
 import { WebsiteHero } from '@/components/organisms/Hero'
 import { ProductCard } from '@/components/molecules/Card'
 import { Badge } from '@/components/atoms/Badge'
@@ -14,7 +15,7 @@ const products = [
     id: 1,
     name:        'C-Bright Eye Cream',
     price:       '$25',
-    image:       '/img/product-1.jpg',
+    image:       imgUrl('product-1.jpg'),
     description: 'Brightening vitamin C formula that reduces dark circles and fine lines.',
     badge:       'Best Seller',
   },
@@ -22,14 +23,14 @@ const products = [
     id: 2,
     name:        'Homemade Lip Scrub',
     price:       '$16',
-    image:       '/img/product-2.jpg',
+    image:       imgUrl('product-2.jpg'),
     description: 'Sugar-based exfoliant with sweet almond oil for soft, plump lips.',
   },
   {
     id: 3,
     name:        'Niacinamide Booster Serum',
     price:       '$35',
-    image:       '/img/product-3.jpg',
+    image:       imgUrl('product-3.jpg'),
     description: '10% niacinamide and zinc formula to minimise pores and even skin tone.',
     badge:       'Top Rated',
   },
@@ -37,7 +38,7 @@ const products = [
     id: 4,
     name:        'Rosehip Face Oil',
     price:       '$44',
-    image:       '/img/product-4.jpg',
+    image:       imgUrl('product-4.jpg'),
     description: 'Rich in vitamin A and antioxidants for regenerative overnight care.',
     badge:       'New',
   },
@@ -45,7 +46,7 @@ const products = [
     id: 5,
     name:        'Hyaluronic Acid Serum',
     price:       '$22',
-    image:       '/img/product-5.jpg',
+    image:       imgUrl('product-5.jpg'),
     description: 'Multi-weight hyaluronic acid for deep and surface-level hydration.',
   },
 ]
@@ -54,22 +55,22 @@ const routineSteps = [
   {
     step: '01', label: 'Tone',       icon: '💧',
     desc: 'Balance pH and prep skin to absorb treatments.',
-    image: '/img/noah-usry-cojUQF-9GT0-unsplash.jpg',
+    image: imgUrl('noah-usry-cojUQF-9GT0-unsplash.jpg'),
   },
   {
     step: '02', label: 'Serum',      icon: '✨',
     desc: 'Target specific concerns with concentrated actives.',
-    image: '/img/product-3.jpg',
+    image: imgUrl('product-3.jpg'),
   },
   {
     step: '03', label: 'Moisturise', icon: '🌿',
     desc: 'Lock in hydration and strengthen the skin barrier.',
-    image: '/img/cheyenne-doig-qTBDxXIoCL4-unsplash.jpg',
+    image: imgUrl('cheyenne-doig-qTBDxXIoCL4-unsplash.jpg'),
   },
   {
     step: '04', label: 'Sunscreen',  icon: '☀️',
     desc: 'Daily SPF protection — the most important step.',
-    image: '/img/content-pixie-0z4h9qneDMA-unsplash.jpg',
+    image: imgUrl('content-pixie-0z4h9qneDMA-unsplash.jpg'),
   },
 ]
 
@@ -147,7 +148,7 @@ export function WebsiteHome() {
       <WebsiteHero
         headline="Skincare backed by science. Loved by skin."
         subheadline="Evidence-based formulations designed for real results. No fluff, no fillers — just what your skin actually needs."
-        image="/img/shifaaz-shamoon-CE5wcAmL7gg-unsplash.jpg"
+        image={imgUrl('shifaaz-shamoon-CE5wcAmL7gg-unsplash.jpg')}
         badge="New Arrivals Just Landed"
         ctaLabel="Shop Best Sellers"
       />

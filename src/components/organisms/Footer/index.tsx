@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Github, Twitter, Instagram } from 'lucide-react'
 import { cn } from '@/utils/cn'
+import { imgUrl } from '@/utils/assets'
 
 interface FooterProps {
   className?: string
@@ -25,7 +26,7 @@ export function Footer({ className }: FooterProps) {
           <div className="md:col-span-1">
             <Link to="/" className="inline-block mb-3 w-fit">
               <img
-                src="/img/B-logo-2.png"
+                src={imgUrl('B-logo-2.png')}
                 alt="BEYOND Skincare"
                 className="h-10 w-auto dark:brightness-110"
               />

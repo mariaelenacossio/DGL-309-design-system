@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Menu, X, ShoppingBag, Layers } from 'lucide-react'
 import { ThemeToggle } from '@/components/atoms/ThemeToggle'
 import { Footer } from '@/components/organisms/Footer'
+import { imgUrl } from '@/utils/assets'
 
 const navItems = [
   { label: 'Skin Quiz',     to: '/website/contact' },
@@ -23,7 +24,7 @@ function WebsiteNavbar() {
           {/* Logo */}
           <Link to="/website" className="shrink-0" aria-label="BEYOND Skincare — home">
             <img
-              src="/img/B-logo-2.png"
+              src={imgUrl('B-logo-2.png')}
               alt="BEYOND Skincare"
               className="h-9 w-auto dark:brightness-110"
             />

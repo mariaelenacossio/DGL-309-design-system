@@ -3,6 +3,7 @@ import { Button } from '@/components/atoms/Button'
 import { Badge } from '@/components/atoms/Badge'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import type { ReactNode } from 'react'
+import { imgUrl } from '@/utils/assets'
 
 /* ─── DS Hero (documentation site) ───────────────────────────────────────── */
 interface DSHeroProps {
@@ -43,7 +44,7 @@ export function DSHero({
         {/* BEYOND Skincare logo */}
         <div className="mb-6 flex justify-center">
           <img
-            src="/img/B-logo-2.png"
+            src={imgUrl('B-logo-2.png')}
             alt="BEYOND Skincare"
             className="h-14 md:h-16 w-auto brightness-0 invert opacity-90"
           />

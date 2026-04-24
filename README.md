@@ -19,9 +19,7 @@
     <img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite 5" />
   </p>
 
-  <br />
-
-  <img src="img/shifaaz-shamoon-CE5wcAmL7gg-unsplash.jpg" alt="BEYOND Skincare Design System Preview" width="800" style="border-radius:12px" />
+  <img src="img/B-Skincare.png" alt="BEYOND Skincare Design System" width="420" />
 </div>
 
 ---
@@ -263,11 +261,7 @@ npm run build
 
 ## 📸 Screenshots
 
-| Design System Docs | BEYOND Website |
-|---|---|
-| ![DS Home](img/B-Skincare.ico) | ![Website](img/B-Skincare.ico) |
-
-> Visit the **[Live Site](https://mariaelenacossio.github.io/DGL-309-design-system/)** for full interactive previews.
+> Visit the **[Live Site](https://mariaelenacossio.github.io/DGL-309-design-system/)** for full interactive previews of the design system docs and BEYOND Skincare website.
 
 ---
 

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/utils/cn'
+import { imgUrl } from '@/utils/assets'
 import { ThemeToggle } from '@/components/atoms/ThemeToggle'
 import { Button } from '@/components/atoms/Button'
 
@@ -52,7 +53,7 @@ export function Navbar({ items = defaultItems, logo, actions, className }: Navba
           >
             {logo ?? (
               <img
-                src="/img/B-logo-2.png"
+                src={imgUrl('B-logo-2.png')}
                 alt="BEYOND Skincare"
                 className="h-9 w-auto dark:brightness-110"
               />
