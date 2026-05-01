@@ -401,5 +401,5 @@ npm run lint
 <div align="center">
   <img src="img/B-logo-2.png" alt="BEYOND Skincare" height="40" />
   <br />
-  <sub>Designed & built by <strong>Maria Elena Cossio Clark</strong></sub>
+  <sub>Designed & built by <strong>Mariaelena Cossio Clark</strong></sub>
 </div>
