@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Star, Leaf, Shield, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowRight, Star, Leaf, Shield, Sparkles, ChevronLeft, ChevronRight, Check } from 'lucide-react'
 import { imgUrl } from '@/utils/assets'
 import { WebsiteHero } from '@/components/organisms/Hero'
 import { ProductCard } from '@/components/molecules/Card'
@@ -141,7 +141,21 @@ function ProductCarousel() {
 }
 
 /* ─── Page ────────────────────────────────────────────────────────────────── */
+const scrollToId = (id: string) => () => {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 export function WebsiteHome() {
+  const [subscribed, setSubscribed] = useState(false)
+  const [email, setEmail]           = useState('')
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!/\S+@\S+\.\S+/.test(email)) return
+    setSubscribed(true)
+  }
+
   return (
     <div>
       {/* Hero */}
@@ -151,6 +165,9 @@ export function WebsiteHome() {
         image={imgUrl('shifaaz-shamoon-CE5wcAmL7gg-unsplash.jpg')}
         badge="New Arrivals Just Landed"
         ctaLabel="Shop Best Sellers"
+        onCta={scrollToId('products')}
+        learnMoreLabel="Build Your Routine"
+        onLearnMore={scrollToId('routine')}
       />
 
       {/* Values */}
@@ -276,21 +293,40 @@ export function WebsiteHome() {
       {/* CTA Banner */}
       <section aria-label="Newsletter" className="gradient-brand py-16">
         <div className="container-ds text-center">
-          <Heading level={2} size="xl" className="text-white mb-3">
-            Get 15% off your first order
-          </Heading>
-          <Text className="text-white/80 mb-8 max-w-md mx-auto">
-            Sign up for science-backed skincare tips, exclusive offers, and early access to new launches.
-          </Text>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={e => e.preventDefault()}>
-            <input
-              type="email"
-              placeholder="your@email.com"
-              aria-label="Email address"
-              className="flex-1 h-11 px-4 rounded-xl text-sm bg-white/20 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <Button variant="cta" size="md" type="submit">Subscribe</Button>
-          </form>
+          {subscribed ? (
+            <div role="status" aria-live="polite" className="max-w-md mx-auto">
+              <span className="h-14 w-14 rounded-full bg-white/20 flex items-center justify-center text-white mx-auto mb-4">
+                <Check size={28} aria-hidden="true" />
+              </span>
+              <Heading level={2} size="xl" className="text-white mb-3">
+                You're in! Check your inbox.
+              </Heading>
+              <Text className="text-white/80">
+                We've sent your 15% off code to <span className="font-semibold">{email}</span>. Welcome to the BEYOND family.
+              </Text>
+            </div>
+          ) : (
+            <>
+              <Heading level={2} size="xl" className="text-white mb-3">
+                Get 15% off your first order
+              </Heading>
+              <Text className="text-white/80 mb-8 max-w-md mx-auto">
+                Sign up for science-backed skincare tips, exclusive offers, and early access to new launches.
+              </Text>
+              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={handleSubscribe} noValidate>
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  aria-label="Email address"
+                  className="flex-1 h-11 px-4 rounded-xl text-sm bg-white/20 text-white placeholder:text-white/60 border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+                />
+                <Button variant="cta" size="md" type="submit">Subscribe</Button>
+              </form>
+            </>
+          )}
         </div>
       </section>
     </div>

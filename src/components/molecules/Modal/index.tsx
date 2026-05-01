@@ -134,6 +134,9 @@ export function Modal({
 }
 
 /* ─── Convenience hook ────────────────────────────────────────────────────── */
+// Co-located with the Modal component on purpose — small surface area,
+// always used together. Fast Refresh warns about mixed exports; safe to ignore.
+// eslint-disable-next-line react-refresh/only-export-components
 export function useModal(initial = false) {
   const [open, setOpen] = useState(initial)
   return {

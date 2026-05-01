@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { cn } from '@/utils/cn'
 import { Button } from '@/components/atoms/Button'
 import { Badge } from '@/components/atoms/Badge'
@@ -74,7 +75,7 @@ export function DSHero({
         {(primaryCta || secondaryCta) && (
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             {primaryCta && (
-              <a href={primaryCta.to}>
+              <Link to={primaryCta.to} className="no-underline">
                 <Button
                   variant="cta"
                   size="lg"
@@ -82,14 +83,14 @@ export function DSHero({
                 >
                   {primaryCta.label}
                 </Button>
-              </a>
+              </Link>
             )}
             {secondaryCta && (
-              <a href={secondaryCta.to}>
+              <Link to={secondaryCta.to} className="no-underline">
                 <Button variant="ghost" size="lg" className="text-white hover:bg-white/10 border border-white/30">
                   {secondaryCta.label}
                 </Button>
-              </a>
+              </Link>
             )}
           </div>
         )}
@@ -100,13 +101,24 @@ export function DSHero({
 
 /* ─── Website Hero (BEYOND Skincare) ─────────────────────────────────────── */
 interface WebsiteHeroProps {
-  headline:    string
-  subheadline: string
-  image:       string
-  badge?:      string
-  ctaLabel?:   string
-  onCta?:      () => void
-  className?:  string
+  headline:        string
+  subheadline:     string
+  image:           string
+  badge?:          string
+  ctaLabel?:       string
+  onCta?:          () => void
+  learnMoreLabel?: string
+  onLearnMore?:    () => void
+  className?:      string
+}
+
+/**
+ * Smoothly scrolls to a section on the current page by id. Falls back to a
+ * no-op if the target isn't in the DOM.
+ */
+const scrollToId = (id: string) => () => {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 export function WebsiteHero({
@@ -116,8 +128,15 @@ export function WebsiteHero({
   badge,
   ctaLabel = 'Shop Now',
   onCta,
+  learnMoreLabel = 'Learn More',
+  onLearnMore,
   className,
 }: WebsiteHeroProps) {
+  // Sensible defaults so the buttons are never dead, even when consumers
+  // forget to pass handlers. CTA scrolls to #products, Learn More to #routine.
+  const handleCta       = onCta       ?? scrollToId('products')
+  const handleLearnMore = onLearnMore ?? scrollToId('routine')
+
   return (
     <section
       aria-label="Hero"
@@ -159,7 +178,7 @@ export function WebsiteHero({
               variant="cta"
               size="lg"
               iconRight={<ArrowRight size={18} />}
-              onClick={onCta}
+              onClick={handleCta}
             >
               {ctaLabel}
             </Button>
@@ -167,8 +186,9 @@ export function WebsiteHero({
               variant="ghost"
               size="lg"
               className="text-white hover:bg-white/10 border border-white/30"
+              onClick={handleLearnMore}
             >
-              Learn More
+              {learnMoreLabel}
             </Button>
           </div>
         </div>

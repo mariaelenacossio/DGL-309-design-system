@@ -71,7 +71,18 @@ export function WebsiteContact() {
               <p className="text-body-sm text-neutral-600 dark:text-neutral-400">
                 Take our free 2-minute Skin Quiz and get personalised product recommendations.
               </p>
-              <Button variant="primary" size="sm" className="mt-4 w-full">Take the Skin Quiz</Button>
+              <Button
+                variant="primary"
+                size="sm"
+                className="mt-4 w-full"
+                onClick={() => {
+                  // Pre-fill the contact form subject and scroll to it
+                  setForm(f => ({ ...f, subject: 'Skin type quiz' }))
+                  document.querySelector('form')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
+              >
+                Take the Skin Quiz
+              </Button>
             </Card>
           </aside>
 

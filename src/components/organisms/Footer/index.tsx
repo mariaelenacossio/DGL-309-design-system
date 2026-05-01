@@ -1,7 +1,15 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Github, Twitter, Instagram } from 'lucide-react'
 import { cn } from '@/utils/cn'
 import { imgUrl } from '@/utils/assets'
+
+/** Smooth-scroll a hash target into view if it exists in the DOM. */
+function scrollToHash(hash: string) {
+  if (!hash) return
+  const id = hash.replace(/^#/, '')
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
 interface FooterProps {
   className?: string
@@ -10,6 +18,19 @@ interface FooterProps {
 const year = new Date().getFullYear()
 
 export function Footer({ className }: FooterProps) {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  // Footer "Products" / "Routine" need to navigate AND scroll under HashRouter.
+  const handleSectionLink = (path: string, section: string) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    if (location.pathname === path) {
+      scrollToHash(section)
+    } else {
+      navigate(path, { state: { section } })
+    }
+  }
+
   return (
     <footer
       aria-label="Site footer"
@@ -68,18 +89,19 @@ export function Footer({ className }: FooterProps) {
               BEYOND Skincare
             </h3>
             <ul role="list" className="flex flex-col gap-2">
-              {[
-                ['Home',      '/website'],
-                ['Products',  '/website#products'],
-                ['Routine',   '/website#routine'],
-                ['Contact',   '/website/contact'],
-              ].map(([label, to]) => (
-                <li key={to}>
+              {([
+                { label: 'Home',     path: '/website' },
+                { label: 'Products', path: '/website', section: 'products' },
+                { label: 'Routine',  path: '/website', section: 'routine'  },
+                { label: 'Contact',  path: '/website/contact' },
+              ] as Array<{ label: string; path: string; section?: string }>).map(item => (
+                <li key={item.label}>
                   <Link
-                    to={to}
+                    to={item.path}
+                    onClick={item.section ? handleSectionLink(item.path, item.section) : undefined}
                     className="text-body-sm text-neutral-600 dark:text-neutral-400 hover:text-primary-500 dark:hover:text-primary-300 transition-colors no-underline"
                   >
-                    {label}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -121,21 +143,33 @@ export function Footer({ className }: FooterProps) {
           </p>
 
           <div className="flex items-center gap-3">
+            {/*
+              Real social link goes through `<a>`. Twitter & Instagram are
+              demo placeholders for the design system showcase — rendered as
+              non-clickable icons with a "demo" tooltip so they don't 404.
+            */}
+            <a
+              href="https://github.com/mariaelenacossio"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-400 hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+            >
+              <Github size={18} aria-hidden="true" />
+            </a>
             {[
-              { label: 'GitHub',    href: 'https://github.com/mariaelenacossio', Icon: Github },
-              { label: 'Twitter',   href: '#', Icon: Twitter },
-              { label: 'Instagram', href: '#', Icon: Instagram },
-            ].map(({ label, href, Icon }) => (
-              <a
+              { label: 'Twitter',   Icon: Twitter },
+              { label: 'Instagram', Icon: Instagram },
+            ].map(({ label, Icon }) => (
+              <span
                 key={label}
-                href={href}
-                aria-label={label}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-400 hover:text-primary-500 dark:hover:text-primary-300 transition-colors"
+                role="img"
+                aria-label={`${label} (placeholder)`}
+                title={`${label} — demo placeholder`}
+                className="text-neutral-300 dark:text-neutral-700 cursor-default"
               >
                 <Icon size={18} aria-hidden="true" />
-              </a>
+              </span>
             ))}
           </div>
         </div>
