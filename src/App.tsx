@@ -1,5 +1,6 @@
 import { HashRouter as BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useTheme } from '@/hooks/useTheme'
+import { CartProvider } from '@/context/CartContext'
 
 // Layouts
 import { DSLayout }      from '@/pages/design-system/DSLayout'
@@ -18,6 +19,7 @@ import { Images }           from '@/pages/design-system/Images'
 // Website pages
 import { WebsiteHome }    from '@/pages/website/WebsiteHome'
 import { WebsiteContact } from '@/pages/website/WebsiteContact'
+import { SkinQuiz }       from '@/pages/website/SkinQuiz'
 
 function ThemeProvider({ children }: { children: React.ReactNode }) {
   useTheme() // initializes and syncs theme on mount
@@ -28,31 +30,34 @@ export default function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <Routes>
-          {/* Root redirect */}
-          <Route path="/" element={<Navigate to="/design-system" replace />} />
+        <CartProvider>
+          <Routes>
+            {/* Root redirect */}
+            <Route path="/" element={<Navigate to="/design-system" replace />} />
 
-          {/* Design System */}
-          <Route path="/design-system" element={<DSLayout />}>
-            <Route index           element={<DSHome />}         />
-            <Route path="colors"      element={<Colors />}         />
-            <Route path="typography"  element={<Typography />}     />
-            <Route path="spacing"     element={<Spacing />}        />
-            <Route path="components"  element={<Components />}     />
-            <Route path="forms"       element={<Forms />}          />
-            <Route path="navigation"  element={<NavigationPage />} />
-            <Route path="images"      element={<Images />}         />
-          </Route>
+            {/* Design System */}
+            <Route path="/design-system" element={<DSLayout />}>
+              <Route index           element={<DSHome />}         />
+              <Route path="colors"      element={<Colors />}         />
+              <Route path="typography"  element={<Typography />}     />
+              <Route path="spacing"     element={<Spacing />}        />
+              <Route path="components"  element={<Components />}     />
+              <Route path="forms"       element={<Forms />}          />
+              <Route path="navigation"  element={<NavigationPage />} />
+              <Route path="images"      element={<Images />}         />
+            </Route>
 
-          {/* BEYOND Skincare website */}
-          <Route path="/website" element={<WebsiteLayout />}>
-            <Route index         element={<WebsiteHome />}    />
-            <Route path="contact" element={<WebsiteContact />} />
-          </Route>
+            {/* BEYOND Skincare website */}
+            <Route path="/website" element={<WebsiteLayout />}>
+              <Route index         element={<WebsiteHome />}    />
+              <Route path="contact" element={<WebsiteContact />} />
+              <Route path="skin-quiz" element={<SkinQuiz />}    />
+            </Route>
 
-          {/* Fallback */}
-          <Route path="*" element={<Navigate to="/design-system" replace />} />
-        </Routes>
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/design-system" replace />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

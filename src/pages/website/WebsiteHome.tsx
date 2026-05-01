@@ -7,49 +7,21 @@ import { ProductCard } from '@/components/molecules/Card'
 import { Badge } from '@/components/atoms/Badge'
 import { Button } from '@/components/atoms/Button'
 import { Heading, Text } from '@/components/atoms/Typography'
+import { useCart } from '@/context/CartContext'
+import { products as catalog, formatPrice } from '@/data/products'
 import { cn } from '@/utils/cn'
 
 /* ─── Data ────────────────────────────────────────────────────────────────── */
-const products = [
-  {
-    id: 1,
-    name:        'C-Bright Eye Cream',
-    price:       '$25',
-    image:       imgUrl('product-1.jpg'),
-    description: 'Brightening vitamin C formula that reduces dark circles and fine lines.',
-    badge:       'Best Seller',
-  },
-  {
-    id: 2,
-    name:        'Homemade Lip Scrub',
-    price:       '$16',
-    image:       imgUrl('product-2.jpg'),
-    description: 'Sugar-based exfoliant with sweet almond oil for soft, plump lips.',
-  },
-  {
-    id: 3,
-    name:        'Niacinamide Booster Serum',
-    price:       '$35',
-    image:       imgUrl('product-3.jpg'),
-    description: '10% niacinamide and zinc formula to minimise pores and even skin tone.',
-    badge:       'Top Rated',
-  },
-  {
-    id: 4,
-    name:        'Rosehip Face Oil',
-    price:       '$44',
-    image:       imgUrl('product-4.jpg'),
-    description: 'Rich in vitamin A and antioxidants for regenerative overnight care.',
-    badge:       'New',
-  },
-  {
-    id: 5,
-    name:        'Hyaluronic Acid Serum',
-    price:       '$22',
-    image:       imgUrl('product-5.jpg'),
-    description: 'Multi-weight hyaluronic acid for deep and surface-level hydration.',
-  },
-]
+// Best sellers carousel — pull a curated subset from the catalogue,
+// adapted to the existing ProductCard prop shape.
+const products = catalog.slice(0, 5).map(p => ({
+  id:          p.id,
+  name:        p.name,
+  price:       formatPrice(p.priceCents),
+  image:       p.image,
+  description: p.description,
+  badge:       p.badge,
+}))
 
 const routineSteps = [
   {
@@ -85,6 +57,12 @@ function ProductCarousel() {
   const [index, setIndex] = useState(0)
   const visible = 3
   const max     = products.length - visible
+  const { add, openDrawer } = useCart()
+
+  const handleAdd = (productId: number) => {
+    add(productId, 1)
+    openDrawer()
+  }
 
   return (
     <div className="relative">
@@ -95,7 +73,7 @@ function ProductCarousel() {
         >
           {products.map(p => (
             <div key={p.id} className="shrink-0" style={{ width: `calc(${100/visible}% - ${(visible-1)*16/visible}px)` }}>
-              <ProductCard {...p} onAddToCart={() => {}} />
+              <ProductCard {...p} onAddToCart={() => handleAdd(p.id)} />
             </div>
           ))}
         </div>
@@ -200,7 +178,7 @@ export function WebsiteHome() {
               <Heading level={2} id="products-heading" size="xl">Best Sellers</Heading>
               <Text color="muted" className="mt-1">Our most-loved formulations, tried and tested by thousands.</Text>
             </div>
-            <Link to="/website/contact">
+            <Link to="/website/skin-quiz">
               <Button variant="outline" iconRight={<ArrowRight size={16} />}>
                 View all products
               </Button>
@@ -250,7 +228,7 @@ export function WebsiteHome() {
           </div>
 
           <div className="mt-10 text-center">
-            <Link to="/website/contact">
+            <Link to="/website/skin-quiz">
               <Button variant="primary" size="lg" iconRight={<ArrowRight size={18} />}>
                 Take the Skin Quiz
               </Button>

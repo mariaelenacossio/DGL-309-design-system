@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react'
 import { Menu, X, ShoppingBag, Layers } from 'lucide-react'
 import { ThemeToggle } from '@/components/atoms/ThemeToggle'
 import { Footer } from '@/components/organisms/Footer'
+import { CartDrawer } from '@/components/organisms/CartDrawer'
+import { useCart } from '@/context/CartContext'
 import { imgUrl } from '@/utils/assets'
 
 /**
@@ -13,7 +15,7 @@ import { imgUrl } from '@/utils/assets'
 type NavItem = { label: string; path: string; section?: string }
 
 const navItems: NavItem[] = [
-  { label: 'Skin Quiz',    path: '/website/contact' },
+  { label: 'Skin Quiz',    path: '/website/skin-quiz' },
   { label: 'Best Sellers', path: '/website', section: 'products' },
   { label: 'Routine',      path: '/website', section: 'routine'  },
   { label: 'Contact',      path: '/website/contact' },
@@ -31,7 +33,7 @@ function WebsiteNavbar() {
   const [open, setOpen] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
-  const [bag, setBag] = useState(0)
+  const { count, openDrawer } = useCart()
 
   // After navigation completes, scroll to the saved section if any.
   // We stash it in location.state so it survives the route change.
@@ -95,15 +97,14 @@ function WebsiteNavbar() {
             </Link>
             <ThemeToggle />
             <button
-              aria-label={`Shopping bag (${bag} ${bag === 1 ? 'item' : 'items'})`}
-              onClick={() => setBag(b => b + 1)}
-              title="Demo cart — adds a sample item"
+              aria-label={`Shopping bag (${count} ${count === 1 ? 'item' : 'items'})`}
+              onClick={openDrawer}
               className="relative h-9 w-9 rounded-lg flex items-center justify-center text-neutral-600 dark:text-neutral-400 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
             >
               <ShoppingBag size={18} aria-hidden="true" />
-              {bag > 0 && (
+              {count > 0 && (
                 <span className="absolute -top-1 -right-1 h-4 min-w-4 px-1 rounded-full bg-primary-500 text-white text-[10px] font-bold flex items-center justify-center">
-                  {bag}
+                  {count}
                 </span>
               )}
             </button>
@@ -149,6 +150,8 @@ export function WebsiteLayout() {
         <Outlet />
       </main>
       <Footer />
+      {/* Cart drawer — mounted once at the layout level so it persists across routes */}
+      <CartDrawer />
     </div>
   )
 }
